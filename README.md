@@ -6,8 +6,7 @@ These types of sites use links to help visitors navigate the site. Your final si
 
 ## Instructions
 - Create all the sections you see in the example image
-- Create anchor links to navigate to different sections of the page 
- - About Me, Portfolio and Experience should all take the user to different sections on the same page
+- Create anchor links to navigate to different sections of the page - i.e. `About Me`, `Portfolio` and `Experience` links in the header should all take the user to different sections on the same page
 - Create internal links to simple portfolio pages
 - Create external links to GitHub and/or CodeSandbox
 - Focus on building a website with navigation first; styling second
