@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Trebuchet MS;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+
+
+/* header */
+header {
+    background-color: royalblue;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr 400px;
+    grid-auto-flow: column;
+    place-items: center;
+}
+
+header ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 25px;
+    width: 400px;
+    place-items: center;
+}
+
+header li {
+    list-style: none;
+    color: royalblue;
+    background-color: white;
+    padding: 6px 16px;
+    border: hidden ;
+    border-radius: 6px;
+}
+
+header h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:visited {
+    color: purple;
+}
+
+
+
+/* main-title */
+.main-title {
+    background-color: royalblue;
+    color: white;
+    display: grid;
+    padding: 150px ;
+    place-items: center;
+    gap: 40px;
+}
+
+h1 {
+    font-size: 5.5rem;
+    max-width: 10ch;
+    text-align: left;
+}
+
+.main-title p {
+    max-width: 60ch;
+}
+
+.black {
+    color: black;
+}
+
+.underline {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+
+/* about-me */
+#about-me {
+    border-top: solid 10px #1D313A;
+    display: grid;
+    grid-template-columns: 1fr 580px 1fr;
+    margin-bottom: 70px;
+}
+
+.h2main {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.about-me-center h3 {
+    margin-bottom: 15px;
+}
+
+.about-me-center p {
+    margin-bottom: 40px;
+}
+
+.about-me-center ul {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 130px;
+}
+
+
+
+/* portfolio */
+#portfolio {
+    border-top: solid 10px #1D313A;
+    border-bottom: solid 10px #1D313A;
+    background-color: #FFEBEE;
+    padding-bottom: 55px;
+}
+
+.portfolio1 {
+    border: solid 8px #AE1457;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 2px;
+
+}
+
+.portfolio2 {
+    border: solid 8px #AE1457;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 2px;
+    
+}
+
+.portfolio3 {
+    border: solid 8px #AE1457;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 2px;
+    
+}
+
+
+
+/* experience */
+#experience {
+    display: grid;
+    grid-template-columns: 1fr 580px 1fr;
+}
+
+.experience-center {
+    margin-bottom: 30px;
+}
+
+.experience-center h3 {
+    margin-bottom: 15px;
+}
+
+.experience-center p {
+    margin-bottom: 40px;
+}
+
+
+
+/* footer */
+footer {
+    background-color: #1D313A;
+    color: white;
+    padding: 20px;
+}
