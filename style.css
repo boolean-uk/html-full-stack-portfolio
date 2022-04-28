@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* box-sizing, the total whole block space is w*h */
+/* margin is stranger, padding is our family */
+html {
+  --primary-color: rgb(179, 3, 120);
+  --top-bar-color: rgb(144, 193, 212);
+  --white-standard: whitesmoke;
+}
+main {
+    padding: 20px;
+  display: grid;
+  grid-template:
+    "top-bar"
+    "top-bar-body"
+    "about-me"
+    "portfolio"
+    "exp"
+    "footer";
+  grid-template-rows: 100px repeat(4, 1fr) 100px;
+  gap: 5px;
+}
+.top-bar {
+  grid-area: top-bar;
+  border-radius: 3px;
+  padding: 5px 20px;
+  background-color: var(--top-bar-color);
+}
+.nav-items {
+  display: grid;
+  grid-auto-flow: column;
+  width: fit-content;
+  gap:0.5fr;
+  
+  
+}
+
+.nav-details {
+    justify-content:end;
+  margin-left: 300px;
+  display: grid;
+  grid-auto-flow: column;
+  width: fit-content;
+  gap: 10px;
+  list-style: none;
+  
+}
+.nav-box {
+  height: 40px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-align: center;
+  color: var(--top-bar-color);
+  background-color: var(var(--white-standard));
+}
+.top-bar-body {
+  grid-area: top-bar-body;
+  padding: 30%;
+  background-color: var(--top-bar-color);
+  width: auto;
+  height: 1fr;
+  width: 1fr;
+  border: 10px;
+  border-bottom: solid black;
+}
+.top-bar-body .adv-profile {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.top-bar-body .adv-details {
+
+  text-align: center;
+}
+.top-bar-body p {
+  /* grid-template-columns: repeat(2, 1fr); */
+  font-size: 1rem;
+  text-align: center;
+}
+.top-bar-body p em strong {
+  color: white;
+}
+
+.about-me {
+  grid-area: about-me;
+  background-color: white;
+  width: auto;
+  height: 100vh;
+  border: 10px;
+  border: solid none;
+}
+.about-me .adv-about-me {
+  font-size: 2rem;
+  display: grid;
+  text-align: center;
+  margin: 30px;
+  margin-top: 100px;
+}
+.about-me h2 {
+  margin: 0px 100px;
+  display: block;
+  justify-content: right;
+}
+.about-me p {
+  display: grid;
+  font-size: 1rem;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  /* grid-template-rows: 55ch; */
+  justify-items: center;
+}
+.about-me .tech-skills {
+  margin: 10px 100px;
+  display: block;
+
+  justify-content: left;
+}
+.about-me .tech-skills ul {
+  margin: 10px 20px;
+  display: block;
+  justify-content: center;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.portfolio {
+  grid-area: portfolio;
+  padding: 20px;
+  background-color: rgb(243, 198, 205, 50%);
+  border: 5px;
+  border-style: solid none;
+}
+.container {
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 0 50px;
+}
+.container .project-title {
+  display: grid;
+  font-size: 1.5rem;
+  align-content: center;
+}
+.container .project {
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px;
+  border: 1px dashed;
+  border: solid 5px var(--primary-color);
+  border-radius: 5px;
+  background-color: white;
+  grid-template-rows: 30px 1fr 20px 20px;
+}
+.container .project .read-more {
+  display: grid;
+  place-items: center;
+  /* place item : center function on grid only */
+  /* Also can use justify-self:center; */
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+
+  max-width: 200px;
+  /* stop this element change in size */
+}
+.container .project .githup-repo {
+  color: var(--primary-color);
+  display: grid;
+  place-items: center;
+}
+.exp {
+  grid-area: exp;
+}
+.exp .adv-exp {
+  font-size: 2rem;
+  display: grid;
+  text-align: center;
+  margin: 30px;
+  margin-top: 100px;
+}
+.exp h2 {
+  margin: 0px 100px;
+  display: block;
+  justify-content: right;
+}
+.exp p {
+  display: grid;
+  font-size: 1rem;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  /* grid-template-rows: 55ch; */
+  justify-items: center;
+}
+footer {
+  grid-area: footer;
+  padding: 20px;
+  color: white;
+  background-color: grey;
+}
+/*
+  @media screen and(max-width: 550px) {
+    anything <=550 will apply, anything over 550 won't apply 
+    .container {
+      grid-template:
+        "header" 50px
+        "left-menu" 100px
+        "menu" 1fr
+        "footer" 50px /
+        200px;
+    }
+    .right-menu {
+      display: none;
+    }
+  }*/
