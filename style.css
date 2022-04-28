@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  /* background-color: var(--top-bar-color); */
 }
 /* box-sizing, the total whole block space is w*h */
 /* margin is stranger, padding is our family */
@@ -11,146 +12,139 @@ html {
   --top-bar-color: rgb(144, 193, 212);
   --white-standard: whitesmoke;
 }
-main {
-    padding: 20px;
+main{
   display: grid;
   grid-template:
     "top-bar"
-    "top-bar-body"
+    "main-body"
     "about-me"
     "portfolio"
     "exp"
     "footer";
-  grid-template-rows: 100px repeat(4, 1fr) 100px;
+  grid-template-rows:100px repeat(4,minmax(200px,1fr)) 100px;
   gap: 5px;
+ 
 }
 .top-bar {
+  
   grid-area: top-bar;
-  border-radius: 3px;
-  padding: 5px 20px;
+  
   background-color: var(--top-bar-color);
+ 
 }
-.nav-items {
-  display: grid;
-  grid-auto-flow: column;
-  width: fit-content;
-  gap:0.5fr;
-  
-  
+nav.nav-items {
+    display: grid;
+    grid-auto-flow: column;
 }
-
+nav h1 {
+  padding-top: 20px;
+  padding-left: 50px;
+  font-size: 1.5rem;
+}
 .nav-details {
-    justify-content:end;
-  margin-left: 300px;
+  padding-top: 20px;
   display: grid;
   grid-auto-flow: column;
-  width: fit-content;
-  gap: 10px;
   list-style: none;
-  
+  gap: 20px;
+}
+.nav-box a {
+  text-decoration: none;
 }
 .nav-box {
-  height: 40px;
+  text-align: center;
   font-size: 0.9rem;
   text-decoration: none;
   text-align: center;
   color: var(--top-bar-color);
-  background-color: var(var(--white-standard));
+  background-color: var(--white-standard);
 }
-.top-bar-body {
-  grid-area: top-bar-body;
-  padding: 30%;
+.main-body {
+  grid-area: main-body;
+  display: grid;
+  grid-auto-flow: row;
+  align-content: center;
+  justify-content: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
   background-color: var(--top-bar-color);
-  width: auto;
-  height: 1fr;
-  width: 1fr;
   border: 10px;
   border-bottom: solid black;
 }
-.top-bar-body .adv-profile {
+.middle-box {
+  width: 40px;
+}
+.midText {
   font-size: 2rem;
   text-align: center;
-  padding-bottom: 10px;
 }
-.top-bar-body .adv-details {
-
+.leftContent {
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+}
+.veryLargeText {
+  text-align: left;
+  font-size: 4rem;
+  padding: 0 10px;
+}
+.largeText {
+  text-align: left;
+  font-size: 2.5rem;
+  padding: 0 10px;
+}
+.standardText {
+  font-size: 1.2rem;
   text-align: center;
 }
-.top-bar-body p {
-  /* grid-template-columns: repeat(2, 1fr); */
-  font-size: 1rem;
-  text-align: center;
-}
-.top-bar-body p em strong {
+.main-body p em strong {
   color: white;
 }
-
 .about-me {
+  display: grid;
   grid-area: about-me;
-  background-color: white;
-  width: auto;
-  height: 100vh;
+  background-color: var(--white-standard);
+}
+.aboutme-container {
+  grid-auto-flow: row;
+  height: fit-content;
+  background-color: var(--white-standard);
   border: 10px;
   border: solid none;
 }
-.about-me .adv-about-me {
-  font-size: 2rem;
-  display: grid;
-  text-align: center;
-  margin: 30px;
-  margin-top: 100px;
-}
-.about-me h2 {
-  margin: 0px 100px;
-  display: block;
-  justify-content: right;
-}
-.about-me p {
-  display: grid;
-  font-size: 1rem;
+.about-me h1 {
   padding-top: 50px;
-  padding-bottom: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
-
-  /* grid-template-rows: 55ch; */
-  justify-items: center;
 }
-.about-me .tech-skills {
-  margin: 10px 100px;
-  display: block;
 
-  justify-content: left;
-}
-.about-me .tech-skills ul {
-  margin: 10px 20px;
-  display: block;
-  justify-content: center;
+.contentStyle {
+  line-height: 1.5;
+  text-align: start;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 70ch;
 }
 
 .section-title {
-  margin-bottom: 10px;
+  padding: 50px 20px;
   text-align: center;
   text-transform: uppercase;
 }
 .portfolio {
   grid-area: portfolio;
-  padding: 20px;
   background-color: rgb(243, 198, 205, 50%);
   border: 5px;
   border-style: solid none;
 }
 .container {
   display: grid;
-  /* grid-template-columns: 100px 100px 100px; */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-flow: column;
   grid-gap: 10px;
-  padding: 0 50px;
+  padding: 100px;
 }
 .container .project-title {
-  display: grid;
   font-size: 1.5rem;
   align-content: center;
+  padding: 0px 100px;
 }
 .container .project {
   display: grid;
@@ -160,51 +154,33 @@ main {
   border: solid 5px var(--primary-color);
   border-radius: 5px;
   background-color: white;
-  grid-template-rows: 30px 1fr 20px 20px;
+  grid-template-rows: 30px 1fr 40px 30px;
+  justify-self: center;
 }
 .container .project .read-more {
+  margin-top: 10px;
   display: grid;
   place-items: center;
-  /* place item : center function on grid only */
-  /* Also can use justify-self:center; */
   background-color: var(--primary-color);
   color: white;
   border-radius: 5px;
   text-decoration: none;
 
   max-width: 200px;
+  max-height: 250px;
   /* stop this element change in size */
 }
 .container .project .githup-repo {
   color: var(--primary-color);
-  display: grid;
   place-items: center;
 }
 .exp {
+  padding: 150px 50px;
+  display: grid;
+  grid-auto-flow: row;
   grid-area: exp;
-}
-.exp .adv-exp {
-  font-size: 2rem;
-  display: grid;
-  text-align: center;
-  margin: 30px;
-  margin-top: 100px;
-}
-.exp h2 {
-  margin: 0px 100px;
-  display: block;
-  justify-content: right;
-}
-.exp p {
-  display: grid;
-  font-size: 1rem;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
-
-  /* grid-template-rows: 55ch; */
-  justify-items: center;
+  height: fit-content;
+  place-content: center;
 }
 footer {
   grid-area: footer;
