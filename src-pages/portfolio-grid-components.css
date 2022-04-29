@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Trebuchet MS;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+
+
+/* header */
+header {
+    background-color: royalblue;
+    color: white;
+    padding: 20px;
+    place-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+header h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.spacing {
+    height: 60px;
+}
+
+
+
+/* grid-components */
+#grid-components {
+    display: grid;
+    grid-template-columns: 1fr 580px 1fr;
+    margin-bottom: 70px;
+}
+
+.h2main {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.grid-components .repo {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+/* portfolio */
+#portfolios {
+    border-top: solid 10px #1D313A;
+    border-bottom: solid 10px #1D313A;
+    background-color: #FFEBEE;
+    padding-bottom: 55px;
+}
+
+.portfolio {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.portfolios {
+    border: solid 8px #AE1457;
+    display: grid;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px #AE1457;
+    height: 500px;
+    width: 400px;
+    padding: 45px;
+}
+
+.portfolios h2 {
+    font-size: 1.9rem;
+}
+
+.portfolios p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    background-color: #AE1457;
+    border: hidden 1px;
+    border-radius:4px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-top: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.read-more:active {
+    background-color: #b66c8c;
+}
+
+.repo {
+    color: #AE1457;
+    text-align: center;
+}
+
+.repo:hover {
+    text-decoration: none;
+}
+
+.repo:active {
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio {
+        display: grid;
+        grid-template: "spacer1 portfolio1 spacer2" 1fr
+                        "spacer1 portfolio2 spacer2" 1fr
+                        "spacer1 portfolio3 spacer2" 1fr /
+                        1fr 420px 1fr;
+        gap: 50px;
+    }
+
+    .portfolio1 {
+        grid-area: portfolio1;
+    }
+
+    .portfolio2 {
+        grid-area: portfolio2;
+    }
+
+    .portfolio3 {
+        grid-area: portfolio3;
+    }
+
+    .spacer1 {
+        grid-area: spacer1;
+    }
+
+    .spacer2 {
+        grid-area: spacer2;
+    }
+}
+
+
+
+/* footer */
+footer {
+    background-color: #1D313A;
+    color: white;
+    padding: 20px;
+}
