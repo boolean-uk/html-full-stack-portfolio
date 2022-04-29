@@ -12,7 +12,22 @@ html {
   --top-bar-color: rgb(144, 193, 212);
   --white-standard: whitesmoke;
 }
-main{
+a::before,
+a::after {
+
+  width: 100%;
+  color:red;
+
+} 
+a:hover {
+  
+}
+.top-bar a:hover {
+  color:white;
+  box-shadow: inset 200px 0 0 0 #54b3d6;
+  /*  box-shadow: offset(outsideframe) inset (insideframe) x y shadowSpreading furthershadow*/
+}
+main {
   display: grid;
   grid-template:
     "top-bar"
@@ -21,25 +36,21 @@ main{
     "portfolio"
     "exp"
     "footer";
-  grid-template-rows:100px repeat(4,minmax(200px,1fr)) 100px;
-  gap: 5px;
- 
+  grid-template-rows: 100px repeat(4, minmax(200px, 1fr)) 100px;
 }
 .top-bar {
-  
   grid-area: top-bar;
-  
   background-color: var(--top-bar-color);
- 
 }
 nav.nav-items {
-    display: grid;
-    grid-auto-flow: column;
+  display: grid;
+  grid-auto-flow: column;
 }
 nav h1 {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-left: 50px;
   font-size: 1.5rem;
+  color: var(--white-standard);
 }
 .nav-details {
   padding-top: 20px;
@@ -47,17 +58,23 @@ nav h1 {
   grid-auto-flow: column;
   list-style: none;
   gap: 20px;
+  justify-content: flex-end;
 }
 .nav-box a {
+  display: grid;
+  justify-content: center;
+  padding: 15px;
   text-decoration: none;
+  text-align: center;
 }
 .nav-box {
-  text-align: center;
+  height: 40px;
+  width: fit-content;
   font-size: 0.9rem;
   text-decoration: none;
-  text-align: center;
   color: var(--top-bar-color);
   background-color: var(--white-standard);
+  border-radius: 5px;
 }
 .main-body {
   grid-area: main-body;
@@ -141,13 +158,10 @@ nav h1 {
   grid-gap: 10px;
   padding: 100px;
 }
-.container .project-title {
-  font-size: 1.5rem;
-  align-content: center;
-  padding: 0px 100px;
-}
+
 .container .project {
   display: grid;
+  grid-auto-flow: row;
   grid-gap: 10px;
   padding: 20px;
   border: 1px dashed;
@@ -155,24 +169,27 @@ nav h1 {
   border-radius: 5px;
   background-color: white;
   grid-template-rows: 30px 1fr 40px 30px;
-  justify-self: center;
 }
-.container .project .read-more {
-  margin-top: 10px;
+.container .project-title {
+  font-size: 1.5rem;
+  width: fit-content;
   display: grid;
-  place-items: center;
+  justify-content: center;
+}
+
+.container .project a.read-more {
+  display: grid;
+  justify-content: center;
   background-color: var(--primary-color);
   color: white;
   border-radius: 5px;
   text-decoration: none;
-
-  max-width: 200px;
-  max-height: 250px;
-  /* stop this element change in size */
 }
+
 .container .project .githup-repo {
   color: var(--primary-color);
-  place-items: center;
+  display: grid;
+  justify-content: center;
 }
 .exp {
   padding: 150px 50px;
@@ -188,18 +205,4 @@ footer {
   color: white;
   background-color: grey;
 }
-/*
-  @media screen and(max-width: 550px) {
-    anything <=550 will apply, anything over 550 won't apply 
-    .container {
-      grid-template:
-        "header" 50px
-        "left-menu" 100px
-        "menu" 1fr
-        "footer" 50px /
-        200px;
-    }
-    .right-menu {
-      display: none;
-    }
-  }*/
+
