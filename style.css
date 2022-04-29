@@ -12,16 +12,6 @@ html {
   --top-bar-color: rgb(144, 193, 212);
   --white-standard: whitesmoke;
 }
-a::before,
-a::after {
-
-  width: 100%;
-  color:red;
-
-} 
-a:hover {
-  
-}
 .top-bar a:hover {
   color:white;
   box-shadow: inset 200px 0 0 0 #54b3d6;
@@ -162,6 +152,7 @@ nav h1 {
 .container .project {
   display: grid;
   grid-auto-flow: row;
+  width: fit-content;
   grid-gap: 10px;
   padding: 20px;
   border: 1px dashed;
@@ -176,7 +167,10 @@ nav h1 {
   display: grid;
   justify-content: center;
 }
-
+.fifthyChLimit{
+  width: 50ch;
+    
+}
 .container .project a.read-more {
   display: grid;
   justify-content: center;
