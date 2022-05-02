@@ -18,24 +18,10 @@ html {
   /*  box-shadow: offset(outsideframe) inset (insideframe) x y shadowSpreading furthershadow*/
 }
 body {
-  display: grid;
-  justify-content: center;
   max-width: 100vw;
   max-height: 100vh;
 }
-.wrapper {
-  grid-area: main1;
-}
-.space1 {
-
-  grid-area: space1;
-}
-.space2 {
-
-  grid-area: space2;
-}
 main {
-  grid-area: main;
   display: grid;
   grid-template:
     "top-bar"
@@ -44,10 +30,11 @@ main {
     "portfolio"
     "exp"
     "footer";
-  grid-template-rows: 100px repeat(4, minmax(200px, 1fr)) 100px;
+  grid-template-rows: 6.25rem repeat(4, minmax(12.5rem, 1fr)) 6.25rem;
   justify-content: center;
   max-width: fit-content;
 }
+/* -----------------Top-bar Area----------------- */
 .top-bar {
   grid-area: top-bar;
   background-color: var(--top-bar-color);
@@ -57,76 +44,50 @@ nav.nav-items {
   grid-auto-flow: column;
 }
 nav h1 {
-  padding-top: 25px;
-  padding-left: 50px;
+  padding-top: 1.55rem;
+  padding-left: 3.125rem;
   font-size: 1.5rem;
   color: var(--white-standard);
 }
 .nav-details {
-  padding-top: 20px;
+  padding-top: 1.25rem;
   display: grid;
   grid-auto-flow: column;
   list-style: none;
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: flex-end;
 }
 .nav-box a {
   display: grid;
   justify-content: center;
-  padding: 15px;
+  padding: 0.938rem;
   text-decoration: none;
   text-align: center;
 }
 .nav-box {
-  height: 40px;
+  height: 2.5rem;
   width: fit-content;
   font-size: 0.9rem;
   text-decoration: none;
   color: var(--top-bar-color);
   background-color: var(--white-standard);
-  border-radius: 5px;
+  border-radius: 0.313rem;
 }
+/* -----------------Main Body----------------- */
 .main-body {
   grid-area: main-body;
   display: grid;
   grid-auto-flow: row;
   align-content: center;
   justify-content: center;
-  padding-top: 20%;
-  padding-bottom: 20%;
   background-color: var(--top-bar-color);
-  border: 10px;
+  border: 0.625rem;
   border-bottom: solid black;
-}
-.middle-box {
-  width: 40px;
-}
-.midText {
-  font-size: 2rem;
-  text-align: center;
-}
-.leftContent {
-  display: flex;
-  justify-content: left;
-  padding-left: 20px;
-}
-.veryLargeText {
-  text-align: left;
-  font-size: 4rem;
-  padding: 0 10px;
-}
-.largeText {
-  text-align: left;
-  font-size: 2.5rem;
-  padding: 0 10px;
-}
-.standardText {
-  font-size: 1.2rem;
-  text-align: center;
 }
 .main-body p em strong {
   color: white;
 }
+/*-----------------About-me-----------------*/
 .about-me {
   display: grid;
   grid-area: about-me;
@@ -136,59 +97,36 @@ nav h1 {
   grid-auto-flow: row;
   height: fit-content;
   background-color: var(--white-standard);
-  border: 10px;
+  border: 0.625rem;
   border: solid none;
 }
 .about-me h1 {
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
-
-.contentStyle {
-  line-height: 1.5;
-  text-align: start;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 70ch;
-}
-
-.section-title {
-  padding: 50px 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
+/*----------------- Protfolio -----------------*/
 .portfolio {
   grid-area: portfolio;
   background-color: rgb(243, 198, 205, 50%);
-  border: 5px;
+  border: 0.313rem;
   border-style: solid none;
 }
 .container {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 10px;
-  padding: 100px;
+  grid-gap: 0.625rem;
+  padding: 6.25rem;
 }
-
 .container .project {
   display: grid;
   grid-auto-flow: row;
   width: fit-content;
-  grid-gap: 10px;
-  padding: 20px;
+  grid-gap: 0.625rem;
+  padding: 1.25rem;
   border: 1px dashed;
   border: solid 5px var(--primary-color);
   border-radius: 5px;
   background-color: white;
-  grid-template-rows: 30px 1fr 40px 30px;
-}
-.container .project-title {
-  font-size: 1.5rem;
-  width: fit-content;
-  display: grid;
-  justify-content: center;
-}
-.fifthyChLimit {
-  width: 50ch;
+  grid-template-rows: 1.875rem 1fr 2.5rem 1.875rem;
 }
 .container .project a.read-more {
   display: grid;
@@ -198,39 +136,190 @@ nav h1 {
   border-radius: 5px;
   text-decoration: none;
 }
-
 .container .project .githup-repo {
   color: var(--primary-color);
   display: grid;
   justify-content: center;
 }
-.exp {
-  padding: 150px 50px;
+/*-----------------Experience----------------- */
+.exp.contentStyle {
+  padding: 2rem 1rem;
+  grid-area: exp;
   display: grid;
   grid-auto-flow: row;
-  grid-area: exp;
-  height: fit-content;
-  place-content: center;
+  /*
+  height: fit-content; */
 }
+
+/* -----------------footer----------------- */
 footer {
   grid-area: footer;
-  padding: 20px;
+  padding: 1.25rem;
   color: white;
   background-color: grey;
 }
-@media screen and (max-width: 720px) {
+/*-----------------Font---------------- */
+.midText {
+  font-size: 2rem;
+  text-align: center;
+}
+.leftContent {
+  display: flex;
+  justify-content: left;
+  padding-left: 1.25rem;
+}
+.veryLargeText {
+  text-align: left;
+  font-size: 4rem;
+  padding: 0 0.625rem;
+}
+.largeText {
+  text-align: left;
+  font-size: 2.5rem;
+  padding: 0 0.625rem;
+}
+.standardText {
+  font-size: 1.2rem;
+}
+.portfolio-title {
+  padding: 4rem 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.project-title,
+.exp-title {
+  font-size: 1.5rem;
+  width: fit-content;
+  display: grid;
+  justify-content: center;
+}
+.exp-title {
+  padding: 2rem 0.5rem;
+  font-size: 2.5rem;
+}
+.contentStyle {
+  text-align: left;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 70ch;
+}
+.fifthyChLimit {
+  width: 50ch;
+}
+/* Media queries*/
+@media screen and (max-width: 1800px) {
   main {
-    grid-area: main;
-    display: grid;
-    grid-template:
-      "main-body"
-      "about-me"
-      "portfolio"
-      "exp"
-      "footer";
-    grid-template-rows:repeat(4,50%) 100px;
+    grid-template-rows: [top-bar] 100px [main-body] 500px [about-me] 500px [portfolio] auto-fit [exp] 500px [footer] 100px;
     justify-content: center;
-    
   }
-  *{font-size:1rem;}
+    nav h1 {
+   
+    text-align:right;
+  }
+  .nav-details {
+padding-left: 2rem;
+    justify-content:start;
+  }
+
+  .container {
+    padding: 1rem 0;
+    grid-auto-flow: row;
+  }
+  .container .project {
+    padding: 0.5rem;
+    grid-template-rows: 1rem 0.5fr 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-rows: [top-bar] 100px [main-body] 400px [about-me] 400px [portfolio] auto-fit [exp] 400px [footer] 100px;
+    justify-content: center;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  main {
+    grid-template-rows: [top-bar] 100px [main-body] 350px [about-me] 350px [portfolio] auto-fit [exp] 350px [footer] 100px;
+    justify-content: center;
+  }
+
+}
+@media screen and (max-width: 470px) {
+  main {
+    grid-template-rows: [top-bar] 100px [main-body] 300px [about-me] 300px [portfolio] auto-fit [exp] 300px [footer] 100px;
+    justify-content: center;
+  }
+
+  nav.nav-items {
+    grid-auto-flow: row;
+  }
+  nav h1 {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .nav-details {
+    padding-top: 0.6rem;
+    gap: 0.5rem;
+    grid-auto-flow: rows;
+    list-style: none;
+    justify-content: center;
+  }
+  .nav-box a {
+    padding: 0.45rem;
+  }
+  .nav-box {
+    height: 1.2rem;
+    font-size: 0.45rem;
+  }
+  .main-body{
+    padding: 0 1rem;
+  }
+  .about-me {
+    grid-auto-flow: row;
+  }
+
+  .container {
+    padding: 1rem 0;
+    grid-auto-flow: row;
+  }
+  .container .project {
+    padding: 0.5rem;
+    grid-template-rows: 0.9rem 0.5fr 1.2rem 0.9rem;
+  }
+  .exp-container {
+    grid-auto-flow: row;
+    height: fit-content;
+  }
+  .exp-container.contentStyle {
+    max-width: 30ch;
+  }
+  footer {
+    text-align: center;
+  }
+  .midText {
+    font-size: 1rem;
+  }
+  .leftContent {
+    font-size: 0.625rem;
+  }
+  .veryLargeText {
+    font-size: 2rem;
+  }
+  .largeText,
+  .exp-title {
+    font-size: 1.2rem;
+  }
+  .standardText {
+    font-size: 0.5rem;
+  }
+  .portfolio-title {
+    padding: 2rem 0.625rem;
+    font-size: 1.2rem;
+  }
+  .project-title {
+    font-size: 0.625rem;
+  }
 }
