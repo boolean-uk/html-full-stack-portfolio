@@ -232,7 +232,7 @@ padding-left: 2rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   main {
     grid-template-rows: [top-bar] 100px [main-body] 400px [about-me] 400px [portfolio] auto-fit [exp] 400px [footer] 100px;
     justify-content: center;
