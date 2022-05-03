@@ -232,21 +232,21 @@ padding-left: 2rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   main {
     grid-template-rows: [top-bar] 100px [main-body] 400px [about-me] 400px [portfolio] auto-fit [exp] 400px [footer] 100px;
     justify-content: center;
   }
 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   main {
     grid-template-rows: [top-bar] 100px [main-body] 350px [about-me] 350px [portfolio] auto-fit [exp] 350px [footer] 100px;
     justify-content: center;
   }
 
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 480px) {
   main {
     grid-template-rows: [top-bar] 100px [main-body] 300px [about-me] 300px [portfolio] auto-fit [exp] 300px [footer] 100px;
     justify-content: center;
