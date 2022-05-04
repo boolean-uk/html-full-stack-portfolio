@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* background-color: var(--top-bar-color); */
+}
+/* box-sizing, the total whole block space is w*h */
+/* margin is stranger, padding is our family */
+html {
+  --primary-color: rgb(179, 3, 120);
+  --top-bar-color: rgb(144, 193, 212);
+  --white-standard: whitesmoke;
+}
+.top-bar a:hover {
+  color: white;
+  box-shadow: inset 200px 0 0 0 #54b3d6;
+  /*  box-shadow: offset(outsideframe) inset (insideframe) x y shadowSpreading furthershadow*/
+}
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+main {
+  display: grid;
+  grid-template:
+    "top-bar"
+    "main-body"
+    "about-me"
+    "portfolio"
+    "exp"
+    "footer";
+  grid-template-rows: 6.25rem repeat(4, minmax(12.5rem, 1fr)) 6.25rem;
+  justify-content: center;
+  max-width: fit-content;
+}
+/* -----------------Top-bar Area----------------- */
+.top-bar {
+  grid-area: top-bar;
+  background-color: var(--top-bar-color);
+}
+nav.nav-items {
+  display: grid;
+  grid-auto-flow: column;
+}
+nav h1 {
+  padding-top: 1.55rem;
+  padding-left: 3.125rem;
+  font-size: 1.5rem;
+  color: var(--white-standard);
+}
+.nav-details {
+  padding-top: 1.25rem;
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  gap: 1.25rem;
+  justify-content: flex-end;
+}
+.nav-box a {
+  display: grid;
+  justify-content: center;
+  padding: 0.938rem;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-box {
+  height: 2.5rem;
+  width: fit-content;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--top-bar-color);
+  background-color: var(--white-standard);
+  border-radius: 0.313rem;
+}
+/* -----------------Main Body----------------- */
+.main-body {
+  grid-area: main-body;
+  display: grid;
+  grid-auto-flow: row;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--top-bar-color);
+  border: 0.625rem;
+  border-bottom: solid black;
+}
+.main-body p em strong {
+  color: white;
+}
+/*-----------------About-me-----------------*/
+.about-me {
+  display: grid;
+  grid-area: about-me;
+  background-color: var(--white-standard);
+}
+.aboutme-container {
+  grid-auto-flow: row;
+  height: fit-content;
+  background-color: var(--white-standard);
+  border: 0.625rem;
+  border: solid none;
+}
+.about-me h1 {
+  padding-top: 3.125rem;
+}
+/*----------------- Protfolio -----------------*/
+.portfolio {
+  grid-area: portfolio;
+  background-color: rgb(243, 198, 205, 50%);
+  border: 0.313rem;
+  border-style: solid none;
+}
+.container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.625rem;
+  padding: 6.25rem;
+}
+.container .project {
+  display: grid;
+  grid-auto-flow: row;
+  width: fit-content;
+  grid-gap: 0.625rem;
+  padding: 1.25rem;
+  border: 1px dashed;
+  border: solid 5px var(--primary-color);
+  border-radius: 5px;
+  background-color: white;
+  grid-template-rows: 1.875rem 1fr 2.5rem 1.875rem;
+}
+.container .project a.read-more {
+  display: grid;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.container .project .githup-repo {
+  color: var(--primary-color);
+  display: grid;
+  justify-content: center;
+}
+/*-----------------Experience----------------- */
+.exp.contentStyle {
+  padding: 2rem 1rem;
+  grid-area: exp;
+  display: grid;
+  grid-auto-flow: row;
+  /*
+  height: fit-content; */
+}
+
+/* -----------------footer----------------- */
+footer {
+  grid-area: footer;
+  padding: 1.25rem;
+  color: white;
+  background-color: grey;
+}
+/*-----------------Font---------------- */
+.midText {
+  font-size: 2rem;
+  text-align: center;
+}
+.leftContent {
+  display: flex;
+  justify-content: left;
+  padding-left: 1.25rem;
+}
+.veryLargeText {
+  text-align: left;
+  font-size: 4rem;
+  padding: 0 0.625rem;
+}
+.largeText {
+  text-align: left;
+  font-size: 2.5rem;
+  padding: 0 0.625rem;
+}
+.standardText {
+  font-size: 1.2rem;
+}
+.portfolio-title {
+  padding: 4rem 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.project-title,
+.exp-title {
+  font-size: 1.5rem;
+  width: fit-content;
+  display: grid;
+  justify-content: center;
+}
+.exp-title {
+  padding: 2rem 0.5rem;
+  font-size: 2.5rem;
+}
+.contentStyle {
+  text-align: left;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 70ch;
+}
+.fifthyChLimit {
+  width: 50ch;
+}
+/* Media queries*/
+@media screen and (max-width: 1800px) {
+  main {
+    grid-template-rows: [top-bar] 100px [main-body] 500px [about-me] 500px [portfolio] auto-fit [exp] 500px [footer] 100px;
+    justify-content: center;
+  }
+    nav h1 {
+   
+    text-align:right;
+  }
+  .nav-details {
+padding-left: 2rem;
+    justify-content:start;
+  }
+
+  .container {
+    padding: 1rem 0;
+    grid-auto-flow: row;
+  }
+  .container .project {
+    padding: 0.5rem;
+    grid-template-rows: 1rem 0.5fr 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    grid-template-rows: [top-bar] 100px [main-body] 400px [about-me] 400px [portfolio] auto-fit [exp] 400px [footer] 100px;
+    justify-content: center;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-rows: [top-bar] 100px [main-body] 350px [about-me] 350px [portfolio] auto-fit [exp] 350px [footer] 100px;
+    justify-content: center;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  main {
+    grid-template-rows: [top-bar] 100px [main-body] 300px [about-me] 300px [portfolio] auto-fit [exp] 300px [footer] 100px;
+    justify-content: center;
+  }
+
+  nav.nav-items {
+    grid-auto-flow: row;
+  }
+  nav h1 {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .nav-details {
+    padding-top: 0.6rem;
+    gap: 0.5rem;
+    grid-auto-flow: rows;
+    list-style: none;
+    justify-content: center;
+  }
+  .nav-box a {
+    padding: 0.45rem;
+  }
+  .nav-box {
+    height: 1.2rem;
+    font-size: 0.45rem;
+  }
+  .main-body{
+    padding: 0 1rem;
+  }
+  .about-me {
+    grid-auto-flow: row;
+  }
+
+  .container {
+    padding: 1rem 0;
+    grid-auto-flow: row;
+  }
+  .container .project {
+    padding: 0.5rem;
+    grid-template-rows: 0.9rem 0.5fr 1.2rem 0.9rem;
+  }
+  .exp-container {
+    grid-auto-flow: row;
+    height: fit-content;
+  }
+  .exp-container.contentStyle {
+    max-width: 30ch;
+  }
+  footer {
+    text-align: center;
+  }
+  .midText {
+    font-size: 1rem;
+  }
+  .leftContent {
+    font-size: 0.625rem;
+  }
+  .veryLargeText {
+    font-size: 2rem;
+  }
+  .largeText,
+  .exp-title {
+    font-size: 1.2rem;
+  }
+  .standardText {
+    font-size: 0.5rem;
+  }
+  .portfolio-title {
+    padding: 2rem 0.625rem;
+    font-size: 1.2rem;
+  }
+  .project-title {
+    font-size: 0.625rem;
+  }
+}
