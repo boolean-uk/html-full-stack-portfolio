@@ -1,0 +1,205 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Top Section */
+  
+  .heroSection {
+    background-color: teal;
+    border-top: solid 1em black;
+    border-bottom: solid 1em black;
+    width: 100%;
+  }
+  
+  .callout {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .callout h1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: lightblue;
+    font-size: 520%;
+    line-height: 1.4;
+  }
+  
+  .callout p {
+    color: lightblue;
+    line-height: 2;
+  }
+  
+  .callout p strong {
+    color: black;
+  }
+  
+  .callout p em {
+    text-decoration: underline;
+    text-decoration-color: black;
+  }
+  
+  .mainNav {
+    width: 100%;
+  }
+  
+  .navContents {
+    padding: 2em;
+  }
+  
+  .siteTitle {
+    font-size: 2em;
+    font-weight: bold;
+    color: lightblue;
+    display: inline-block;
+  }
+  
+  .navBarLinks {
+    float: right;
+    margin-top: 1em;
+  }
+  
+  .navLink {
+    padding: 1em;
+    background-color: lightblue;
+    border-radius: 0.4em;
+    font-weight: bold;
+    text-decoration: none;
+    color: teal;
+    margin-left: 1em;
+  }
+  
+  .navLink:hover {
+    color: black;
+  }
+  
+  /* Main Sections */
+  
+  .mainText {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.6em;
+  }
+  
+  main h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 200%;
+  }
+  
+  main h3 {
+    font-size: 140%;
+  }
+  
+  #portfolio {
+    padding: 2em;
+    background-color: lightpink;
+    border-top: solid 1em black;
+    border-bottom: solid 1em black;
+  }
+  
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+  .portfolioContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+  .portfolioCol {
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+    border: solid 0.4em red;
+    border-radius: 1em;
+  }
+  
+  .readMore {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.4em;
+    display: inline-block;
+    width: 100%;
+    background-color: red;
+    border-radius: 0.4em;
+  }
+  
+  .readMore:hover {
+    color: lightpink;
+  }
+  
+  .gitLink {
+    text-align: center;
+    line-height: 2.4em;
+    display: inline-block;
+    width: 100%;
+    font-size: small;
+  }
+  
+  
+  /* Footer */
+  
+  .mainFooter {
+    background-color: black;
+    color: white;
+    padding: 1em;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 800px) {
+    .callout {
+      padding-top: 2em;
+      padding-bottom: 3em;
+      width: 90%;
+    }
+  
+    .callout h1 {
+      font-size: 400%;
+      text-align: center;
+    }
+  
+    .siteTitle {
+      text-align: center;
+      height: 2em;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .navBarLinks {
+      text-align: center;
+      height: 2em;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .mainText {
+      padding-top: 4em;
+      padding-bottom: 4em;
+      width: 90%;
+      margin: 0 auto;
+      line-height: 1.6em;
+    }
+  
+    .portfolioContainer {
+      display: grid;
+      grid-template-columns: auto;
+    }
+  
+    .mainFooter {
+      text-align: center;
+    }
+  }
