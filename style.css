@@ -77,6 +77,37 @@ h1 {
 
 /* PORTFOLIO */
 
+.section-portfolio {
+  padding: 50px;
+  background: #FFEBEE;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.block {
+  border: 10px solid #AE1457;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  padding: 30px;
+}
+
+.block h1 {
+  font-size: 30px;
+  color: #1D313A;
+  padding-bottom: 10px;
+}
+
+.block p {
+  font-weight:500;
+  font-size: ;
+}
+
 /* PORTFOLIO END */
 
 
