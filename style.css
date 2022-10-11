@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #1D313A;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px;
+  background: #4EB6AC;
+  padding: 18px;
+  scroll-behavior: smooth;
+}
+
+.header nav {
+  margin-left: auto;
+  margin-right: 0;
+  display: grid;
+  grid-auto-flow: column;
+  /* align-content: end; */
+  list-style-type: none;
+  gap: 10px;
+}
+.header nav a {
+  background: white;
+  text-align: center;
+  color: #4EB6AC;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+}
+h3 { /* Logo */
+  color: white;
+  font-size: 30px;
+}
+
+/* INTRO */
+.section-intro {
+  background: #4EB6AC;
+  /* color: white; */
+  height: 50vw;
+  display: grid;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 8vw;
+  color: white;
+}
+.section-intro div p {
+  color: white;
+}
+/* INTRO END */
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0 36px;
+}
+/* ABOUT END */
+
+
+/* PORTFOLIO */
+
+.section-portfolio {
+  background: #FFEBEE;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.block {
+  border: 10px solid #AE1457;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  padding: 30px;
+  display: grid;
+}
+
+.block h1 {
+  font-size: 30px;
+  color: #1D313A;
+  padding-bottom: 10px;
+}
+
+.block p {
+  font-weight:500;
+}
+
+.read-more-button {
+  background: #AE1457;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+  margin-top: 30px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+}
+
+.github-button {
+  color: #AE1457;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: small;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+}
+
+/* PORTFOLIO END */
+
+
+/* EXPERIENCE */
+
+.section-experience p {
+  font-weight: 500;
+}
+
+/* EXPERIENCE END */
+
+/* FOOTER */
+.footer {
+  background-color: #1D313A;
+}
+.footer p {
+  color: white;
+  padding: 20px 50px;
+}
+
+/* FOOTER END */
+
+
+
+/* REUSABLE CLASSES */
+h2 {
+  color: #1D313A;
+  text-align: center;
+  font-size: 3vw;
+}
+h4 {
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+.border-top {
+  border-top: 5px solid #1D313A;
+}
+
+.content-wrapper {
+  width: 50vw;
+}
+
+.center-grid {
+  display: grid;
+  justify-content: center;
+}
+
+.section-padding {
+  padding: 50px;
+}
+
+/* Responsives */
+@media screen and (max-width: 1000px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+  .content-wrapper {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content-wrapper {
+    width: 90vw;
+  }
+  .header nav .mobile-rem{
+    display: none;
+  }
+}
