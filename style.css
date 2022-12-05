@@ -1,0 +1,36 @@
+.mainContainer {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 30px
+}
+
+.mainContainer .navBar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.title p span {
+    font-weight: bold;
+    color: black;
+}
+
+.title p #underline {
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.aboutMe {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+
+}
+
+.aboutMe .techSkills {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.aboutMe .sectionTitle {
+    display: grid;
+    justify-items: center;
+}
