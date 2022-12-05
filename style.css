@@ -1,10 +1,8 @@
 * {
-  /* background-color: whitesmoke; */
   scroll-behavior: smooth;
-  /* margin: 0px;
-    /* padding: 0px; */
   box-sizing: border-box;
-}
+  margin: 0px;
+} 
 
 h1 {
   padding: 20px;
@@ -13,17 +11,28 @@ h1 {
  
 .landing-pg h1, .landing-page-body h1 {
     padding: 0;
+  font-size: 60px;
 }
+
+.header h1 {
+font-size: 30px;
+padding: 20px;
+}
+
 p {
   text-align: start;
   padding-left: 50px;
+  margin: 20px;
 }
 
 h2, h3 {
     padding-left: 50px;
+    margin: 20px;
 }
 
-
+scan {
+    color: black;
+}
 /* Landing Page */
 
 .landing-pg {
@@ -42,6 +51,11 @@ h2, h3 {
 .title {
   grid-area: names;
 }
+
+.title h1 {
+    text-align: left;
+}
+
 .Nav-buttons {
   grid-area: links;
 
@@ -58,6 +72,17 @@ h2, h3 {
   text-transform: uppercase;
 }
 
+.landing-pg > .header > .title a {
+    border: 2px solid aliceblue;
+}
+
+.about-me-button{
+    text-align: center;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+}
+
 /* About Us page */
 
 
@@ -65,6 +90,11 @@ h2, h3 {
   height: 600px;
   background-color: blanchedalmond;
   border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+  margin: 0;
+}
+
+.about-me .skills{
+    align-items: center;
 }
 
 .about-me .skills ul{
@@ -79,7 +109,9 @@ h2, h3 {
   height: 600px;
   background-color: aquamarine;
   border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+  margin: 0px;
 }
+
 .container {
   margin: 20px;
   padding: 20px;
@@ -94,7 +126,7 @@ h2, h3 {
 .Item3 {
   border: darkblue solid 4px;
   border-radius: 5px;
-  padding-top: 5px;
+
 }
 
 .Item1,
@@ -106,9 +138,9 @@ h1 {
 
 .read-more {
   color: white;
-  margin: 5px;
   background-color: rgba(0, 0, 128, 0.355);
-}
+  margin: 5px;
+  padding-top: 5px;}
 
 /* Experience Page*/
 
@@ -119,6 +151,10 @@ h1 {
 }
 
 .footer {
-    height: 50px;
+    height: 80px;
     background-color: grey;
+}
+
+.footer p {
+    margin: 0px;
 }
