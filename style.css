@@ -17,7 +17,7 @@ header {
 }
 .navbar {
     display:grid;
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: auto 1fr;
     margin:5px
 }
 .navbar ul {
@@ -25,7 +25,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     list-style-type:none; 
     grid-gap:5px;
-    scroll-behavior: smooth;
+    justify-content: right;
     
 }
 .navbar span > h3 {
