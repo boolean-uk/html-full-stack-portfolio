@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: sans-serif;
+  }
+  /* TOP-BAR (name and butons)*/
+  .top-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(72, 179, 165);
+    border-top: 5px black solid;
+    
+  }
+  .top-bar .main-title {
+    color: white;
+    padding: 15px;
+  }
+  
+  .top-bar a {
+    background-color: rgba(255, 255, 255, 0.874);
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: rgb(72, 179, 165);
+    text-decoration: none;
+    font-size: 0.8rem;
+    
+  }
+  
+  .top-bar ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .top-bar ul li {
+    
+    margin: 0px;
+    
+  }
+
+
+
+
+
+  /*main top (green part)*/
+  #main-top {
+    padding: 20px;
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 7rem;
+    
+    
+    
+  }
+  #main-top h2{
+    line-height: 7rem;
+    padding-left: 150px;
+    padding-bottom: 15px;
+  }
+  
+  #main-top .main-description {
+    font-size: 15px;
+    color: white;
+    padding-left: 150px;
+    font-weight: bolder;
+  }
+  .main-description .black-color {
+    color: black;
+  }
+.main-description .under-line{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+/* ABOUT ME */
+#about-me {
+    border-top: 5px black solid;
+}
+#about-me h2 {
+    justify-content: center;
+    display: grid;
+    padding: 20px;
+}
+#about-me h3{
+    display: grid;
+    padding-left: 150px;
+    padding-bottom: 20px;
+}
+#about-me p{
+    display: grid;
+    justify-content: center;
+    line-height: 25px; 
+    padding: 0px 150px 30px 150px;
+}
+#about-me ul {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    padding: 10px 150px 50px 180px;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+  /* portfolio */
+  #portfolio {
+    background-color: rgb(240, 214, 218);
+    padding: 30px;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 0 50px;
+  }
+  
+  .project {
+    border: solid 5px rgb(197, 61, 95);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 30px 1fr 30px 20px;
+    grid-gap: 10px;
+  }
+  .project .project-title {
+    font-size: 1.5rem;
+  
+    display: grid;
+    align-content: center;
+  }
+  
+  .project .read-more {
+    background-color:  rgb(197, 61, 95);
+    border-radius: 5px;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    max-width: 200px;
+    justify-content: center;
+  }
+  
+  .project .githup-repo {
+    color:  rgb(197, 61, 95);
+    text-align: center;
+  }
+
+
+  
+  /* Experience */
+  #experience {
+    margin: 20px;
+  }
+  .experience-title {
+    text-align: center;
+    margin: 15px;
+  }
+  .job-title {
+    padding:10px 150px 20px 150px;
+    margin: 5;
+    font-weight: 600;
+  }
+
+  #experience p {
+    padding: 0px 150px 10px 150px;
+  }
+  .bottom-bar {
+    background-color: rgb(1, 31, 19);
+    width: 1fr;
+    border: 5px solid rgb(1, 31, 19);
+    padding: 10px;
+    color: white;
+    font-size: 0.8rem;
+  }
+  
