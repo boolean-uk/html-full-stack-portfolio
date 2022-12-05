@@ -4,10 +4,185 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
+    <title>Assignment: Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Javascript that I slightly understand -->
+    <div> 
+    <script>
+        function about_me() {
+          const element = document.getElementById("about-me");
+          element.scrollIntoView();
+        }
+    </script>
+    <script>
+        function portfolio() {
+          const element = document.getElementById("portfolio");
+          element.scrollIntoView();
+        }
+    </script>
+    <script>
+        function experience() {
+          const element = document.getElementById("experience");
+          element.scrollIntoView();
+        }
+    </script>
+    <script>
+        function back() {
+          const element = document.getElementById("back");
+          element.scrollIntoView();
+        }
+    </script>
+    </div>
   </head>
-  <body>
 
+    <!-- BODY -->
+
+  <body id="back">
+    <!-- Header with Nav buttons -->
+
+    <header>
+      <h1>Michael Pope</h1>
+      <nav>
+        <button class="about-Me styled" onclick="about_me()">About Me</button>
+        <button class="portfolio styled" onclick="portfolio()">Portfolio</button>
+        <button class="experience styled" onclick="experience()">Experience</button>
+      </nav>
+    </header>
+    
+
+    <!-- introduction Page -->
+
+    <article class="introduction">
+      <section>
+        <h2>
+          Looking for <br/>
+          an ambitious student ?
+        </h2>
+        <p>
+          I have very limited knowledge of
+          <strong class="highlight">html</strong> and
+          <strong class="highlight">CSS</strong>
+          <em class="sidenote">(thanks to the fundementals camp)</em> and lack
+          any experience in <strong class="highlight">React</strong>,
+          <strong class="highlight">NodeJS</strong> and
+          <strong class="highlight">Typescript</strong>. I am hoping to
+          <em>change</em> this and be able to <em>build</em> a future with the
+          help of <strong class="highlight">Boolean</strong>.
+        </p>
+      </section>
+    </article>
+
+
+    <hr class="divider" />
+
+
+    <!-- About Me Section -->
+
+    <article class="about-me" id="about-me">
+      <section>
+        <h2>About Me</h2>
+        <h3>introduction</h3>
+        <p>
+          I have been interested in coding since a young age, playing video games and dreaming of one day making my own.  <br/>
+          While that dream might not be exactly the same anymore, I want to code now more than ever, the constant problem solving is something that drives me to pursue the goal of becoming a Software Developer. <br/>
+          The moment I found out about boolean I was immediately interested, the way of teaching and the goal of building a career, rather than just getting a certificate are things that made me want to join the programm and be a part of it.             
+        </p>
+        <br />
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>Javascript<em class="sidenote">(soon)</em></li>
+          <li>Typescript<em class="sidenote">(soon)</em></li>
+          <li>React<em class="sidenote">(soon)</em></li>
+          <li>Redux<em class="sidenote">(soon)</em></li>
+          <li>NodeJS<em class="sidenote">(soon)</em></li>
+          <li>Lua<em class="sidenote">(tiny amount)</em></li>
+        </ul>
+      </section>
+    </article>
+
+
+    <hr class="divider">
+
+
+    <!-- Portfolio Section -->
+
+    <article class="portfolio" id="portfolio">
+      <section>
+        <h2>portfolio</h2>
+        <div class="cardcontainer">
+          <div class="card">
+          <h3>Assignment: <br> Gmail Layout</h3>
+          <p>
+              Oh the hairs I have lost during this assignment, at least I wasn't the only one. CSS grids are the tool I always wanted but never knew about. While the concept of grids felt quite natural to me, sizing of these  components gave me a bit of a headache. <br/>
+              But there are only so many ways to mess up and after exploring almost all of them I can now set up CSS grids rather intuitively; most of the time.  <br/>
+              <br/>
+              It made me look at websites in a new way, trying to think of ways how I could recreate them.
+          </p>
+          <a target="blank" href="https://github.com/MaybeFreak/Boolean_Gmail_Assignment">
+            <button class="styled">GitHub Repo</button>
+          </a>
+          </div>
+          <div class="card">
+            <h3>Assignment: <br> Gymtastic</h3>
+            <p>Looking back at the code now it is very obvious that I had very little knowledge  about the semantics of coding and how much I was focused on the visual aspect while paying little attention to possible functionality. I am quite happy about how the CSS for the buttons is set up, but the rest of the code could definitely benefit from my newly gained abilities.
+                <br><br> Overall an exercise that left me wanting to learn more.      
+            </p>
+            <a target="blank" href="https://github.com/MaybeFreak/Boolean_Gymtastic_Assignment">
+              <button class="styled">GitHub Repo</button>
+            </a>
+          </div>
+          <div class="card">
+              <h3>Assignment: <br>Boolean News</h3>
+              <p> It went better than I had expected, considering this was the first time I was coding on my own, rather than following along with someone. 
+                  I felt confident enough to experiment a bit by not just adding the image but also making sure it links back to the source when clicked. While not the biggest achievement it did felt empowering to come up with a solution by myself. <br>
+                  <br>
+                  Overall a great first step into the world of coding
+              </p>
+              <a target="blank" href="https://github.com/MaybeFreak/Boolean_News_Assignment">
+                <button class="styled">GitHub Repo</button>
+              </a>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <hr class="divider">
+
+    <article class="experience" id="experience">
+      <section>
+        <h2>experience</h2>
+          <h3>recently</h3>
+          <p>
+              In recent times I have been trying to figure out where I want to go in live, covid combined with some other factors left me unable to work for a couple of years. I earned a couple of dollars here and there with graphic design, motion graphics or video editing. I finally feel ready to take the next step in live and start my lifelong goal of becoming a software developer and hope to achieve this with the help of boolean.
+          </p>
+          <h3>AFNORTH International School</h3>  
+          <p>
+              Being a DODEA school AFNORTH offered a huge amount of computer and art classes many of which I attended. This school helped me a lot to grow in the field of computers. Computer science,  computer graphics/animation, video editing, if it involved computers I was sure to be interested.
+          </p>
+          <h3>Internship at HEAD Acoustics</h3>
+          <p>
+              For school I had to take a 2 week internship and decided to try and see if the position of hardware engineer could be something for me, and while I enjoyed the time and learned valuable skills, it made me realize that the software side of things is just a lot more interesting to me.
+          </p>
+          <h3>Anita-Lichtenstein Gesamtschule</h3>
+          <p>
+              While in my first year of Abitur,  I had a few unfortunate medical issues that saw me spending a significant amount of time in the hospital or at home in bed. After multiple unsuccessful attempts of getting some learning materials from the teachers, I kept returning to school during testing periods with no knowledge of the subjects. After seeing this lack of care I finally decided to transfer to a different school.
+          </p>
+      </section>
+    </article>
+    <footer>
+      <h2>Michael Pope</h2>
+      <h3>Contact</h3>
+      <footer class="info">
+        <address>
+          E-Mail: <a target="blank" href="mailto:michaelpope97@gmail.com">michaelpope97@gmail.com</a> <br>
+          Discord: <a target="blank" href="https://discord.com/users/138683062073556992/">Freak#7907</a> <br>
+          GitHub: <a target="blank" href="https://github.com/MaybeFreak">MaybeFreak</a>
+        </address>
+        <button class="back styled" onclick="back()">Back to Top</button>
+        <h4> &copy; Michael Pope</h4>
+      </footer>
+    </footer>
   </body>
 </html>
