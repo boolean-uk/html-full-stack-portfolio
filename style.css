@@ -1,0 +1,124 @@
+* {
+  /* background-color: whitesmoke; */
+  scroll-behavior: smooth;
+  /* margin: 0px;
+    /* padding: 0px; */
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+}
+ 
+.landing-pg h1, .landing-page-body h1 {
+    padding: 0;
+}
+p {
+  text-align: start;
+  padding-left: 50px;
+}
+
+h2, h3 {
+    padding-left: 50px;
+}
+
+
+/* Landing Page */
+
+.landing-pg {
+  background-color: pink;
+  border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+  color: white;
+}
+
+.header {
+  display: grid;
+  grid-template:
+    "names links" 60px /
+    3fr 2fr;
+}
+
+.title {
+  grid-area: names;
+}
+.Nav-buttons {
+  grid-area: links;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.landing-pg .landing-page-body {
+  margin: 200px;
+}
+
+.landing-pg .landing-page-body scan {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* About Us page */
+
+
+.about-me {
+  height: 600px;
+  background-color: blanchedalmond;
+  border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+}
+
+.about-me .skills ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left:  90px;
+}
+
+/* Portfolio Page */
+
+.portfolio {
+  height: 600px;
+  background-color: aquamarine;
+  border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+}
+.container {
+  margin: 20px;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.Item1,
+.Item2,
+.Item3 {
+  border: darkblue solid 4px;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.Item1,
+.Item2,
+.Item3,
+h1 {
+  text-align: center;
+}
+
+.read-more {
+  color: white;
+  margin: 5px;
+  background-color: rgba(0, 0, 128, 0.355);
+}
+
+/* Experience Page*/
+
+.experience {
+  height: 600px;
+  background-color: blanchedalmond;
+  border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+}
+
+.footer {
+    height: 50px;
+    background-color: grey;
+}
