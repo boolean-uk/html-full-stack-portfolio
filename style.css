@@ -1,0 +1,184 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+
+.hero{
+background-color: teal;
+border-top: solid 1em black;
+border-bottom: solid 1em black;
+width: 100%;
+}
+.callout{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.callout h1{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 500%;
+color:lightblue;
+line-height: 1.5;
+}
+.callout p{
+color: lightblue;
+line-height:2;
+text-align: center;
+}
+.callout p strong{
+    color: black;
+}
+.callout p em {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.mainnav{
+   width: 100%;
+}
+.navContent{
+    padding: 2em;
+}
+
+.titlesite{
+    font-size: 2em;
+    font-weight: bold;
+    color: lightblue;
+    display: inline-block;
+}
+ .navBarLinks{
+    float:right;
+    margin-top: 1em;
+ }
+
+ .navlink{
+    padding: 1em;
+    background-color:lightblue;
+    font-weight: bold;
+    text-decoration: none;
+    color: teal;
+    margin-left: 1em;
+
+}
+
+.navlink:hover{
+    color:black
+}
+
+.maintxt{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding-left: 250px;
+    padding-right: 100px;
+    width: 58%;
+    margin: 0;
+    line-height: 1.6em;
+   
+           
+}
+main h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size:200%;
+
+}
+
+main h3{
+    font-size: 140%;
+}
+
+#portfolio{
+    padding: 2em;
+    background-color: lightpink;
+    border-top:solid 1em black;
+    border-bottom: solid 1em black;
+
+}
+
+.skillContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.portfolioContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.portfoliocol{
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+    border: solid 0.4em red;
+    border-radius: 1em;
+
+}
+.readmore{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.4em;
+    display: inline-block;
+    width: 100%;
+    background-color: red;
+    border-radius: 0.4em;
+}
+.readmore :hover{
+    color: lightpink;
+}
+.gitlink {
+    text-align: center;
+    line-height: 2.4em;
+    display: inline-block;
+    width: 100%;
+    font-size: small;
+}
+.mainfooter{
+    background-color: black;
+    color: white;
+    padding:1em;
+
+}
+@media screen and (max-width:800px) {
+    .callout{
+        padding-top: 2em;
+        padding-bottom: 3em;
+        width: 90%;
+    }
+    .callout h1{
+        font-size: 400%;
+        text-align: center;
+
+    }
+    .titlesite{
+        text-align: center;
+        height: 2em;
+        width:100%;
+        display: block;
+
+        }
+        .navBarLinks{
+            text-align: center;
+            height: 2em;
+            width: 100%;
+            display:block;
+            margin: 0 auto;
+        }
+        .maintxt{
+            padding-top: 4em;
+            padding-bottom: 4em;
+            width: 90%;
+            margin: 0 auto;
+            line-height:1.6em;
+        }
+        .portfolioContainer{
+            display: grid;
+            grid-template-columns: auto;
+        }
+}
