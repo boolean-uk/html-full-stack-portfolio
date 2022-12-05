@@ -1,0 +1,402 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 375px;
+}
+
+/* Page Header */
+
+header {
+  padding: 25px;
+  background-color: #1e1e1e;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto auto auto;
+  grid-template-rows: 1.8rem;
+}
+
+header h1 {
+  color: #f4d8cd;
+  font-size: 2.5rem;
+  /* text-shadow: 5px 5px 5px #00000050;   <--------  unsure about the shadow*/
+}
+
+nav button.styled {
+  margin: 5px 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  background-color: #b06a4d;
+  color: #fff;
+}
+
+nav button.styled:hover {
+  background-color: #db9172;
+}
+
+/* Introduction Part*/
+
+article.introduction {
+  display: grid;
+  grid-template-areas: " . section . ";
+  grid-template-columns: 1fr minmax(0, 75ch) 1fr;
+  grid-template-rows: 95vh;
+  padding: 10px 10px;
+  background-color: #1f4e45;
+  align-items: center;
+  color: #fff;
+}
+
+article.introduction h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: start;
+}
+
+article.introduction section {
+  grid-area: section;
+  text-align: start;
+  padding: 10px;
+}
+
+article.introduction section p {
+  margin: 3rem 0px;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  letter-spacing: 0.05rem;
+}
+
+article.introduction strong.highlight {
+  color: #edb183;
+}
+
+article.introduction em {
+  text-decoration: underline;
+}
+
+article.introduction em.sidenote {
+  color: #ffffff70;
+  font-weight: 100;
+}
+
+/* Horizontal Divider */
+
+hr.divider {
+  border: none;
+  background-color: #1e1e1e;
+  height: 20px;
+  color: #1e1e1e;
+}
+
+/* About Me Section  */
+
+article.about-me {
+  display: grid;
+  grid-template-areas: " . section . ";
+  grid-template-columns: 1fr minmax(0, 75ch) 1fr;
+  padding: 20px;
+  background-color: #cfb79f;
+  color: #3a2e39;
+}
+
+article.about-me section {
+  grid-area: section;
+  padding: 4rem 1rem;
+}
+
+article.about-me h2 {
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+article.about-me h3 {
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+}
+
+article.about-me p {
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+article.about-me ul {
+  font-size: 1.2rem;
+  font-weight: 600;
+  list-style-type: disc;
+  columns: 2;
+  list-style-position: inside;
+  text-align: left;
+  margin: 0px 2rem;
+}
+
+article.about-me em {
+  color: #3a2e3995;
+  font-weight: 100;
+}
+
+/* Portfolio Section */
+
+article.portfolio {
+  background-color: #4d7973;
+}
+
+article.portfolio section {
+  padding: 4rem 1rem;
+}
+
+article.portfolio h2 {
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  color: #f4d8cd;
+}
+
+article.portfolio .cardcontainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardcontainer {
+  flex: 1;
+}
+
+article .card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 15rem;
+  max-width: 24rem;
+  min-height: 36rem;
+  margin: 1rem;
+  padding: 1.5rem;
+
+  background-color: #cfb79f;
+  border: solid 0.6rem #cfb79f;
+  border-radius: 0.7rem;
+  box-shadow: 5px 5px 20px #00000045;
+}
+
+article.portfolio h3 {
+  font-size: 1.6rem;
+  padding-bottom: 0.4rem;
+}
+
+article.portfolio p {
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-bottom: 30px;
+}
+
+article.portfolio a {
+  display: grid;
+  justify-content: center;
+}
+
+article.portfolio button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #b06a4d;
+  color: #fff;
+}
+
+article.portfolio button.styled:hover {
+  background-color: #db9172;
+}
+
+article.portfolio a {
+  text-decoration: none;
+}
+
+/* Experience Section */
+
+article.experience {
+  display: grid;
+  grid-template-areas: " . section . ";
+  grid-template-columns: 1fr minmax(0, 75ch) 1fr;
+  padding: 20px;
+  background-color: #cfb79f;
+  color: #3a2e39;
+}
+
+article.experience section {
+  grid-area: section;
+  padding: 4rem 1rem;
+}
+
+article.experience h2 {
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+article.experience h3 {
+  padding-top: 1rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+}
+
+article.experience p {
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+/* Footer */
+
+footer {
+  padding: 1.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #1e1e1e;
+  color: #f4d8cd;
+}
+
+footer h2 {
+  color: #f4d8cd;
+  font-size: 2.5rem;
+  padding-bottom: 0.6rem;
+}
+
+footer h3 {
+  padding-bottom: 0.2rem;
+}
+
+footer.info {
+  padding: 0;
+  display: grid;
+  grid-template-areas: "contact button cc";
+  grid-template-columns: 1fr auto 1fr;
+}
+
+footer.info address {
+  grid-area: contact;
+  font-style: normal;
+}
+
+footer.info a {
+  text-decoration: none;
+  color: #f4d8cd;
+  font-style: italic;
+}
+
+footer.info button {
+  align-self: center;
+  grid-area: button;
+
+  margin: 5px 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: #b06a4d;
+  color: #fff;
+}
+
+footer.info button.styled:hover {
+  background-color: #db9172;
+}
+
+footer.info h4 {
+  grid-area: cc;
+  align-self: end;
+  text-align: right;
+  color: #f4d8cd50;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 920px) {
+  header {
+    padding: 25px;
+    background-color: #1e1e1e;
+    display: grid;
+    align-items: center;
+    grid-template:
+      ". name . " auto
+      "button button button" 45px /
+      1fr auto 1fr;
+    justify-items: center;
+  }
+  header h1 {
+    grid-area: name;
+  }
+  nav {
+    grid-area: button;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  header {
+    padding: 15px;
+    background-color: #1e1e1e;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: "name" "nav";
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    grid-area: name;
+  }
+
+  nav {
+    grid-area: nav;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  footer h4 {
+    display: none;
+  }
+  article.about-me ul {
+    font-size: 0.8rem;
+  }
+  article.introduction h2 {
+    font-size: 3rem;
+  }
+}
