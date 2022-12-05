@@ -1,3 +1,6 @@
+* {
+    scroll-behavior: smooth;
+}
 .heading {
     font-weight: bold;
 }
@@ -10,7 +13,7 @@
 
 .mainContainer .navBar {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     background-color:rgb(8, 164, 164);
     color: whitesmoke;
 }
@@ -149,6 +152,10 @@ header {
     color: rgb(179, 0, 45);
     margin-bottom: 20px;
 }
+.portfolio .articleContainer .blockText {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .portfolio .articleContainer .readMoreButton {
     border: 0px white solid;
     background-color: rgb(179, 0, 45);
@@ -164,4 +171,51 @@ header {
 .experience {
     display: grid;
     border-top: black 5px solid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". sectionTitle ."
+    ". heading ."
+    ". blockText ."
+    ". heading2 ."
+    ". blockText2 ."
+    ;
+    font-family: sans-serif;
+}
+.experience .sectionTitle {
+    grid-area: sectionTitle;
+    text-align: center;
+}
+.experience .heading {
+    grid-area: heading;
+}
+.experience .blockText {
+    grid-area: blockText;
+}
+.experience #heading2 {
+    grid-area: heading2;
+}
+.experience #blockText2 {
+    grid-area: blockText2;
+}
+footer {
+    background-color: rgb(1, 67, 67);
+    color: whitesmoke;
+    
+}
+footer p {
+    margin-top: 3px;
+    margin-left: 2px;
+}
+
+@media screen and (max-width: 710px) {
+    .mainContainer .navBar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio .smallContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
 }
