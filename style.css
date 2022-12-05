@@ -6,17 +6,70 @@
 .mainContainer .navBar {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color:rgb(8, 164, 164);
+    color: whitesmoke;
+}
+header {
+   background-color:rgb(8, 164, 164);
+}
+.navBar h3 {
+    color: whitesmoke;
+    margin-left: 5px; 
+    font-family: sans-serif;
+}
+.navBar .navButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+    margin-right: 5px;
 }
 
+.navBar .navButtons a {
+    background-color: rgba(245, 245, 245, 0.788);
+    color:rgb(8, 164, 164) ;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 2px;
+}
+.title {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: 
+    ". title ."
+    ". textbox ."
+    ;
+    background-color: rgb(8, 164, 164);
+}
+.title h1 {
+    grid-area: title;
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+    
+}
+.title p {
+    grid-area: textbox;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
 .title p span {
     font-weight: bold;
     color: black;
+    
 }
 
 .title p #underline {
     font-weight: normal;
     font-style: italic;
-    text-decoration: underline;
+    text-decoration: underline black;
+    color: whitesmoke;
+    
+
 }
 
 .aboutMe {
@@ -33,4 +86,23 @@
 .aboutMe .sectionTitle {
     display: grid;
     justify-items: center;
+}
+.portfolio {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+.portfolio .smallContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+}
+.portfolio .articleContainer {
+    display: grid;
+    
+}
+.portfolio .articleContainer a {
+    justify-items: center;
+    text-align: center;
+}
+.experience {
+    display: grid;
 }
