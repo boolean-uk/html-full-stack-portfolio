@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #3b5767;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+  /* Header/Logo */
+  header {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    padding: 10px;
+    background-color: #80cbeb;
+  }
+  
+  .header-logo {
+    color: #3b5767;
+  }
+  
+  /* Nav Buttons */
+  nav.header-nav-buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .header-nav-buttons a {
+    display: grid;
+    color: #3b5767;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Main Hiring Section */
+  
+  article.main-hiring {
+    display: grid;
+    grid-template:
+      "upper-left main-text upper-right" 400px
+      "lower-left main-para lower-right" 200px /
+      1fr 512px 1fr;
+    background-color: #80cbeb;
+  }
+  
+  section.main-hiring-header {
+    display: grid;
+    grid-area: main-text;
+    justify-content: center;
+  }
+  
+  section.main-hiring-para {
+    display: grid;
+    grid-area: main-para;
+    justify-content: center;
+  }
+  
+  article.main-hiring h2 {
+    display: grid;
+    color: white;
+    font-size: 5rem;
+    text-align: left;
+    justify-content: center;
+    padding: 100px 0px;
+    padding-left: 40px;
+    letter-spacing: 0.2rem;
+    line-height: 130%;
+    max-width: 20ch;
+    text-shadow: rgb(59, 87, 103) 2px 0px 0px, rgb(59, 87, 103) 1.75517px 0.958851px 0px, rgb(59, 87, 103) 1.0806px 1.68294px 0px, rgb(59, 87, 103) 0.141474px 1.99499px 0px, rgb(59, 87, 103) -0.832294px 1.81859px 0px, rgb(59, 87, 103) -1.60229px 1.19694px 0px, rgb(59, 87, 103) -1.97998px 0.28224px 0px, rgb(59, 87, 103) -1.87291px -0.701566px 0px, rgb(59, 87, 103) -1.30729px -1.5136px 0px, rgb(59, 87, 103) -0.421592px -1.95506px 0px, rgb(59, 87, 103) 0.567324px -1.91785px 0px, rgb(59, 87, 103) 1.41734px -1.41108px 0px, rgb(59, 87, 103) 1.92034px -0.558831px 0px;
+  }
+  
+  article.main-hiring p {
+    color: #3b5767;
+    padding: 50px;
+    max-width: 67ch;
+    font-size: 1rem;
+  }
+  
+  strong.hiring {
+    color: #060f1d;
+  }
+  
+  em.hiring {
+    text-decoration: underline;
+    text-decoration-color: #060f1d;
+  }
+  
+  /* ABOUT ME */
+  article.about-me {
+    display: grid;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+    color: #3b5767;
+  }
+  
+  article.about-me section h2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  article.about-me section {
+    display: grid;
+    justify-content: center;
+  }
+  
+  article.about-me section h3 {
+    padding-bottom: 10px;
+  }
+  article.about-me section p {
+    width: 60ch;
+    padding-bottom: 20px;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  
+  /* TECHNICAL SKILLS */
+  div.list {
+    display: grid;
+    margin: 10px;
+    padding-left: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* PORTFOLIO */
+  article.portfolio {
+    background-color: #80cbeb;
+    margin-top: 10px;
+    display: grid;
+  }
+  .section-portfolio {
+    justify-content: center;
+  }
+  div.portfolio-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 0 50px;
+    margin-bottom: 20px;
+  }
+  
+  div.portfolio-examples {
+    padding-bottom: 15px;
+    background-color: #ffffff;
+    border: 7px solid #e14b6a;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.253);
+    display: inline-block;
+  }
+  
+  h2.portfolio-heading {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 2rem;
+    color: #3b5767;
+  }
+  
+  div.portfolio-examples h3 {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  
+  div.portfolio-examples p {
+    padding: 20px;
+  }
+  nav.read-more-button {
+    text-align: center;
+  }
+  a.read-more {
+    background-color: #e14b6a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+  }
+  nav.repo {
+    display: grid;
+    text-align: center;
+    margin-top: 15px;
+  }
+  a.github-repo {
+    color: #e14b6a;
+  }
+  
+  /* EXPERIENCE */
+  article.experience {
+    background-color: white;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  article.experience h2 {
+    padding-top: 30px;
+    color: #060f1d;
+  }
+
+  div.experience-container {
+    padding-top: 20px;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+  }
+  
+  .experience-container h3 {
+    color: #3b5767;
+  }
+
+  div.experience-container p {
+    padding-top: 10px;
+    line-height: 140%;
+    color: #3b5767;
+  }
+  
+  /* FOOTER */
+  
+  footer {
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  
