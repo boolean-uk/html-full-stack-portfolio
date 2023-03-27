@@ -1,10 +1,16 @@
 /* Page One */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .page-one {
     background-color: #8e9aaf;
     color: white;
     display: grid;
     grid-template-rows: 0.5fr 5fr;
+    height: 100vh;
 }
 
 .top {
@@ -18,8 +24,62 @@
     align-self: center;
 }
 
+
+
 .main-one div {
     display: grid;
     align-content: center;
     justify-content: center;
+}
+
+.main-one div p{
+  place-content: center;
+}
+
+.page-two {
+  height: 100vh;
+}
+
+.page-two {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+  ". about-us ."
+  ". intro ."
+  ". tech-skills .";
+  row-gap: 90px;
+}
+
+.page-two > div {
+  display: grid;
+  justify-items: center;
+  row-gap: 90px;
+}
+
+.page-two > div >  h1 {
+  font-size: 80px;
+}
+
+.page-two > div > h2 {
+  font-size: 45px;
+}
+
+.page-two > .intro > p {
+  font-size: 25px;
+}
+
+.page-two .about-us {
+  grid-area: about-us;
+}
+.page-two .intro {
+  grid-area: intro;
+}
+
+.page-two .tech-skills {
+  grid-area: tech-skills;
+}
+
+.page-two .tech-skills > ul > li {
+  font-size: 30px;
 }
