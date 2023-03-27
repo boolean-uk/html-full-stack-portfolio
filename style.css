@@ -1,0 +1,220 @@
+*{
+    margin: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr{
+    height: 5px;
+    background-color: black;
+    border: none;
+}
+.header{
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template: 
+    'logo buttons' auto /
+    2fr 1fr;
+    background-color: rgba(112, 194, 233, 1);
+    padding:20px;
+}
+
+.header > .logo {
+    grid-area: logo;
+    text-align: left;
+    font-size: 3rem;
+    color: white;
+}
+
+.header > .buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 25px;
+}
+
+.header > .buttons > a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(6, 63, 90, 0.801);
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 15px;
+}
+
+.header > .buttons > a:hover {
+    background-color: rgba(5, 45, 64, 1);
+}
+
+.mainpage{
+    display: grid;
+    background-color: rgba(112, 194, 233, 1);
+    text-align: center;
+    padding: 75px;
+    place-items: center;
+    height: 95vh;
+}
+
+.mainpage > h1 {
+    color: white;
+    font-size: 8rem;
+    max-width: 700px;
+    text-align: left;
+}
+
+.mainpage > div {
+    width: 800px;
+}
+.mainpage > div > p{
+    color: white;
+    font-size: 3rem;
+}
+
+.colored {
+    color: rgba(5, 45, 64, 1);
+}
+
+.underlined {
+    text-decoration: underline;
+    text-decoration-color: rgba(5, 45, 64, 1);
+}
+
+.aboutme{
+    padding: 75px;
+}
+
+.aboutme > h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(5, 45, 64, 1);
+}
+
+.aboutme > h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 25px;
+}
+
+.aboutme > p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.aboutme > div {
+    display: grid;
+    grid-template: 
+    'left-list right-list' auto /
+    1fr 1fr;
+    place-items: center;
+}
+
+
+.aboutme > div > ul {
+    display: inline-block;
+    width: auto;
+    font-size: 1.5rem;
+    
+}
+
+.portfolio {
+    background-color: rgba(209, 133, 216, 0.438); 
+    padding-top: 25px;
+}
+
+    /* portfolio cards */
+.portfolio > div > h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(5, 45, 64, 1); 
+ }
+.cards{
+    display:grid;
+    grid-template: 
+    'card1 card2 card3' 40vh / 
+    1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+    
+}
+
+.card {
+    border: 10px solid rgba(255, 50, 245, 0.438);
+    text-align:center; 
+    border-radius: 25px;
+    background-color: white;
+    padding: 0 25px 0 25px
+}
+
+.card > p {
+    font-size: 1.5rem;
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.card1{
+    grid-area: card1;   
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+
+.cardtitle{
+    font-size: 2rem;
+    text-align:center;
+}
+.readmore{
+    background-color: rgb(66, 103, 222);
+    border-radius: 8px;
+    padding: 5px;
+    color:rgba(19, 18, 18, 0.966);
+    text-decoration: none;
+    
+}
+.github{
+    background-color: rgb(66, 102, 221);
+    border-radius: 8px;
+    padding: 5px;
+    color:rgba(19, 18, 18, 0.966);
+    text-decoration: none;
+}
+    /* portfolio ends */
+
+    /* experience */
+.experience{
+    text-align: center;
+    padding: 25px;
+}
+
+.experience > h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(5, 45, 64, 1); 
+}
+.experience > .jobtitle{
+    color:black;
+    padding:20px;
+    font-size: 30px;
+    text-align: left;
+}
+.experience > .extext{
+    font-size: 1.3rem;
+     text-align: left;
+     padding-left: 20px;
+}
+.footer{
+    background-color:rgb(66, 103, 222);
+}
+/* experience end */
+h2{
+    font-size: 30px;
+
+}
