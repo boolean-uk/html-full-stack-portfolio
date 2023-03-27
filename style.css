@@ -1,0 +1,191 @@
+body {
+    background-color: #1d313a;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Part 1 - Home */
+
+#home {
+    background-color: #4eb6ac ;
+    color: #ffffff;
+    height: 600px;
+    place-items: center;
+    margin: 10px 0px;
+}
+
+#home > header {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    align-items: center;
+}
+
+#home > header > h3 {
+    font-size: 20px;
+    margin: 0px ;
+}
+
+#home > header > .header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+#home > header > .header-buttons > a {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #4eb6ac;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home > div {
+    display: grid;
+    place-content: center;
+}
+
+#home > div > h1 {
+    font-size: 60px;
+}
+
+#home > div > p {
+    font-weight: 500;
+    width: 520px
+}
+
+#home > div > p > .font-color{
+    color: #1d313a;
+}
+
+#home > div > p > .underline{
+    text-decoration: underline;
+    text-decoration-color: #1d313a;
+}
+
+/* Part 2 - About me */
+
+#about-me {
+    background-color: #ffffff;
+    display: grid;
+    place-content: center;
+    padding: 40px;
+    color: #1d313a;
+    margin: 10px 0px;
+}
+
+#about-me > h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#about-me > div {
+    width: 520px;
+}
+
+#about-me > div > h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#about-me > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Part 3 - Portfolio */
+
+#portfolio {
+    background-color: #ffebee;
+    color: #1d313a;
+    padding: 40px;
+    margin: 10px 0px;
+    display: grid;
+
+}
+
+#portfolio > h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#portfolio > .portfolio-cards {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio > .portfolio-cards > div {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 8px solid #ae1457;
+    border-radius: 5px;
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+}
+
+#portfolio > .portfolio-cards > div > h2 {
+    margin: 0px
+}
+
+#portfolio > .portfolio-cards > div > .read-more {
+    display: grid;
+    align-content:center;
+    text-align: center;
+    margin: 10px;
+    height: 30px;
+    text-decoration: none;
+    background-color: #ae1457;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#portfolio > .portfolio-cards > div > .external-link {
+    text-align: center;
+    color: #ae1457;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Part 4 - Experience */
+
+#experience {
+    background-color: #ffffff;
+    color: #1d313a;
+    padding: 40px;
+    margin: 10px 0px;
+    display: grid;
+    justify-content: center;
+}
+
+#experience > h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#experience > div {
+    width: 520px;
+}
+
+#experience > div > h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
