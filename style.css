@@ -4,14 +4,17 @@
     gap: 5px;
 }
 
+/* header - content - footer division */
 body {
     display: grid;
     /* max-width 800px; */
     grid-template:
-    "header" 100px
+    "header" 50px
     "content" 1fr
-    "footer" 100px / 100vw;
+    "footer" 50px / 100vw;
 }
+
+/* nav bar styling */    
     .nav_bar {
         grid-area: header;
         background-color: lightseagreen;
@@ -20,7 +23,7 @@ body {
         display: grid;
         grid-template-areas: "name menubuttons";
         grid-template-columns: 100px, 1fr;
-    }
+    }  
         .name {
             grid-area: name;
             background-color: lightgreen;
@@ -31,15 +34,45 @@ body {
             grid-area: menubuttons;
             background-color: aquamarine;
         }
-
-
+/* main content divisions & styling */
     .content {
         grid-area: content;
         background-color: lightcoral;
         min-height: 500px;
+        padding: 50px;
     }
-    .footer {
-        grid-area: footer;
-        background-color: lightskyblue;
-    }
+        .home {
+            display: grid;
+            min-height: 200px;
+            min-width: 1fr;
+            border: dashed 1px black;
+            margin: 20px;
+            place-self: centre;
+            grid-template: 
+            "headline" 
+            "pitch"  ;
+            grid-template-rows: 1fr 2fr;
+            grid-template-columns: 1fr;
+            max-width: 500px;
+            justify-self: center;
+        }
+            .home h1{
+                grid-area: headline;
+                place-self: start;
+                border: dotted 1px blue;
+            }
+            .home p {
+                grid-area: pitch;
+                place-self: end;
+                border: dotted 1px blue;
+                max-width: 300px;
+            }
+  
 
+/* footer styling */
+.footer {
+    grid-area: footer;
+    background-color: lightskyblue;
+    text-align: center;
+    text-justify: center;
+}
