@@ -59,18 +59,15 @@ font-size: 40px;
 }
 
 .page-two {
-  min-height: 100vh;
-}
-
-.page-two {
   display: grid;
-  grid-template-rows: 1fr 2fr 2fr;
+grid-template-rows: 1fr 2fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: 
   ". about-us ."
   ". intro ."
   ". tech-skills .";
   row-gap: 90px;
+min-height: 100vh;
 }
 
 .page-two > div {
@@ -80,6 +77,7 @@ font-size: 40px;
 
 .page-two > div >  h1 {
   font-size: 80px;
+
 }
 
 .page-two > div > h2 {
@@ -93,21 +91,27 @@ font-size: 40px;
 
 .page-two .about-us {
   grid-area: about-us;
-  padding-top: 40px;
+    padding-top: 200px;
+    
+        display: grid
 }
 .page-two .intro {
   grid-area: intro;
+display: grid;
+    row-gap: 20px;
 }
 
 .page-two .tech-skills {
   grid-area: tech-skills;
   grid-template-rows: 100px 1fr;
+display: grid;
 }
 
 .page-two .tech-skills > ul > li {
   font-size: 30px;
   row-gap: 0;
 }
+
 
 .page-three {
     gap: 10px;
@@ -141,6 +145,8 @@ font-size: 40px;
   margin: 50px;
   border-radius: 8px;
   padding: 20px;
+justify-content: center;
+    display: grid;
 }
 
 .card > * {
@@ -182,4 +188,15 @@ font-size: 40px;
 
 .page-four .content .about-us {
   font-size: 40px;
+}
+
+.job-experience {
+    font-size: 20px;
+}
+
+#portfolio-button {
+
+    color: white;
+    background-color: #006d77;
+
 }
