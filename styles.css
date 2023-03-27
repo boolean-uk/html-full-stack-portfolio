@@ -1,5 +1,11 @@
+* {
+    font-family: sans-serif;
+}
 body {
+    display: grid;
+    place-content: center;
     background-color: bisque;
+    margin: 0;
 }
 .big-grid {
     display: grid;
@@ -7,32 +13,51 @@ body {
     grid-template-columns: 800px;
     grid-template-rows: repeat(4, 80vh);
 }
-.profile, .about-me, .portfolio, .experience {
-    margin: 15px;
+.profile, #about-me, #portfolio, #experience {
+    margin: 15px 0px;
     border: solid 1px black;
     background-color: white;
     display: grid;
 }
-.profile {
-    grid-template-rows: 10% 90%;
-    background-color: rgb(210, 210, 255);
+header > p {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-shadow: 5px purple;
 }
-.profile header {
+.profile {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    background-color: rgb(210, 210, 255);
+    place-content: center;
+}
+h1 {
+    font-size: 40px;
+}
+.profile p {
+    width: 400px;
+}
+header {
+    border: solid 2px darkblue;
+    background-image: linear-gradient(black, white);
+    width: 778px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    position: sticky;
+    padding-left: 20px;
+    top: 10px;
 }
 
-.profile > header > nav > ul{
+header > nav > ul{
     display: grid;
-    justify-content: end;
+    justify-content: center;
     grid-template-columns: repeat(3, 90px);
     gap: 25px;
-    padding-right: 10px;
-    
+    padding-left: 0;
 }
 
 
-.profile > header > nav > ul > li {
+header > nav > ul > li {
     display: grid;
     list-style: none;
     border: 2px solid black;
@@ -44,7 +69,26 @@ body {
     
 }
 
-.profile > header > nav > ul > li > a {
+header > nav > ul > li > a {
     text-decoration: none;
+    color: white;
     padding: 5px;
+}
+header > nav > ul > li > a:visited {
+    color: white;
+}
+header > nav > ul > li > a:active {
+    color: black;
+}
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: overline;
+}
+#about-me h3, #about-me p, #about-me ul {
+    text-align: center;
+}
+#about-me li {
+    list-style: upper-roman;
+    list-style-position: inside;
 }
