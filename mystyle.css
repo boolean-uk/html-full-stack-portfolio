@@ -9,15 +9,18 @@
     background-color: #006d77;
     color: white;
     display: grid;
-    grid-template-rows: 0.5fr 5fr;
     height: 100vh;
 }
 
 .top {
+  height:50px;
     background-color: #83c5be;
+    color: white;
     display: grid;
     grid-template-columns: 400px 3fr 1fr 1fr 1fr;
-        align-items: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .name {
@@ -56,7 +59,7 @@ font-size: 40px;
 }
 
 .page-two {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .page-two {
@@ -73,7 +76,6 @@ font-size: 40px;
 .page-two > div {
   display: grid;
   justify-items: center;
-  row-gap: 90px;
 }
 
 .page-two > div >  h1 {
@@ -82,6 +84,7 @@ font-size: 40px;
 
 .page-two > div > h2 {
   font-size: 45px;
+  display: inline-block;
 }
 
 .page-two > .intro > p {
@@ -90,7 +93,7 @@ font-size: 40px;
 
 .page-two .about-us {
   grid-area: about-us;
-padding-top: 40px;
+  padding-top: 40px;
 }
 .page-two .intro {
   grid-area: intro;
@@ -98,29 +101,85 @@ padding-top: 40px;
 
 .page-two .tech-skills {
   grid-area: tech-skills;
+  grid-template-rows: 100px 1fr;
 }
 
 .page-two .tech-skills > ul > li {
   font-size: 30px;
+  row-gap: 0;
 }
 
 .page-three {
-    display: grid;
-    grid-template-areas:
-        "header" 1fr
-        "title" 4fr/
-        1fr;
     gap: 10px;
-    height: 100vh;
+}
+
+.page-three-grid {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+
 }
 
 .portfolio {
-    grid-area: header;
-    background-color: #83c5be;
+  display: grid;
+    background-color: #006d77;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    color: white;
 }
 
 .cards {
     display: grid;
-    grid-area: title;
     grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    column-gap: 20px;
+}
+
+.card {
+  border: 3px solid #006d77;
+  margin: 50px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card > * {
+  text-align: center;
+}
+
+.card > p {
+  font-size: 20px;
+}
+
+.page-four {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 100px;
+
+}
+
+.page-four > .content {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  line-height: 25px;
+  text-align: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 100px;
+}
+
+.footer {
+  display: grid;
+  background-color: #006d77;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+.big {
+  font-size: 30px;
+}
+
+.page-four .content .about-us {
+  font-size: 40px;
 }
