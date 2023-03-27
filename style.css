@@ -4,122 +4,198 @@
     box-sizing: border-box;
   }
 
-.header-page {
-    background-color: teal;
-    height: 100vh;
-    grid-template: 
-        'top-nav-bar' 50px
-        'main-' 1fr /
-        1fr;
-      }
+  /* Front Cover Start */
+.front-page{
+  background-color: rgb(67, 194, 194);
+  display: grid;
+  height: 100vh;
+}
 
-.top-nav-bar {
+.nav-bar {
     display: grid;
-    grid-area: top-nav-bar;
     color: white;
-    grid-template: 
-    'name-left about portfolio experience' auto /
-    600px 300px 300px 300px;
+    font-family: ;
+    align-items: center;
+    grid-template-columns: 400px 3fr 1fr 1fr 1fr;
+   
+ }
+
+ .logo {
+  display: grid;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+ }
+ 
+ .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+  position: absolute;
+  right: -10px;
+  width: 400px;
+  height: 20px;
+ }
+
+ .about-me {
+  border: solid white;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(67, 194, 194);
+ }
+
+ .portfolio {
+  border: solid white;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(67, 194, 194);
+ }
+
+ .experience {
+  border: solid white;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(67, 194, 194);
+ }
+
+ .main {
+    display: grid;
+    text-align: center;
+    padding: 50px;
+    place-items: center;
+    height: 95vh;
+    color: white;
  }
 
  .hiring {
-    grid-area: hiringfullstack;
+  font-size: 50px;
+ }
+
+ strong {
+  color: black;
+ }
+
+ i {
+  text-decoration: underline black;
+ }
+
+ /* Front Cover End */
+
+ /* About Me Start */
+
+ .about-me-page {
+  display: grid;
+  height: 80vh;
+ }
+
+ .about {
+  display: grid;
+  text-align: center;
+ }
+
+ .intro {
+  display: grid;
+  text-align: center;
  }
 
  .text {
-    grid-area: text;
+  display: grid;
+  text-align: center;
  }
 
- .main-area {
-    display: grid;
-    /* grid-template: 
-    'hiringfullstack' 1fr 
-    'text' 1fr / auto ; */
-    grid-template:
-        ". hiringfullstack ." 1fr
-        ". text ." 1fr /
-        1fr 500px 1fr;
-    grid-area: main-area;
-    color: white;
-    place-content: center;
+ .skills {
+  display: grid;
+  text-align: center;
+
  }
 
- .about-me-page {
-    height: 100vh;
-    display: grid;
-    grid-template:
-        ". aboutme ." 1fr
-        ". intro ." 1fr 
-        ". text ." 1fr
-        ". skills ." 1fr 
-        ". bulletpoints ." 1fr /
-        1fr 500px 1fr;
-
-    place-content: center;
-    text-align: center;
+ .bulletpoints {
+  display: grid;
+  text-align: center;
  }
 
-  html {
-    --primary-color: rgb(241, 134, 11);
-    --primary-colour-lighter: rgb(240, 191, 198);
-  }
+ li {
+  display: grid;
+  text-align: center;
+ }
+
+ /* Portfolio Start */
+ html {
+  --primary-color: rgb(230, 65, 128);
+  --primary-color-lighter: rgb(219, 181, 196);
+  --side-padding: 3rem;
+}
+body {
+  font-family: sans-serif;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.top-bar ul {
+  list-style: none;
+}
+
+.top-bar li {
+  display: inline;
+}
+.portfolio-one {
+  background-color: var(--primary-color-lighter);
+  padding: 200px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  grid-gap: 10px;
+  padding: 0 var(--side-padding);
+}
+
+.project {
+  border: solid 5px var(--primary-color);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+
+  display: grid;
+  grid-template-rows: 40px 1fr 30px 30px;
+  grid-gap: 10px;
+}
+
+.project .project-title {
+  font-size: 1.5em;
+
+  display: grid;
+  align-content: center;
+}
+
+.project .read-more {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+
+  display: grid;
+  place-items: center;
+
+  text-decoration: none;
+}
+
+.project .github {
+  color: rgb(230, 65, 128);
+  text-align: center;
+}
   
-  body {
-    font-family: sans-serif;
-  }
-  
-  .portfolio-one {
-    background-color: var(--primary-colour-lighter);
-  
-    padding: 20px;
-  }
-  
-  .section-title {
-    text-align: center;
-    margin-bottom: 20px;
-  
-    text-transform: uppercase;
-  }
-  
-  .project-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  
-    grid-gap: 10px;
-    padding: 0 50px;
-  }
-  
-  .project {
-    border: solid 5px var(--primary-color);
-    border-radius: 5px;
-  
-    padding: 20px;
-    background-color: white;
-  
-    display: grid;
-    grid-template-rows: 30px 1fr 30px 20px;
-    grid-gap: 10px;
-  }
-  
-  .project .project-title {
-    font-size: 1.5 rem;
-  
-    display: grid;
-    align-content: centre;
-  }
-  
-  .project .read-more {
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 5px;
-  
-    display: grid;
-    place-items: center;
-    text-decoration: none;
-  }
-  
-  .project .github-repo {
-    color: var(--primary-color);
-    text-align: center;
-  }
-  
+/* Portfolio End */
