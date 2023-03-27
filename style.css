@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    border-radius: 5px;
+}
+
+body {
+    display: grid;
+    /* max-width 800px; */
+    grid-template:
+    "header" 100px
+    "content" 1fr
+    "footer" 100px / 100vw;
+}
+    .nav_bar {
+        grid-area: header;
+        background-color: lightseagreen;
+    }
+    .content {
+        grid-area: content;
+        background-color: lightcoral;
+        min-height: 500px;
+    }
+    .footer {
+        grid-area: footer;
+        background-color: lightskyblue;
+    }
+
