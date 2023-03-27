@@ -1,0 +1,23 @@
+body {
+    background-color: bisque;
+}
+.big-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80vw;
+    grid-template-rows: 80vh 80vh 80vh 80vh;
+}
+.profile, .about-me, .portfolio, .experience {
+    margin: 15px;
+    border: solid 1px black;
+    background-color: white;
+    display: grid;
+}
+.profile {
+    grid-template-rows: 10% 90%;
+}
+.profile header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
