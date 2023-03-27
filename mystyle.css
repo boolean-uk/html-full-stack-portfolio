@@ -1,0 +1,202 @@
+/* Page One */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-one {
+    background-color: #006d77;
+    color: white;
+    display: grid;
+    height: 100vh;
+}
+
+.top {
+  height:50px;
+    background-color: #83c5be;
+    color: white;
+    display: grid;
+    grid-template-columns: 400px 3fr 1fr 1fr 1fr;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.name {
+    font-size: 20px;
+    padding-left: 20px;
+}
+.navigation {
+    justify-self: center;
+    align-self: center;
+}
+
+.main-one {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    place-content: center;
+}
+
+
+.main-one div {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    place-content: center;
+}
+
+.main-one>div>p {
+    display: grid;
+  place-content: center;
+font-size: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+.page-two {
+  display: grid;
+grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+  ". about-us ."
+  ". intro ."
+  ". tech-skills .";
+  row-gap: 90px;
+min-height: 100vh;
+}
+
+.page-two > div {
+  display: grid;
+  justify-items: center;
+}
+
+.page-two > div >  h1 {
+  font-size: 80px;
+
+}
+
+.page-two > div > h2 {
+  font-size: 45px;
+  display: inline-block;
+}
+
+.page-two > .intro > p {
+  font-size: 25px;
+}
+
+.page-two .about-us {
+  grid-area: about-us;
+    padding-top: 200px;
+    
+        display: grid
+}
+.page-two .intro {
+  grid-area: intro;
+display: grid;
+    row-gap: 20px;
+}
+
+.page-two .tech-skills {
+  grid-area: tech-skills;
+  grid-template-rows: 100px 1fr;
+display: grid;
+}
+
+.page-two .tech-skills > ul > li {
+  font-size: 30px;
+  row-gap: 0;
+}
+
+
+.page-three {
+    gap: 10px;
+}
+
+.page-three-grid {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+
+}
+
+.portfolio {
+  display: grid;
+    background-color: #006d77;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    column-gap: 20px;
+}
+
+.card {
+  border: 3px solid #006d77;
+  margin: 50px;
+  border-radius: 8px;
+  padding: 20px;
+justify-content: center;
+    display: grid;
+}
+
+.card > * {
+  text-align: center;
+}
+
+.card > p {
+  font-size: 20px;
+}
+
+.page-four {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 100px;
+
+}
+
+.page-four > .content {
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  line-height: 25px;
+  text-align: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 100px;
+}
+
+.footer {
+  display: grid;
+  background-color: #006d77;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+.big {
+  font-size: 30px;
+}
+
+.page-four .content .about-us {
+  font-size: 40px;
+}
+
+.job-experience {
+    font-size: 20px;
+}
+
+#portfolio-button {
+
+    color: white;
+    background-color: #006d77;
+
+}

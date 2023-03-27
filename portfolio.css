@@ -1,0 +1,21 @@
+.one,
+.two,
+.three {
+    height: 70vh;
+    width: 70vw;
+    margin: 20px;
+    font-size: 30px;
+
+}
+
+.one {
+    background-color: #c8b6ff;
+}
+
+.two {
+    background-color: #00a6fb;
+}
+
+.three {
+    background-color: #006494;
+}
