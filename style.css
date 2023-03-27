@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --darkgreen: #1d313a;
+  --lightgreen: #e5ffff;
+  --medgreen: #4eb6ac;
+  --black: #000000;
+  --lightred: #ffebee;
+  --darkred: #ae1457;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* COMMON CSS SECTION */
+
+/* LANDING SECTION START */
+
+.landing {
+  background-color: var(--medgreen);
+  border-top: 7px solid var(--darkgreen);
+  border-bottom: 7px solid var(--darkgreen);
+  color: var(--lightgreen);
+
+  display: grid;
+  grid-template-rows: 55px;
+  padding: 0 35px;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  margin: 15px;
+}
+
+.navigation .logo a {
+  font-size: 21px;
+  text-decoration: none;
+  color: var(--lightgreen);
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.right-menu {
+  display: grid;
+  justify-content: end;
+}
+
+.right-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: repeat(3, 95px);
+  gap: 19px;
+}
+
+.right-menu li {
+  background-color: var(--lightgreen);
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+}
+
+.right-menu li a {
+  color: var(--medgreen);
+  text-decoration: none;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hire {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: grid;
+  grid-template-columns: minmax(450px, 750px);
+  place-content: center;
+  height: 85vh;
+}
+
+.hire p {
+  margin-top: 21px;
+  font-size: 25px;
+  line-height: 1.3;
+}
+
+.hire span {
+  color: var(--darkgreen);
+}
+
+h1 {
+  font-size: 75px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 850px) {
+}
+
+/* LANDING SECTION END */
+
+/* ABOUT ME SECTION START */
+
+.about-me {
+  border-bottom: 7px solid var(--darkgreen);
+  color: var(--darkgreen);
+  padding: 0 35px;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr 1.5fr;
+  grid-template-columns: minmax(450px, 750px);
+  place-content: center;
+}
+
+.about-header {
+  font-size: 39px;
+  font-weight: bold;
+
+  display: grid;
+  place-items: center;
+}
+
+.tech-header h3 {
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+.tech-header p {
+  font-size: 23px;
+  line-height: 1.5;
+  margin-bottom: 45px;
+}
+
+.tech-skills {
+  margin-left: 45px;
+  line-height: 1.5;
+  font-size: 21px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+/* ABOUT ME SECTION END */
+
+/* PORTFOLIO SECTION START */
+
+.portfolio {
+  background-color: var(--lightred);
+  border-bottom: 7px solid var(--darkgreen);
+  display: grid;
+  grid-template-rows: 115px 1fr;
+  padding-top: 25px;
+}
+
+.portfolio-head {
+  display: grid;
+  place-items: center;
+}
+
+.portfolio-head h3 {
+  font-size: 39px;
+  font-weight: bold;
+  color: var(--darkgreen);
+}
+
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+  place-content: center;
+  gap: 55px;
+  padding-bottom: 55px;
+}
+
+.portfolio-list {
+  border: 7px solid var(--darkred);
+  padding: 45px;
+  border-radius: 5px;
+  line-height: 1.7;
+  box-shadow: 2px 2px 5px #888;
+  color: var(--darkgreen);
+}
+
+.portfolio-list h3 {
+  margin-bottom: 15px;
+}
+
+.read-more {
+  background-color: var(--darkred);
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 7px;
+  margin: 25px 0 11px 0;
+  font-size: 12px;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.repo-link {
+  text-align: center;
+}
+
+.repo-link a {
+  color: var(--darkred);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* PORTFOLIO SECTION END */
+
+/* EXPERIENCE SECTION START */
+.experience {
+  color: var(--darkgreen);
+  display: grid;
+  grid-template-rows: 125px 1fr;
+  grid-template-columns: minmax(450px, 750px);
+
+  place-content: center;
+  padding: 0 35px;
+}
+
+.experience-header {
+  font-size: 39px;
+  font-weight: bold;
+
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+
+.introduction {
+  margin: 15px 0;
+}
+
+.introduction h3 {
+  font-size: 23px;
+}
+
+.introduction p {
+  font-size: 23px;
+  line-height: 1.5;
+  /* margin-bottom: 45px; */
+  margin: 11px 0 25px 0;
+}
+
+.tech-skills {
+  margin-left: 45px;
+  line-height: 1.5;
+  font-size: 21px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+/* EXPERIENCE SECTION END */
+
+/* FOOTER SECTION START */
+.footer {
+  background-color: var(--darkgreen);
+  height: 55px;
+  display: grid;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 15px;
+  margin-left: 15px;
+  color: white;
+}
+/* FOOTER SECTION END */
+
+.totop {
+  background-color: var(--darkgreen);
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+  text-decoration: none;
+  color: white;
+  
+  font-size: 12px;
+  position: fixed;
+  right: 45px;
+  bottom: 59px;
+  
+  display: grid;
+  place-content: center;
+}
