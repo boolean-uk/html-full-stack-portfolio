@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    border-radius: 5px;
+    gap: 5px;
+    /* scroll-behavior: smooth; */
+}
+
+/* header - content - footer division */
+body {
+    display: grid;
+    /* max-width 800px; */
+    grid-template:
+    "header" 50px
+    "content" 1fr
+    "footer" 50px / 100vw;
+}
+
+/* nav bar styling */    
+    .nav_bar {
+        grid-area: header;
+        background-color: lightseagreen;
+        padding: 5px;
+        position: sticky;
+        top: 0px;
+        border-radius: 0;
+        display: grid;
+        grid-template-areas: "name menubuttons";
+        grid-template-columns: 100px, 1fr;
+    }  
+        .name {
+            grid-area: name;
+            background-color: lightgreen;
+            place-self: center;
+            justify-self: start;
+            max-width: 100px;
+        }
+        .menubuttons ul {
+            display: grid;
+            border: dashed 1px yellow;
+            list-style: none;
+            margin: 0;
+            padding: 5px;
+            grid-auto-flow: column;
+            place-content: center;
+            justify-self: end;
+            max-width:300px;
+        }
+            .menubuttons ul li {
+                border: dotted 1px blue;
+                place-self: center;
+            }
+
+/* main content divisions & styling */
+    .content {
+        grid-area: content;
+        background-color: lightcoral;
+        min-height: 500px;
+        padding: 50px;
+    }
+
+/* "box" dimensions for within content section */
+        .home, .about, .portfolio, .exp {
+            padding: 5px;
+            margin: 20px;
+            place-self: centre; 
+            border: dashed 1px black;
+            /* need way to set max content width */
+        }
+
+/* home page styling */
+        .home {
+            background-color: paleturquoise;
+            display: grid;
+            min-height: 200px;
+            min-width: 1fr;
+            grid-template: 
+            "headline" 
+            "pitch"  ;
+            grid-template-rows: 1fr 2fr;
+            grid-template-columns: 1fr;
+            justify-self: center;
+        }
+            .home h1{
+                grid-area: headline;
+                place-self: start;
+                border: dotted 1px blue;
+            }
+            .home p {
+                grid-area: pitch;
+                place-self: end;
+                border: dotted 1px blue;
+                max-width: 300px;
+            }
+/* about me page styling */
+        .about {
+            background-color:palegreen;
+            display:grid;
+            grid-area:
+            "title title"
+            "blurb skills";
+            grid-template-rows: 1fr 4fr;
+            grid-template-columns: 1fr 1fr;
+            padding: 5px;
+            margin: 20px;
+            border:dashed 1px black;
+            max-height: 400px;
+        }
+            .about h2 {
+                grid-area: title;
+                display: contents;
+                /* border: dotted 1px blue; */
+            }
+            .about p {
+                grid-area: blurb;
+                display:contents;
+                /* border: dotted 1px blue; */
+            }
+            .about .skills {
+                grid-area: skills;
+                display: contents;
+                border: dotted 1px blue;
+            }
+/* portfolio tiles and links styling */
+        .portfolio {
+            background-color: palegoldenrod;
+        }
+            .portfolio ul {
+                display: grid;
+                border: dashed 1px red;
+                list-style: none;
+                margin: 0;
+                padding: 5px;
+                grid-auto-flow: column;
+            }
+                .portfolio ul li {
+                    border: dotted 1px blue;
+                }
+                    .portfolio > ul > li > a, h5 {
+                        text-justify: center;
+                    }
+/* experience styling */
+        .exp {
+            background-color: palevioletred;
+            display: grid;
+            grid-template-areas: "experience job";
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-auto-flow: column;
+        }
+            .exp h2 {
+                display: grid;
+                grid-area: experience;
+                justify-items: center;
+            }
+            /* .exp div {
+                display:grid;
+                grid-area: job;
+            } */
+/* fixed back to top button */
+.pagetop {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    background-color: lightseagreen;
+    border: solid 1px black;
+    padding: 5px;
+}
+/* footer styling */
+.footer {
+    grid-area: footer;
+    background-color: lightskyblue;
+    text-align: center;
+    text-justify: center;
+}
