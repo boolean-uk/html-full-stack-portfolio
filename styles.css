@@ -4,8 +4,8 @@ body {
 .big-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: 80vw;
-    grid-template-rows: 80vh 80vh 80vh 80vh;
+    grid-template-columns: 800px;
+    grid-template-rows: repeat(4, 80vh);
 }
 .profile, .about-me, .portfolio, .experience {
     margin: 15px;
@@ -15,9 +15,36 @@ body {
 }
 .profile {
     grid-template-rows: 10% 90%;
+    background-color: rgb(210, 210, 255);
 }
 .profile header {
     display: grid;
     grid-template-columns: 200px 1fr;
 }
 
+.profile > header > nav > ul{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(3, 90px);
+    gap: 25px;
+    padding-right: 10px;
+    
+}
+
+
+.profile > header > nav > ul > li {
+    display: grid;
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+    place-content: center;
+    
+    
+}
+
+.profile > header > nav > ul > li > a {
+    text-decoration: none;
+    padding: 5px;
+}
