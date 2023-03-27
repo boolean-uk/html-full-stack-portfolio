@@ -13,6 +13,10 @@
   --darkred: #ae1457;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -30,6 +34,7 @@ body {
 
   display: grid;
   grid-template-rows: 55px;
+  padding: 0 35px;
 }
 
 .navigation {
@@ -109,10 +114,11 @@ h1 {
 .about-me {
   border-bottom: 7px solid var(--darkgreen);
   color: var(--darkgreen);
+  padding: 0 35px;
+
   display: grid;
   grid-template-rows: 1fr 2fr 1.5fr;
   grid-template-columns: minmax(450px, 750px);
-
   place-content: center;
 }
 
@@ -222,6 +228,7 @@ h1 {
   grid-template-columns: minmax(450px, 750px);
 
   place-content: center;
+  padding: 0 35px;
 }
 
 .experience-header {
@@ -260,7 +267,8 @@ h1 {
 /* FOOTER SECTION START */
 .footer {
   background-color: var(--darkgreen);
-  height: 55px;display: grid;
+  height: 55px;
+  display: grid;
   align-items: center;
 }
 
@@ -270,3 +278,20 @@ h1 {
   color: white;
 }
 /* FOOTER SECTION END */
+
+.totop {
+  background-color: var(--darkgreen);
+  border-radius: 100%;
+  height: 45px;
+  width: 45px;
+  text-decoration: none;
+  color: white;
+  
+  font-size: 12px;
+  position: fixed;
+  right: 45px;
+  bottom: 59px;
+  
+  display: grid;
+  place-content: center;
+}
