@@ -42,7 +42,7 @@ body {
     grid-gap: 40px;
 }
 
-.top-bar li {    
+.top-bar a {    
     background-color: #e5ffff;
     color: #4eb6ac;
     padding: 5px 20px;
