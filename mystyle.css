@@ -1,0 +1,25 @@
+/* Page One */
+
+.page-one {
+    background-color: #8e9aaf;
+    color: white;
+    display: grid;
+    grid-template-rows: 0.5fr 5fr;
+}
+
+.top {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.navigation {
+    justify-self: center;
+    align-self: center;
+}
+
+.main-one div {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
