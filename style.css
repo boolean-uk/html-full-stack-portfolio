@@ -1,0 +1,192 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0px;
+  width: minmax (120px, 1fr);
+  font-family: sans-serif;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+}
+
+.landing-pg h1,
+.landing-page-body h1 {
+  padding: 0;
+  font-size: 60px;
+}
+
+.header h1 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+p {
+  text-align: start;
+  padding-left: 50px;
+  margin: 20px;
+}
+
+h2,
+h3 {
+  padding-left: 50px;
+  margin: 20px;
+}
+
+scan {
+  color: black;
+}
+
+/* Landing Page */
+
+.landing-pg {
+  background-color: #e9bdbe;
+  border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+  color: white;
+}
+
+.header {
+  display: grid;
+  grid-template:
+    "names links" 60px /
+    3fr 2fr;
+}
+
+.title {
+  grid-area: names;
+}
+
+.title h1 {
+  text-align: left;
+}
+
+.Nav-buttons {
+  grid-area: links;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+}
+
+.Nav-buttons a {
+  width: minmax (120px, 1fr);
+  text-decoration: none;
+  background-color: #f0ede8;
+  align-items: justify;
+
+  border-radius: 5px;
+
+  padding-top: 10px;
+  padding: 20px;
+
+}
+
+.landing-pg .landing-page-body {
+  margin: 200px;
+}
+
+.landing-pg .landing-page-body scan {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.landing-pg>.header>.title a {
+  border: 2px solid aliceblue;
+}
+
+.about-me-button {
+  text-align: center;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* About Us page */
+
+
+.about-me {
+  height: 600px;
+  background-color: #f6f2f0;
+  border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+  margin: 0;
+}
+
+.about-me .skills {
+  align-items: center;
+}
+
+.about-me .skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 90px;
+}
+
+/* Portfolio Page */
+
+.portfolio {
+  height: 600px;
+  background-color: #9aacb8;
+  border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+  margin: 0px;
+}
+
+.container {
+  margin: 70px;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.Item1,
+.Item2,
+.Item3 {
+  border: #3a5154 solid 4px;
+  border-radius: 5px;
+
+}
+
+.Item1,
+.Item2,
+.Item3,
+h1 {
+  text-align: center;
+}
+
+.read-more {
+  color: white;
+  background-color: #3a5154;
+  margin: 5px;
+  padding-top: 5px;
+  box-sizing: content-box;
+}
+
+/* Experience Page*/
+
+.experience {
+  height: 600px;
+  background-color: #f6f2f0;
+  border-bottom: 5px rgba(0, 0, 0, 0.469) solid;
+}
+
+.experience p {
+  text-align: center;
+}
+
+.footer {
+  height: 80px;
+  background-color:  #e9bdbe;
+  color: white;
+}
+.images{
+  display: block;
+  padding-left: 570px;
+  padding-top: 40px;
+
+}
+
+/* Footer */
+.footer p {
+  margin: 0px;
+}
