@@ -1,6 +1,7 @@
 * {
     margin: 0;
     border-radius: 5px;
+    gap: 5px;
 }
 
 body {
@@ -14,7 +15,24 @@ body {
     .nav_bar {
         grid-area: header;
         background-color: lightseagreen;
+        padding: 5px;
+
+        display: grid;
+        grid-template-areas: "name menubuttons";
+        grid-template-columns: 100px, 1fr;
     }
+        .name {
+            grid-area: name;
+            background-color: lightgreen;
+            place-self: center;
+            max-width: 100px;
+        }
+        .menubuttons {
+            grid-area: menubuttons;
+            background-color: aquamarine;
+        }
+
+
     .content {
         grid-area: content;
         background-color: lightcoral;
