@@ -2,6 +2,7 @@
     margin: 0;
     border-radius: 5px;
     gap: 5px;
+    /* scroll-behavior: smooth; */
 }
 
 /* header - content - footer division */
@@ -19,7 +20,9 @@ body {
         grid-area: header;
         background-color: lightseagreen;
         padding: 5px;
-
+        position: sticky;
+        top: 0px;
+        border-radius: 0;
         display: grid;
         grid-template-areas: "name menubuttons";
         grid-template-columns: 100px, 1fr;
@@ -31,14 +34,22 @@ body {
             justify-self: start;
             max-width: 100px;
         }
-        .menubuttons {
-            grid-area: menubuttons;
-            background-color: aquamarine;
-            grid-auto-flow: column;
+        .menubuttons ul {
+            display: grid;
+            border: dashed 1px yellow;
+            list-style: none;
+            margin: 0;
             padding: 5px;
-            place-self: center;
+            grid-auto-flow: column;
+            place-content: center;
             justify-self: end;
+            max-width:300px;
         }
+            .menubuttons ul li {
+                border: dotted 1px blue;
+                place-self: center;
+            }
+
 /* main content divisions & styling */
     .content {
         grid-area: content;
@@ -122,6 +133,16 @@ body {
                 border: dotted 1px blue;
             }
 
+/* fixed home button */
+.pagetop {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    background-color: lightseagreen;
+    border: solid 1px black;
+    padding: 5px;
+
+}
 /* footer styling */
 .footer {
     grid-area: footer;
