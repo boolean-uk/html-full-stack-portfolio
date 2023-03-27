@@ -1,133 +1,170 @@
 * {
-    font-family: sans-serif;
+  font-family: sans-serif;
+}
+img {
+  height: 100vh;
+  width: 100vw;
 }
 body {
-    display: grid;
-    place-content: center;
-    background-color: bisque;
-    margin: 0;
+  display: grid;
+  place-content: center;
+  background-image: url(https://images.freecreatives.com/wp-content/uploads/2015/03/brown-vintage-background-18641-19113-hd-wallpapers.jpg);
+  background-attachment: fixed;
+  margin: 0;
 }
 .big-grid {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 800px;
-    grid-template-rows: repeat(4, 80vh);
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 800px;
+  grid-template-rows: repeat(4, 80vh);
 }
-.profile, #about-me, #portfolio, #experience {
-    margin: 15px 0px;
-    border: solid 1px black;
-    background-color: white;
-    display: grid;
+#profile,
+#about-me,
+#portfolio,
+#experience {
+  margin: 15px 0px;
+  border: solid 1px black;
+  background-color: white;
+  display: grid;
 }
 header > p {
-    font-weight: bold;
-    color: white;
-    font-size: 20px;
-    text-shadow: 5px purple;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  text-shadow: 5px purple;
 }
-.profile {
-    display: grid;
-    background-color: rgb(210, 210, 255);
-    place-content: center;
+#profile {
+  display: grid;
+  background-color: rgb(210, 210, 255);
+  place-content: center;
 }
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
-.profile p {
-    width: 400px;
+#profile p {
+  width: 400px;
 }
 header {
-    border: solid 2px darkblue;
-    background-image: linear-gradient(black, white);
-    width: 778px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    position: sticky;
-    padding-left: 20px;
-    top: 10px;
+  border: solid 2px darkblue;
+  background-image: linear-gradient(black, white);
+  width: 778px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  position: sticky;
+  padding-left: 20px;
+  top: 10px;
 }
 
-header > nav > ul{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 90px);
-    gap: 25px;
-    padding-left: 0;
+header > nav > ul {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 90px);
+  gap: 25px;
+  padding-left: 0;
 }
-
 
 header > nav > ul > li {
-    display: grid;
-    list-style: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    width: 90px;
-    height: 30px;
-    place-content: center;
-    
-    
+  display: grid;
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 90px;
+  height: 30px;
+  place-content: center;
 }
 
 header > nav > ul > li > a {
-    text-decoration: none;
-    color: white;
-    padding: 5px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
 }
 header > nav > ul > li > a:visited {
-    color: white;
+  color: white;
 }
 header > nav > ul > li > a:active {
-    color: black;
+  color: black;
 }
 h2 {
-    text-align: center;
-    padding-top: 10px;
-    text-decoration: overline;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: overline;
 }
-#about-me h3, #about-me p, #about-me ul {
-    text-align: center;
+#about-me h3,
+#about-me p,
+#about-me ul {
+  text-align: center;
 }
 #about-me li {
-    list-style: upper-roman;
-    list-style-position: inside;
+  list-style: upper-roman;
+  list-style-position: inside;
 }
 
-#portfolio{
-    justify-items: center;
-    background-color: rgb(250, 228, 231);
+#portfolio {
+  justify-items: center;
+  background-color: rgb(250, 228, 231);
 }
 
-.portfolio-title{
-    display: inline-block;
-    border: 4px solid crimson;
-    border-radius: 5px;
-    width: 200px;
-    margin: 0 10px;
-    padding: 10px;
-    box-shadow: black 5px 5px 5px;
+.portfolio-title {
+  display: inline-block;
+  border: 4px solid crimson;
+  border-radius: 5px;
+  width: 200px;
+  margin: 0 10px;
+  padding: 10px;
+  box-shadow: black 5px 5px 5px;
 }
 
 .portfolio-title > ul > li {
-    list-style: none;
-    margin: 10px 0;
+  list-style: none;
+  margin: 10px 0;
 }
 
 .portfolio-title > ul {
-   margin-left: 15px;
+  margin-left: 15px;
 }
 
-.portfolio-title > ul > li:nth-child(1) > a{
-    text-decoration: none;
-    color: white;
-    border: 2px solid crimson;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: crimson;
-
+.portfolio-title > ul > li:nth-child(1) > a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid crimson;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: crimson;
 }
 
-.portfolio-title > ul > li > a{
-    text-decoration: none;
-    color: crimson;
+.portfolio-title > ul > li > a {
+  text-decoration: none;
+  color: crimson;
+}
+#experience {
+    display: grid;
+    justify-content: center;
+}
+#experience p {
+    width: 400px;
+}
+#experience button {
+    align-self: end;
+    background-color: rgba(37, 37, 37, 0.397);
+    height: 100px;
+}
+#experience a {
+    font-size: 26px;
+    color:black;
+}
+#experience span {
+    color: yellow;
+    font-size: 30px;
+}
+#experience span:hover {
+    color: black;
+}
+#experience a:hover {
+    color:yellow;
+}
+@media screen and (max-width: 800px) {
+    .big-grid {
+        background-color: blueviolet;
+    }
 }
