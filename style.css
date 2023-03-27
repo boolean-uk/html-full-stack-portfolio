@@ -1,6 +1,7 @@
 
 body {
   background-color: rgb(127, 172, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .main-header {
   display: grid;
@@ -17,6 +18,92 @@ body {
   box-shadow: 0 6px 18px #00000020;
 }
 
+.portfolio {
+    display: grid;
+    grid-area: portfolio;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 350px;
+    grid-template-areas: "Title1 Title2 Title 3";
+    gap: 20px;
+    place-content: center;
+ 
+    
+}
+#Portfolio {
+    background-color: pink;
+    margin: 0;
+    padding: 0;
+
+}
+
+.Title1 {
+
+    border: 10px solid white;
+}
+
+.READ-MORE1 {
+display: grid;
+background-color: hotpink;
+padding: 10px;
+border-radius: 5px;
+width: 150px;
+height: 10px;
+text-align: center;
+
+}
+
+
+.READ-MORE2 {
+    display: grid;
+    background-color: hotpink;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    height: 10px;
+    text-align: center;
+    
+    }
+
+
+.READ-MORE3 {
+    display: grid;
+    background-color: hotpink;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    height: 10px;
+    text-align: center;
+    
+    }
+
+    .GitHub{
+    display: grid;
+    background-color: hotpink;
+    }
+
+.Title2 {
+  border: 10px solid white;
+
+}
+
+.Title3 {
+    border: 10px solid white;
+
+}
+
+h3 {
+    padding: 20px;
+}
+
+.hiring {
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    color: #BC3F67
+    
+}
+
 hr {
   height: 10px;
   background-color: rgb(13, 17, 134);
@@ -28,13 +115,23 @@ h1 {
 }
 
 h2 {
-  text-align: center;
+  text-align: left;
+  padding: 20px
 }
 
 p {
-  text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em
+    
 }
 
-li {
-  text-align: center;
+ul {
+padding: 0;
+  margin: 0;
+  display: inline-block;
+  margin-left: 40em
+
 }
+
