@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(127, 172, 255);
+}
+
+hr {
+  height: 10px;
+  background-color: rgb(13, 17, 134);
+  margin-bottom: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+li {
+  text-align: center;
+}
