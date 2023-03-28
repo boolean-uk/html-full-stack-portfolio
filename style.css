@@ -4,60 +4,102 @@
     box-sizing: border-box;
   }
 
-.header-page {
+
+.first-page {
     background-color: teal;
     height: 100vh;
-    grid-template: 
-        'top-nav-bar' 50px
-        'main-' 1fr /
-        1fr;
+    grid-template-columns: 
+       600px 300px 300px 300px
       }
 
-.top-nav-bar {
-    display: grid;
-    grid-area: top-nav-bar;
-    color: white;
-    grid-template: 
-    'name-left about portfolio experience' auto /
-    600px 300px 300px 300px;
- }
+.nav-bar {
+  margin: 5px;
+  padding: 20px;
+  display: grid;
+  grid-template: 
+   'name-left about portfolio experience' auto /
+     300px 400px 400px 400px;
+ 
+}
+
+.main-area {
+  display: grid;
+  grid-template: 
+  '. hiring .' 1fr
+  '. text .' 1fr /
+  1fr 600px 1fr;
+  color: white;
+  place-content: center;
+ 
+}
 
  .hiring {
-    grid-area: hiringfullstack;
+   display: grid;
+  grid-area: hiring;
+  font-size: 60px;
+  align-items: center;
+  justify-content: center;
+
  }
 
  .text {
-    grid-area: text;
+  /* display: grid; */
+  grid-area: text;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+
  }
 
- .main-area {
+ .second-page {
     display: grid;
-    /* grid-template: 
-    'hiringfullstack' 1fr 
-    'text' 1fr / auto ; */
+    grid-area: second-page;
+    height: 100vh; 
     grid-template:
-        ". hiringfullstack ." 1fr
-        ". text ." 1fr /
-        1fr 500px 1fr;
-    grid-area: main-area;
-    color: white;
-    place-content: center;
- }
-
- .about-me-page {
-    height: 100vh;
-    display: grid;
-    grid-template:
-        ". aboutme ." 1fr
-        ". intro ." 1fr 
-        ". text ." 1fr
-        ". skills ." 1fr 
-        ". bulletpoints ." 1fr /
-        1fr 500px 1fr;
-
-    place-content: center;
+        ". about ." 40px
+        ". intro ." 40px 
+        ". text ." 100px
+        ". skills ." 40px 
+        ". bulletpoints ." 100px /
+        1fr 600px 1fr;
+    /* place-content: center; */
     text-align: center;
+    margin: 50px;
+    padding: 20px;
+    line-height: 20px;
  }
+
+ .about {
+  grid-area: about
+
+ }
+
+ .intro {
+  grid-area: intro;
+  text-align:left;
+ }
+
+ .text {
+  grid-area: text;
+  text-align: left;
+ }
+
+ .skills {
+  grid-area: skills;
+  text-align: left;
+ }
+
+ .bulletpoints {
+  grid-area: bulletpoints;
+  text-align: left;
+ }
+
+ .section-title {
+  text-align: center;
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+}
 
   html {
     --primary-color: rgb(241, 134, 11);
@@ -66,12 +108,13 @@
   
   body {
     font-family: sans-serif;
+    
   }
   
-  .portfolio-one {
+  .third-page {
     background-color: var(--primary-colour-lighter);
-  
     padding: 20px;
+    height: 100vh;
   }
   
   .section-title {
@@ -123,3 +166,30 @@
     text-align: center;
   }
   
+  .fourth-page {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    grid-template-columns: 1fr 600px 1fr; 
+    grid-template-areas: 
+    ". parent .";
+  }
+
+.experience-page {
+  padding: 20px;
+}
+
+.parent{
+  grid-area: parent;
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  line-height: 30px;
+}
+  
+.footer{
+  height: 60px;
+  background-color: navy;
+  color: white;
+  font-size: larger;
+}
