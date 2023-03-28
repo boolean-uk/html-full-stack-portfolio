@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+.container {
+    min-height: 500px;
+    border-bottom: 5px solid black;
+}
+
+.one {
+    background-color: turquoise;
+    
+}
+
+.three {
+    background-color: lightpink;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
+
+.grid {
+    height: 80px;
+    display: grid;
+    grid-template-columns: 50px 1fr 150px;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* .gridTwo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+/* } */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.projects div {
+    border: 2px solid darkred;
+    margin: 5px;
+    background-color: lightcyan;
+    
+}
+
+.button {
+    color: white;
+    background-color: darkred;
+    padding: 5px;
+   
+}
+
+.introduction a {
+    background-color: white;
+    color: turquoise;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.four, .two {
+    padding: 40px 80px;
+}
+
+.port {
+    padding: 5px 300px;
+}
+
+.intro {
+    padding: 5px 300px;
+}
