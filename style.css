@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+
   }
 
   /* Front Cover Start */
@@ -14,9 +17,9 @@
 .nav-bar {
     display: grid;
     color: white;
-    font-family: ;
+    font-family: sans-serif;
     align-items: center;
-    grid-template-columns: 400px 3fr 1fr 1fr 1fr;
+    grid-template-columns: 400px 3fr 1fr 1fr;
    
  }
 
@@ -24,18 +27,21 @@
   display: grid;
   text-align: left;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   font-family:Arial, Helvetica, sans-serif;
  }
  
  .links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2px;
+  gap: 3px;
   position: absolute;
   right: -10px;
   width: 400px;
-  height: 20px;
+  height: 30px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 30px;
  }
 
  .about-me {
@@ -62,6 +68,7 @@
   color: rgb(67, 194, 194);
  }
 
+
  .main {
     display: grid;
     text-align: center;
@@ -72,7 +79,15 @@
  }
 
  .hiring {
+  display: grid;
   font-size: 50px;
+ }
+
+.main > .hiring > p{
+  display: grid;
+  text-align: center;
+  background-color: white;
+  width: 600px;
  }
 
  strong {
@@ -95,6 +110,7 @@
  .about {
   display: grid;
   text-align: center;
+  padding: 20px;
  }
 
  .intro {
@@ -105,6 +121,7 @@
  .text {
   display: grid;
   text-align: center;
+  margin: 25px;
  }
 
  .skills {
@@ -119,35 +136,27 @@
  }
 
  li {
-  display: grid;
+
   text-align: center;
  }
 
+
  /* Portfolio Start */
+ 
  html {
   --primary-color: rgb(230, 65, 128);
   --primary-color-lighter: rgb(219, 181, 196);
   --side-padding: 3rem;
 }
+
 body {
   font-family: sans-serif;
 }
 
-.top-bar {
-  display: grid;
-  grid-template-columns: auto 1fr;
-}
-
-.top-bar ul {
-  list-style: none;
-}
-
-.top-bar li {
-  display: inline;
-}
 .portfolio-one {
   background-color: var(--primary-color-lighter);
   padding: 200px;
+  height: 100vh;
 }
 
 .section-title {
@@ -186,10 +195,8 @@ body {
   background-color: var(--primary-color);
   color: white;
   border-radius: 5px;
-
   display: grid;
   place-items: center;
-
   text-decoration: none;
 }
 
@@ -199,3 +206,29 @@ body {
 }
   
 /* Portfolio End */
+
+/* Experience Start */
+
+.experiencepage {
+  text-align: center;
+  height: 100vh;
+  display: grid;
+  padding: 20px;
+}
+
+.experience-title {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.project-title-one{
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+}
+
+p {
+  display: grid;
+
+}
