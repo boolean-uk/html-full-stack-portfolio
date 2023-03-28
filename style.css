@@ -228,7 +228,12 @@ body {
   font-size: 20px;
 }
 
+.project-title-two {
+  text-align: left;
+  font-size: 20px;
+}
 p {
   display: grid;
-
+  text-align: center;
+  margin-top: 20px;
 }
