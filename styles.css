@@ -1,0 +1,258 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth
+}
+
+.firstpage {
+    display: grid;
+    grid-template-rows: 70px 950px ;
+    background-color: #46ccbc;
+    border-top: solid rgb(15, 76, 98) 10px;
+    border-bottom: solid rgb(15, 76, 98) 10px
+} 
+
+.topheader {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    margin-left: 15px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.topheader > h2 {
+    align-self: center;
+    font-size: 28px;
+}
+
+.topbuttons {
+    justify-self: center;
+    align-self: center;
+}
+
+.topbuttons > button {
+    height: 50px;
+    width: 150px;
+    margin: 6px;
+    border-radius: 6px;
+    border: solid 0px;
+    background-color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 17px;
+    color: #46ccbc;
+}
+
+.hiringtext {
+    padding-top: 200px;
+    padding-left: 500px;
+    padding-right: 500px;
+    margin-top: 40px;
+}
+
+.large {
+    font-size: 90px;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.regular {
+    font-size: 30px;
+    color: white;
+}
+.secondpage{
+    background-color: white;
+    border-bottom: solid rgb(15, 76, 98) 10px;
+    height: 1fr;
+    padding-bottom: 20px;
+}
+.about {
+    padding-left: 500px;
+    padding-right: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.about > h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+}
+.about > h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.about > p{
+    font-size: 20px;
+    padding-top: 10px;
+    line-height: 35px;
+    padding-bottom: 20px;
+}
+.lists{
+    padding-top: 10px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas:
+    "list1 list2" ;
+}
+.list1{
+    grid-area: list1;
+    padding: 3px;
+    line-height: 35px;
+}
+.list2{
+    grid-area: list2;
+    line-height: 35px;
+}
+.thirdpage {
+    background-color: rgba(217, 134, 162, 0.324);
+    height: 700px;
+    border-bottom: solid rgb(15, 76, 98) 10px;
+}
+.examples {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 300px 300px 300px ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "example1 example2 example3";
+    gap: 30px;
+}
+.thirdpage > h2{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+.example1{
+    grid-area: example1;
+    background-color: white;
+    border: solid 8px rgb(174, 48, 90);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center
+}
+.example1 > h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.example1 > button{
+    font-size: 18px;
+    height: 35px;
+    width: 180px;
+    background-color: rgb(174, 48, 90);
+    color: white;
+    display: grid;
+    align-content: center;
+    border: solid 0px ;
+    border-radius: 5px;
+}
+.example1 > a {
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(174, 48, 90)
+}
+.example2{
+    grid-area: example2;
+    background-color: white;
+    border: solid 8px rgb(174, 48, 90);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center
+}
+.example2 > h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.example2 > button{
+    font-size: 18px;
+    height: 35px;
+    width: 180px;
+    background-color: rgb(174, 48, 90);
+    color: white;
+    display: grid;
+    align-content: center;
+    border: solid 0px ;
+    border-radius: 5px;
+}
+.example2 > a {
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(174, 48, 90)
+}
+.example3{
+    grid-area: example3;
+    background-color: white;
+    border: solid 8px rgb(174, 48, 90);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center
+}
+.example3 > h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.example3 > button{
+    font-size: 18px;
+    height: 35px;
+    width: 180px;
+    background-color: rgb(174, 48, 90);
+    color: white;
+    display: grid;
+    align-content: center;
+    border: solid 0px ;
+    border-radius: 5px;
+}
+.example3 > a {
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(174, 48, 90)
+}
+.thirdpage > h2{
+    padding: 40px;
+}
+
+.fourthpage {
+    height: 1fr
+}
+
+.experience {
+    padding-left: 400px;
+    padding-right: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.experience > h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-size: 40px;
+}
+
+.experience > h3 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.footer {
+    display: grid;
+    font-size: 18px;
+    height: 35px;
+    background-color:rgb(15, 76, 98) ;
+    color: #ffffff;
+}
+
+.footertext {
+padding-top: 7px;
+padding-left: 5px;
+
+}
