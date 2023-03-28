@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+
+  }
+
+  /* Front Cover Start */
+.front-page{
+  background-color: rgb(67, 194, 194);
+  display: grid;
+  height: 100vh;
+}
+
+.nav-bar {
+    display: grid;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    grid-template-columns: 400px 3fr 1fr 1fr;
+   
+ }
+
+ .logo {
+  display: grid;
+  text-align: left;
+  color: white;
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+ }
+ 
+ .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+  position: absolute;
+  right: -10px;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 30px;
+ }
+
+ .about-me {
+  border: solid white;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(67, 194, 194);
+ }
+
+ .portfolio {
+  border: solid white;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(67, 194, 194);
+ }
+
+ .experience {
+  border: solid white;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(67, 194, 194);
+ }
+
+
+ .main {
+    display: grid;
+    text-align: center;
+    padding: 50px;
+    place-items: center;
+    height: 95vh;
+    color: white;
+ }
+
+ .hiring {
+  display: grid;
+  font-size: 50px;
+ }
+
+.main > .hiring > p{
+  display: grid;
+  text-align: center;
+  background-color: white;
+  width: 600px;
+ }
+
+ strong {
+  color: black;
+ }
+
+ i {
+  text-decoration: underline black;
+ }
+
+ /* Front Cover End */
+
+ /* About Me Start */
+
+ .about-me-page {
+  display: grid;
+  height: 80vh;
+ }
+
+ .about {
+  display: grid;
+  text-align: center;
+  padding: 20px;
+ }
+
+ .intro {
+  display: grid;
+  text-align: center;
+ }
+
+ .text {
+  display: grid;
+  text-align: center;
+  margin: 25px;
+ }
+
+ .skills {
+  display: grid;
+  text-align: center;
+
+ }
+
+ .bulletpoints {
+  display: grid;
+  text-align: center;
+ }
+
+ li {
+
+  text-align: center;
+ }
+
+
+ /* Portfolio Start */
+ 
+ html {
+  --primary-color: rgb(230, 65, 128);
+  --primary-color-lighter: rgb(219, 181, 196);
+  --side-padding: 3rem;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.portfolio-one {
+  background-color: var(--primary-color-lighter);
+  padding: 200px;
+  height: 100vh;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  grid-gap: 10px;
+  padding: 0 var(--side-padding);
+}
+
+.project {
+  border: solid 5px var(--primary-color);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+
+  display: grid;
+  grid-template-rows: 40px 1fr 30px 30px;
+  grid-gap: 10px;
+}
+
+.project .project-title {
+  font-size: 1.5em;
+
+  display: grid;
+  align-content: center;
+}
+
+.project .read-more {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
+.project .github {
+  color: rgb(230, 65, 128);
+  text-align: center;
+}
+  
+/* Portfolio End */
+
+/* Experience Start */
+
+.experiencepage {
+  text-align: center;
+  height: 100vh;
+  display: grid;
+  padding: 20px;
+}
+
+.experience-title {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.project-title-one{
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.project-title-two {
+  text-align: left;
+  font-size: 20px;
+}
+p {
+  display: grid;
+  text-align: center;
+  margin-top: 20px;
+}
