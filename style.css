@@ -60,3 +60,15 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+
+.four, .two {
+    padding: 40px 80px;
+}
+
+.port {
+    padding: 5px 300px;
+}
+
+.intro {
+    padding: 5px 300px;
+}
