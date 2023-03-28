@@ -18,7 +18,7 @@
   display: grid;
   grid-template: 
    'name-left about portfolio experience' auto /
-     300px 400px 400px 400px;
+     auto;
  
 }
 
