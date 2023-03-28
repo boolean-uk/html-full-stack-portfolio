@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.header-page {
+    background-color: teal;
+    height: 100vh;
+    grid-template: 
+        'top-nav-bar' 50px
+        'main-' 1fr /
+        1fr;
+      }
+
+.top-nav-bar {
+    display: grid;
+    grid-area: top-nav-bar;
+    color: white;
+    grid-template: 
+    'name-left about portfolio experience' auto /
+    600px 300px 300px 300px;
+ }
+
+ .hiring {
+    grid-area: hiringfullstack;
+ }
+
+ .text {
+    grid-area: text;
+ }
+
+ .main-area {
+    display: grid;
+    /* grid-template: 
+    'hiringfullstack' 1fr 
+    'text' 1fr / auto ; */
+    grid-template:
+        ". hiringfullstack ." 1fr
+        ". text ." 1fr /
+        1fr 500px 1fr;
+    grid-area: main-area;
+    color: white;
+    place-content: center;
+ }
+
+ .about-me-page {
+    height: 100vh;
+    display: grid;
+    grid-template:
+        ". aboutme ." 1fr
+        ". intro ." 1fr 
+        ". text ." 1fr
+        ". skills ." 1fr 
+        ". bulletpoints ." 1fr /
+        1fr 500px 1fr;
+
+    place-content: center;
+    text-align: center;
+ }
+
+  html {
+    --primary-color: rgb(241, 134, 11);
+    --primary-colour-lighter: rgb(240, 191, 198);
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  .portfolio-one {
+    background-color: var(--primary-colour-lighter);
+  
+    padding: 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  
+    text-transform: uppercase;
+  }
+  
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+    grid-gap: 10px;
+    padding: 0 50px;
+  }
+  
+  .project {
+    border: solid 5px var(--primary-color);
+    border-radius: 5px;
+  
+    padding: 20px;
+    background-color: white;
+  
+    display: grid;
+    grid-template-rows: 30px 1fr 30px 20px;
+    grid-gap: 10px;
+  }
+  
+  .project .project-title {
+    font-size: 1.5 rem;
+  
+    display: grid;
+    align-content: centre;
+  }
+  
+  .project .read-more {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+  
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+  }
+  
+  .project .github-repo {
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
