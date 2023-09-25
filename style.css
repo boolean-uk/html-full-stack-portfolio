@@ -7,7 +7,12 @@
 }
 
 hr {
- border: 4px solid grey;
+ border: 4px solid rgba(0, 0, 0, 0.69);
+}
+
+p, h1, h2, h3 {
+    color: rgba(0, 0, 0, 0.69);
+    margin-top: 40px;
 }
 
 body {
@@ -21,6 +26,7 @@ header {
     grid-template-columns: 2fr 1fr;
     position: sticky;
     top: 0px;
+    
     align-items: center;
 
     padding: 20px;
@@ -41,16 +47,130 @@ header ul li {
     border: rgb(255, 255, 255) 4px solid;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    
 }
 
 header ul li a {
     text-decoration: none;
     color: rgb(244, 198, 166);
+    padding-left: 4px;
+    font-weight: bold;
 }
+
+
 
 /* home */
 .home {
-    height: 600px;
+    text-align: left;
+    background-color: rgb(244, 198, 166);
+    padding: 20px 300px;
 
+}
+
+.home h1 {
+    font-size: 100px;
+    color: rgba(248, 248, 255, 0.964);
+}
+
+.home p {
+    color: ghostwhite;
+    padding-bottom: 50px;
+}
+
+.home strong {
+    color: rgba(0, 0, 0, 0.69);
+}
+
+.home em {
+    text-decoration: underline rgba(0, 0, 0, 0.69);
+}
+
+/* About Me */
+#about-me {
+    padding: 20px 300px;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#about-me h3 {
+    margin: 8px 0px;
+}
+
+#about-me ul {
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+#about-me ul li {
+    margin-left: 30px;
+}
+
+/* portfolio */
+
+#portfolio {
+    background-color: rgba(228, 1, 1, 0.362);
+    padding: 20px;
+}
+
+.box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+
+.port-box {
+    display: grid;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    border: rgb(193, 0, 0) solid 5px;
+    padding: 30px;
+}
+
+.port-box p {
+    padding-bottom: 20px;
+}
+
+.port-box h3 {
+    margin: 10px 0px;
+}
+
+.read-more {
+    background-color: rgb(180, 3, 3);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: ghostwhite;
+    font-weight: bold;
+    text-align: center;
+}
+
+.github-link {
+    color: rgb(167, 2, 2);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* experience */
+#experience {
+    padding: 20px 300px 50px 300px;
+}
+
+#experience h3 {
+    padding-bottom: 10px;
+}
+
+
+
+/* footer */
+footer {
+    background-color: rgba(1, 33, 71, 0.875);
+    padding: 30px;
+    color: ghostwhite;
 }
