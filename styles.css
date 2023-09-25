@@ -1,0 +1,172 @@
+body {
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.917) 11.2%, rgb(11, 132, 145) 91.1%);
+}
+
+/* Header */
+
+hr {
+border: 8px solid grey
+}
+
+
+.header {
+display: grid;
+grid-template: "name navi-section";
+grid-template-columns: 2fr 1fr;
+/* Takes template rows takes into account the height of the row */
+grid-template-rows: 50px;
+border: 1px dashed grey;
+padding: 10px;
+gap: 10px;
+
+}
+
+.name {
+    grid-area: name;
+    border: 1px dashed grey;
+
+    font-size: 20px;
+
+    /* align the name center but vertically */
+padding-top: 10px;
+color: white;
+
+}
+
+.navi-section {
+    grid-area: navi-section;
+    border: 1px dashed grey;
+
+   display: grid;
+   grid-template: 
+   "about-me-cont portfolio-con experience-con ";
+   grid-template-columns: repeat(auto);
+   padding: 10px;
+gap: 10px;
+}
+
+.about-me-cont {
+    grid-area: about-me-cont;
+    border: 1px dashed grey;
+
+    /* center the button containers */
+    display: grid;
+    place-items: center;
+
+}
+
+.portfolio-con {
+    grid-area: portfolio-con;
+    border: 1px dashed grey;
+
+    /* center the button containers */
+    display: grid;
+    place-items: center;
+}
+
+.experience-con {
+    grid-area: experience-con;
+    border: 1px dashed grey;
+
+    /* center the button containers */
+    display: grid;
+    place-items: center;
+}
+
+
+.hiring {
+    grid-area: hiring;
+    color: white;
+    font-size: 70px;
+    
+    border: 1px dashed grey;
+    text-align: center;
+   
+    
+}
+
+.sentence-con {
+    display: grid;
+    justify-content: center;
+}
+
+.para {
+ color: white;
+ text-align: left;
+ max-width: 700px;
+}
+
+.para span {
+    color: greenyellow;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+/* About me section */
+
+
+
+.about-me-header {
+    color: white;
+    text-align: center;
+}
+
+.intro {
+    color: white;
+    
+}
+
+.para-con {
+    /* created a grid for the para container and centerd this */
+    display: grid;
+    justify-content: center;
+}
+
+.para-about {
+    /* aligned the text to the left */
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+    max-width: 800px;
+  
+}
+
+.tech-skills {
+    color: white;
+    text-align: center;
+}
+
+ul {
+    color: white;
+}
+
+.skill-con {
+    /* display: grid;
+    grid-template: "elements1 elements2" ;
+    grid-template-columns: 1fr 1fr;
+    
+    border: 1px dashed white;
+    padding: 1px;
+    gap:10px; */
+ 
+ display: grid;
+    justify-items: center;
+}
+
+/* .elements1 {
+    grid-area: elements1;
+    border: 1px dashed white;
+}
+
+.elements2 {
+    grid-area: elements1;
+    border: 1px dashed white;
+} */
+
+.port-sec {
+    color: white;
+    text-align: center;
+}
