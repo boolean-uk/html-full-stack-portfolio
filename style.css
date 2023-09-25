@@ -258,10 +258,6 @@ header li:hover, .project button:hover {
     opacity: 0.65;
 }
 
-.button-link {
- color: white;
-}
-
 /* Responsive Section */
 
 .mobile-landing {
