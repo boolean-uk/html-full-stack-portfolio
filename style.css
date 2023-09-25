@@ -248,6 +248,7 @@ footer p, footer a {
 }
 
 /* Style Section */
+
 body{
     opacity: 0;
     transition: opacity 1.5s ease-in-out 100ms;
@@ -255,6 +256,10 @@ body{
 
 header li:hover, .project button:hover {
     opacity: 0.65;
+}
+
+.button-link {
+ color: white;
 }
 
 /* Responsive Section */
@@ -453,4 +458,19 @@ header h2 {
         line-height: 1.8rem;
     }
 
+}
+
+/* Second Page section */
+
+.project-page-ul {
+    display: grid;
+    grid-template: 1fr / 1fr;
+}
+
+.project-page-ul a {
+    padding: 0.5rem 2.5rem;
+}
+
+.project-page-landing {
+    height: calc(100vh - 69px);
 }
