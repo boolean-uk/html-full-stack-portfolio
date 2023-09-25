@@ -31,6 +31,9 @@ h2 {
 h3 {
   padding-bottom: 1rem;
 }
+a{
+  text-decoration: none;
+}
 
 p {
   line-height: 1.5;
@@ -64,11 +67,10 @@ nav > ul {
   padding: 0;
 }
 
-nav > ul > li {
+.button {
   padding: 0.5rem;
   margin: 0;
   border-radius: 5px;
-
   color: rgb(79, 192, 183);
   background-color: azure;
 }
@@ -102,6 +104,23 @@ header.landing {
 
 .portfolio-list h3 {
   margin: 0;
+}
+
+.portfolio .button{
+  text-align: center;
+  display: block;
+  color: rgb(252, 250, 248);
+  background-color: rgb(172, 26, 70);
+}
+
+.external-link{
+  color: rgb(172, 26, 70);
+  text-decoration: underline;
+  text-align: center;
+  background-color: red;
+  display: inline-flex;
+
+
 }
 
 .card {
