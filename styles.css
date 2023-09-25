@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+nav div {
+    text-align: right;
+}
+
+#home {
+    background-color: aqua;
+    padding: 50px;
+    text-align: center;
+}
+
+#about, #experience {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+#portfolio {
+    background-color: #ffd1dc;
+    padding: 50px;
+    text-align: center;
+}
+
+.section {
+    border: 5px solid purple;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-row {
+    display: flex;
+    gap: 20px;
+}
+
+.read-more, .github-repo {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.read-more:hover, .github-repo:hover {
+    background-color: #45a049;
+}
