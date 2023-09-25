@@ -1,0 +1,52 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+}
+
+.portfolio, .experience {
+  padding: 50px;
+}
+
+.portfolio {
+  background-color: rgb(255, 233, 236);
+}
+
+.projectCard {
+  border: 10px rgb(200, 0, 100) solid;
+  background-color: rgb(252, 248, 241);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 0, 128, 0.5);
+  width: 250px;
+  padding: 40px;
+}
+
+.button {
+  background-color: rgb(200, 0, 100);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color:white;
+  margin: 10px 10px;
+}
+
+.externalLink {
+  color: rgb(200, 0, 100);
+  text-decoration: underline;
+  text-align: center;
+}
+
+.projectCardGrid {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+}
