@@ -15,10 +15,6 @@ p, h1, h2, h3 {
     margin-top: 40px;
 }
 
-body {
-    height: 100vh;
-    width: 100vw
-}
 
 /* Header */
 header {
@@ -26,7 +22,7 @@ header {
     grid-template-columns: 2fr 1fr;
     position: sticky;
     top: 0px;
-    
+
     align-items: center;
 
     padding: 20px;
@@ -173,4 +169,8 @@ footer {
     background-color: rgba(1, 33, 71, 0.875);
     padding: 30px;
     color: ghostwhite;
+}
+
+.home.about-me {
+    background-color: green;
 }
