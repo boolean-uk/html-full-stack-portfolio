@@ -1,0 +1,472 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* Header Sect */
+
+header {
+    display: grid;
+    align-content: center;
+    width: 100%;
+    grid-template: 100% / 2fr 1fr;
+    padding: 1rem;
+    background-color: #46b8c7;
+    border-top: 0.5rem solid #052635;
+}
+
+header h2 {
+    color: #fff;
+}
+
+header ul {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+}
+
+header li {
+    min-width: 92px;
+    text-align: center;
+    list-style: none;
+}
+
+header a {
+    font-size: 1.125rem;
+    padding: 0.3rem 0.4rem;
+    background-color: #ffffffee;
+    border-radius: 0.225rem;
+    text-decoration: none; 
+    color: #46b8c7;
+    font-weight: 700;
+}
+
+/* Landing Section */
+.landing {
+    display: grid;
+    grid-template: repeat(6, 8.75rem) / 1fr 2fr 1fr;
+    background-color: #46b8c7;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 0.5rem solid #052635;
+}
+
+.landing h1{
+    color: #fff;
+    font-size: 7.25rem;
+    grid-area: 2 / 2 / 5 / 3;
+    max-width: 680px;
+    text-shadow: 0.15rem 0.15rem 0.3rem #0000007e;
+}
+
+.landing p {
+    line-height: 1.8rem;
+    color: #fff;
+    font-size: 1.6rem;
+    grid-area: 5 / 2 / 6 / 3;
+    max-width: 680px;
+}
+
+.landing strong {
+    color: #052635;
+}
+
+.landing em {
+    text-decoration: underline;
+    text-decoration-color: #052635;
+}
+
+/* About Section */
+#about-me {
+    border-bottom: 0.5rem solid #052635;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.2rem;
+    padding: 1.5rem 0;
+}
+
+.intro h3 {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+.intro p {
+    display: inline-block;
+    min-width: 200px;
+    max-width: 500px;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.tech-skills {
+    text-align: center;
+}
+
+.tech-skills h3{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+.tech-skills ul {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem;
+}
+
+/* Portfolio Section */
+#portfolio {
+    display: grid;
+    padding-bottom: 1.2rem;
+    grid-template: 1fr 4.5fr/ repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    border-bottom: 0.5rem solid #052635;
+    background-color: #ec8f4c;
+}
+
+#portfolio h1{
+    grid-area: 1 / 1 / 2 / 4;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.project {
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 0.55rem solid #e9680b;
+    border-radius: 2%;
+    min-width: 250px;
+    max-width: 280px;
+    box-shadow: 0.3rem 0.3rem;
+}
+
+.project h3{
+    font-size: 1.85rem;
+    width: 100%;
+    text-align: center;
+}
+
+.project p {
+    padding: 0.75rem 0;
+    font-size: 1.175rem;
+    line-height: 1.5rem;
+}
+
+.project-links {
+    text-align: center;
+}
+
+.project-links button {
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+    padding: 0.7rem;
+    background-color: #e9680b;
+    color: #fff;
+    border: 1px solid #e9680b;
+    border-radius: 4.5%;
+    cursor: pointer;
+}
+
+.project-links a {
+    color: #e9680b;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.pro-con1 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.pro-con2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.pro-con3 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+/* Experience Section */
+#experience {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-template: 1fr 2fr 2fr / 1fr 2fr 1fr; 
+}
+
+#experience h1 {
+    padding: 1.5rem 0;
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.job h3{
+    padding-bottom: 0.8rem;
+}
+
+.job p {
+    min-width: 350px;
+    max-width: 534px;
+}
+
+.job {
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.j1 {
+    grid-area: 2 / 2 / 2 / 3;
+}
+
+.j2 {
+    grid-area: 3 / 2 / 3 / 3;
+}
+
+/* Footer Section */
+footer {
+    background-color: #052635;
+    height: 5rem;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+footer p, footer a {
+    color: #fff;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+/* Style Section */
+
+body{
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out 100ms;
+}
+
+header li:hover, .project button:hover {
+    opacity: 0.65;
+}
+
+/* Responsive Section */
+
+.mobile-landing {
+    display: none;
+}
+
+#mobile-portfolio {
+    display: none;
+}
+
+header ul li:nth-child(3) {
+    display: none;
+}
+
+@media only screen and (max-width: 814px) {
+    #portfolio {
+        display: none;
+    }
+
+    header ul li:nth-child(2) {
+        display: none;
+    }
+
+    header ul li:nth-child(3) {
+        display: block;
+    }
+
+    /* Mobile Portfolio Section */
+
+    #mobile-portfolio {
+        display: grid;
+        grid-template: repeat(3fr) / 1fr;
+        padding-bottom: 1.2rem;
+        align-items: center;
+        justify-items: center;
+        border-bottom: 0.5rem solid #052635;
+        background-color: #ec8f4c;
+    }
+
+    #mobile-portfolio h1 {
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+
+    .mobile-project {
+        margin: 0.5rem;
+        padding: 1rem;
+        border: 0.55rem solid #e9680b;
+        border-radius: 2%;
+        min-width: 250px;
+        max-width: 600px;
+        box-shadow: 0.3rem 0.3rem;
+    }
+
+    .mobile-project h3{
+        font-size: 1.85rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mobile-project p {
+        padding: 0.75rem 0;
+        font-size: 1.175rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+header {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h2 {
+    display: none;
+}
+    
+ .landing {
+    display: none;
+ }  
+
+.intro h3, .tech-skills h3 {
+    font-size: 1.35rem;
+ }
+
+.intro p {
+    font-size: 1.175rem;
+ } 
+
+ .mobile-project {
+    max-width: 525px;
+}
+
+  /* Mobile Landing Section */
+
+  .mobile-landing {
+    display: grid;
+    grid-template: 2fr / 1fr;
+    background-color: #46b8c7;
+    align-items: center;
+    justify-items: center;
+    border-bottom: 0.5rem solid #052635;
+    padding: 1.5rem 0;
+}
+
+.mobile-landing h1{
+    padding-bottom: 0.75rem;
+    color: #fff;
+    font-size: 5rem;
+    max-width: 370px;
+    text-shadow: 0.15rem 0.15rem 0.3rem #0000007e;
+}
+
+.mobile-landing p {
+    line-height: 1.8rem;
+    color: #fff;
+    font-size: 1.4rem;
+    max-width: 370px;
+}
+
+.mobile-landing strong {
+    color: #052635;
+}
+
+.mobile-landing em {
+    text-decoration: underline;
+    text-decoration-color: #052635;
+}
+
+}
+
+@media only screen and (max-width: 449px) {
+    .mobile-landing h1 {
+        font-size: 4.75rem;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+
+    footer {
+        text-align: center;
+    }
+
+    .mobile-landing h1{
+        font-size: 3.675rem;
+        max-width: 340px;
+    }
+
+    .mobile-landing p{
+        font-size: 1.25rem;
+        max-width: 340px;
+    }
+
+    .mobile-project {
+        max-width: 350px;
+    }
+
+    .tech-skills ul {
+        font-size: 1.2rem;
+    }
+
+    .project-links button{
+         font-size: 1rem;
+    }
+   
+}
+
+@media only screen and (min-width:1600px) {
+    #about-me, #experience {
+        padding: 2.25rem 0;
+    }
+
+    #about-me h1, #portfolio h1, #experience h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro h3, .tech-skills h3, .job h3 {
+        font-size: 1.75rem;
+    }
+
+    .intro p, .tech-skills ul {
+        font-size: 1.45rem;
+    }
+
+    .project {
+        max-width: 500px;
+    }
+
+    .job p{
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+}
+
+/* Second Page section */
+
+.project-page-ul {
+    display: grid;
+    grid-template: 1fr / 1fr;
+}
+
+.project-page-ul a {
+    padding: 0.5rem 2.5rem;
+}
+
+.project-page-landing {
+    height: calc(100vh - 69px);
+}
