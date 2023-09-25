@@ -1,0 +1,223 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainpage {
+  background-color: aquamarine;
+  margin: 0px;
+}
+
+.options {
+  display: inline;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-areas: "name aboutme portfolio experience";
+  padding: 20px;
+  align-items: center;
+}
+
+a {
+  background-color: grey;
+  display: grid;
+  margin-right: 5px;
+  border: 3px solid brown;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  color: aliceblue;
+}
+
+.name {
+  grid-area: name;
+  display: inline;
+}
+
+.aboutme {
+  grid-area: aboutme;
+}
+
+.portfolio {
+  grid-area: portfolio;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.titlequestion {
+  align-content: center;
+  justify-content: center;
+  color: whitesmoke;
+  display: grid;
+  grid-template:
+    ". maintitle ." 1fr
+    ". mainabout ." 1fr /
+    1fr 500px 1fr;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.titlequestion h1 {
+  grid-area: maintitle;
+  display: grid;
+  justify-content: center;
+  text-align: left;
+  padding: 100px 0px 0px 100px;
+}
+
+.titlequestion p {
+  grid-area: mainabout;
+  display: grid;
+  justify-content: center;
+  padding: 0px 50px 50px 50px;
+}
+
+.aboutmepage {
+  background-color: blue;
+  color: whitesmoke;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "lefty righty";
+  margin: 10px;
+}
+
+.lefty {
+  grid-area: lefty;
+}
+
+.righty {
+  grid-area: righty;
+  margin-bottom: 100px;
+}
+
+.aboutmepage li {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.portfoliopage {
+  background-color: pink;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.portcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "left middle right";
+  gap: 10px;
+  margin: 10px;
+}
+
+.left {
+  grid-area: left;
+  border: solid 5px purple;
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.middle {
+  background-color: white;
+  border: solid 5px purple;
+  padding: 20px;
+  margin: 10px;
+  grid-area: middle;
+  margin-bottom: 100px;
+}
+
+.right {
+  border: solid 5px purple;
+  background-color: white;
+  padding: 20px;
+  grid-area: right;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+.experiencepage {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p,
+h4 {
+  text-align: left;
+}
+
+.experiencepage {
+  display: grid;
+  justify-content: center;
+}
+
+.containingtitles {
+  text-align: center;
+}
+
+.title {
+  margin: auto;
+  text-align: left;
+  width: 50%;
+}
+
+.moreaboutme {
+  padding: 10px;
+}
+
+.name #about.me:hover {
+  text-decoration: underline;
+}
+
+.name #portfolion:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.aboutme:hover {
+  text-decoration: underline;
+  background-color: blue;
+}
+
+.xp:hover {
+  text-decoration: underline;
+  background-color: white;
+}
+
+.porty:hover {
+  text-decoration: underline;
+  background-color: pink;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  border: black 3px dashed;
+  background-color: blue;
+  padding: 5px;
+}
+
+li img {
+  background-color: peru;
+}
