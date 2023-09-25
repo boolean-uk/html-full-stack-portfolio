@@ -36,7 +36,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   color:white;
-  margin: 10px 10px;
+  margin: 20px 20px;
 }
 
 .externalLink {
@@ -49,4 +49,8 @@ h3 {
   display: grid;
   grid-auto-flow: column;
   place-items: center;
+}
+
+p + p {
+  text-indent: 1em;
 }
