@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+#top {
+    background-color: rgb(81, 145, 145);
+
+}
+
+.info {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+    list-style: none;
+    padding: 10px;
+    justify-content: end;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+
+
+.firsta {
+    display: block;
+    background-color: white;
+    padding: 9px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(17, 66, 66);
+}
+
+.intro {
+    background-color: rgb(81, 145, 145);
+    padding: 40px;
+    padding-left: 100px;
+    place-content: center;
+}
+
+.ad {
+    font-size: 45px;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.description {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.me {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#aboutme {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+} 
+
+.text {
+    font-size: 20px;
+}
+
+.list {
+    display: grid;
+    grid-template: 
+    "firstlist    secondlist"
+}
+
+
+.skills {
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.portofolio {
+    display: grid;
+    grid-template: 
+    "box1   box2    box3";
+    gap: 50px;
+    
+}
+
+#pinkportofolio {
+    text-align: center ;
+    padding: 30px;
+}
+
+#mainportofolio {
+    background-color: rgb(250, 219, 240);
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.box1, .box2, .box3 {
+    border: solid;
+    border-color: rgb(228, 66, 120);
+    border-width: 6px;
+    border-radius: 6px;
+    height: auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
+}
+
+
+h3 {
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.readmore {
+    background-color: palevioletred;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 3px;
+    margin: 10px 0px 20px 0px;
+}
+
+.readmore:hover {
+    text-decoration: underline;
+    color: brown;
+}
+
+a {
+    display: block;
+    color: rgb(155, 34, 133);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+h5 {
+    font-size: 16px;
+    padding-bottom: 15px;
+
+}
+
+#experience {
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 19px;
+    
+}
+
+footer {
+    background-color: rgb(81, 145, 145);
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+
