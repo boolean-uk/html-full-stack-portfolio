@@ -22,11 +22,19 @@ p+p {
   text-indent: 1em;
 }
 
-.portfolio, .experience {
+.aboutMe, .portfolio, .experience {
+  border-top: 10px solid rgb(75, 75, 75);
   padding: 50px;
 }
 
-.experience {
+ul {
+  list-style-type: disc;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.experience, .aboutMe {
   display: grid;
   place-content: center;
   grid-auto-columns: 50%;
@@ -74,6 +82,6 @@ p+p {
   width: 100%;
   background-color: grey;
   color: white;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
 }
