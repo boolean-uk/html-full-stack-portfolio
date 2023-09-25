@@ -1,0 +1,106 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-areas:
+    "name . anchor";
+    padding: 10px;
+}
+
+.big {
+    font-size: 50px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.spliter {
+    background-color: black;
+    height: 8px;
+    padding: 0px;
+}
+
+a, li {
+    text-decoration: none;
+    color: grey;
+
+}
+
+ul {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding-top: 8px;
+    /* place-items: center; */
+}
+
+ul > li {
+    place-self: center;
+}
+
+nav {
+    grid-area: anchor;
+}
+
+.name {
+    grid-area: name;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2px 15px;
+}
+
+div {
+    padding:10px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#portfolio {
+    background-color: pink;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.projects > div {
+    background-color: aqua;
+    border: 3px solid black;
+   
+}
+
+.box > div {
+    display: grid;
+    place-items: center;
+    background-color: black;
+    /* justify-self: center; */
+    width: 100px;
+    margin-left: 50px;
+
+
+}
+
+div > a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
