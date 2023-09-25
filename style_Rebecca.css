@@ -16,6 +16,11 @@ h3 {
   padding: 50px;
 }
 
+.experience {
+  display: grid;
+  width: 50%;
+}
+
 .portfolio {
   background-color: rgb(255, 233, 236);
 }
@@ -39,7 +44,7 @@ h3 {
   margin: 20px 20px;
 }
 
-.externalLink {
+.GithubLink, a {
   color: rgb(200, 0, 100);
   text-decoration: underline;
   text-align: center;
@@ -49,8 +54,4 @@ h3 {
   display: grid;
   grid-auto-flow: column;
   place-items: center;
-}
-
-p + p {
-  text-indent: 1em;
 }
