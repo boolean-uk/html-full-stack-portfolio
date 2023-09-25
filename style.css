@@ -183,8 +183,14 @@
     color: rgb(59, 34, 16);
     font-size: 0.6em;
     font-weight: 600;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
+  }
+  .github-link:hover {
+    color: rgba(175, 84, 19, 0.885);
+    font-size: 14px;
+    font-weight: bold;
   }
   #experience {
     grid-area: experience;
