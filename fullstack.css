@@ -1,88 +1,142 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 body {
     display: grid;
-    grid-template-rows:repeat(4, 1fr);
-    gap: 10px;
-    grid-template-areas: "main-header"
-                          "main"
+    grid-template-rows:repeat(4, auto);
+    grid-template-areas: "overview"
+                          "about-me"
                           "main2"
                           "footer";
 }
 
 
-
-.main-header {
+/* OVERVIEW */
+.overview-page {
     display: grid;
-    grid-template-rows: 100px 1fr;
-    background-color: rgb(84, 168, 220);
-    color: white;
-    padding: 10px;
+    grid-area: overview;
+    grid-template-rows: 50px 450px;
     grid-template-areas: 
     "header"
-    "header-content";
+    "overview-content";
 
+    background-color: rgb(37, 203, 187);
+    color: white;
+    padding: 10px 20px;
+
+    border-bottom: solid 10px black;
 }
 
-.top-section {
+.header {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-area: header;
+    grid-template-columns: 1fr 500px;
+    align-items: center;
 }
 
-.main-nav {
-    display: grid;
+.name {
+    font-size: 13px;
 }
 
 .main-nav ul {
     display: grid;
     grid-auto-flow: column;
     justify-content: end;
-    gap: 20px;
+    gap: 30px;
 }
 
-.main-nav li {
+.main-nav ul li {
     list-style: none;
+}
+
+.main-nav > ul > li > a {
     text-decoration: none;
+    font-weight: bold;
+    color: rgb(37, 203, 187);
+    background-color: rgba(255, 255, 255, 0.817);
+    border-radius: 4px;
+    padding: 7px 10px;
 }
 
-.header-content {
+.overview-content {
     display: grid;
-    grid-area: header-content;
-    justify-content: center;
+    grid-area: overview-content;
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-areas: ". content .";
 }
 
+.overview-content-group {
+    grid-area: content;
+}
 
-.main {
+.overview-content-header {
     display: grid;
-    gap: 10px;
-    grid-area: main;
-    justify-items: center;
-    background-color: rgb(148, 147, 147);
+    line-height: 90px;
+    font-size: 70px;
+    padding-bottom: 20px;
 }
 
 
-.main > p {
-    justify-self: center;
-    padding: 0 20px;
+/* ABOUT ME */
+.about-me {
+    display: grid;
+    grid-area: about-me;
+    grid-template-rows: 80px 180px 180px;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-areas: 
+    ". about-me-header ."
+    ". about-me-content ."
+    ". technical-skills .";
+    border-bottom: solid 10px black;
 }
-.main > ul {
+
+.about-me-heading {
+    display: grid;
+    grid-area: about-me-header;
+    place-content: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(1, 1, 71);
+}
+
+.about-me-intro {
+    grid-area: about-me-content;
+    line-height: 24px;
+}
+
+.introduction-title {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.technical-skills {
+    grid-area: technical-skills;
+}
+
+.technical-skills-title {
+    font-size: 16px;
+}
+
+.technical-skills > ul {
      column-count: 2;
      column-gap: 80px;
+     padding: 20px 40px;
 }
 
-
-.main2 {
+/* PORTFOLIO */
+.portfolio {
     display: grid;
     grid-area: main2;
     gap: 10px;
     background-color: rgb(202, 121, 121);
     grid-template-rows: 50px 1fr;
+    border-bottom: solid 10px black;
 }
 
-.port-title {
+.portfolio-title {
 display: grid;
 justify-content: center;
 }
@@ -113,6 +167,7 @@ justify-content: center;
     grid-template-rows: 50px repeat(2, 1fr);
     gap: 10px;
     background-color: lightblue;
+    /* border-bottom: solid 10px black; */
 }
 
 .experience-header {
