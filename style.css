@@ -1,0 +1,56 @@
+/* globals */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+hr {
+ border: 4px solid grey;
+}
+
+body {
+    height: 100vh;
+    width: 100vw
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+
+    padding: 20px;
+    background-color: rgb(244, 198, 166);
+}
+
+.nameplate {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+header ul li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 3px;
+    border: rgb(255, 255, 255) 4px solid;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header ul li a {
+    text-decoration: none;
+    color: rgb(244, 198, 166);
+}
+
+/* home */
+.home {
+    height: 600px;
+
+}
