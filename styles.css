@@ -1,0 +1,412 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.917) 11.2%, rgb(11, 132, 145) 91.1%);
+}
+
+/* Header */
+
+hr {
+border: 8px solid grey
+}
+
+
+.header {
+display: grid;
+grid-template: "name navi-section";
+grid-template-columns: 2fr 1fr;
+/* Takes template rows takes into account the height of the row */
+grid-template-rows: 50px;
+/* border: 1px dashed grey; */
+padding: 10px;
+gap: 10px;
+
+}
+
+.name {
+    grid-area: name;
+    /* border: 1px dashed grey; */
+
+    font-size: 20px;
+
+    /* align the name center but vertically */
+padding-top: 10px;
+color: white;
+
+}
+
+.navi-section {
+    grid-area: navi-section;
+    /* border: 1px dashed grey; */
+
+   display: grid;
+   grid-template: 
+   "about-me-cont portfolio-con experience-con ";
+   grid-template-columns: repeat(auto);
+   padding: 10px;
+gap: 10px;
+}
+
+.about-me-cont {
+    grid-area: about-me-cont;
+    /* border: 1px dashed grey; */
+
+    /* center the button containers */
+    display: grid;
+    place-items: center;
+
+}
+
+.portfolio-con {
+    grid-area: portfolio-con;
+    /* border: 1px dashed grey; */
+
+    /* center the button containers */
+    display: grid;
+    place-items: center;
+}
+
+.experience-con {
+    grid-area: experience-con;
+    /* border: 1px dashed grey; */
+
+    /* center the button containers */
+    display: grid;
+   place-items: center;
+}
+
+.hiring-con {
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+    /* place-self: center; */
+}
+
+
+.hiring {
+    grid-area: hiring;
+    color: white;
+    font-size: 70px;
+    
+    /* border: 1px dashed grey; */
+    text-align: center;
+    text-align: left;
+    line-height: 1.5;
+    max-width: 800px;
+   
+    
+}
+
+.sentence-con {
+    display: grid;
+    justify-content: center;
+}
+
+.para {
+ color: white;
+ text-align: left;
+ max-width: 700px;
+}
+
+.para span {
+    color: greenyellow;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+/* About me section */
+
+
+
+.about-me-header {
+    color: white;
+    text-align: center;
+}
+
+.intro {
+    color: white;
+    
+}
+
+.para-con {
+    /* created a grid for the para container and centerd this */
+    display: grid;
+    justify-content: center;
+}
+
+.para-about {
+    /* aligned the text to the left */
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+    max-width: 800px;
+  
+}
+
+.tech-skills {
+    color: white;
+    text-align: center;
+}
+
+ul {
+    color: white;
+}
+
+.skill-con {
+    /* display: grid;
+    grid-template: "elements1 elements2" ;
+    grid-template-columns: 1fr 1fr;
+    
+    border: 1px dashed white;
+    padding: 1px;
+    gap:10px; */
+ 
+ display: grid;
+    justify-items: center;
+}
+
+/* .elements1 {
+    grid-area: elements1;
+    border: 1px dashed white;
+}
+
+.elements2 {
+    grid-area: elements1;
+    border: 1px dashed white;
+} */
+
+.port-sec {
+    color: white;
+    text-align: center;
+    
+}
+
+.port-div-con {
+    display: grid;
+    grid-template: "card1 card2 card3";
+    grid-template-columns:repeat(3, 1fr) auto;
+    grid-template-rows: 300px;
+
+    /* border: 1px dashed white; */
+    padding: 10px;
+    gap:30px
+}
+
+.card1 {
+    grid-area: card1;
+    border: 3px solid grey;
+
+    display: grid;
+    grid-template: 
+    "title"
+    "detail"
+    "read-more"
+    "github-repo";
+    grid-template-rows: 30px 1fr 30px 30px;
+
+    padding: 5px;
+    gap: 5px;
+   
+    
+}
+
+.title {
+    grid-area: title;
+    /* border: 1px dashed white; */
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+.detail {
+    grid-area: detail;
+    /* border: 1px dashed white; */
+ 
+}
+
+.detail > p {
+    margin: 20px;
+    color: white;
+}
+
+.read-more {
+    grid-area: read-more;
+    /* border: 1px dashed white; */
+    justify-self: center;
+}
+
+.read-more > button {
+    color:white;
+    background-color:seagreen;
+    width:350px;
+    height: 30px;
+    
+
+}
+
+.github-repo {
+    grid-area: github-repo;
+    /* border: 1px dashed white; */
+
+    justify-self: center;
+}
+
+.card2 {
+    grid-area: card2;
+    border: 3px solid grey;
+
+    display: grid;
+    grid-template: 
+    "title2"
+    "detail2"
+    "read-more2"
+    "github-repo2";
+    grid-template-rows: 30px 1fr 30px 30px;
+
+    padding: 5px;
+    gap: 5px;
+}
+
+.title2 {
+    grid-area: title2;
+    /* border: 1px dashed white; */
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+.detail2 {
+    grid-area: detail2;
+    /* border: 1px dashed white; */
+ 
+}
+
+.detail2 > p {
+    margin: 20px;
+    color: white;
+}
+
+.read-more2 {
+    grid-area: read-more2;
+    /* border: 1px dashed white; */
+    justify-self: center;
+ 
+}
+
+.read-more2 > button {
+    color:white;
+    background-color:seagreen;
+    width:350px;
+    height: 30px;
+    
+
+}
+
+
+
+.github-repo2 {
+    grid-area: github-repo2;
+    /* border: 1px dashed white; */
+    justify-self: center;
+}
+
+.card3 { 
+    display: grid;
+    border: 3px solid grey;
+    grid-template: 
+    "title3"
+    "detail3"
+    "read-more3"
+    "github-repo3";
+    grid-template-rows: 30px 1fr 30px 30px;
+
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.title3 {
+    grid-area: title3;
+    /* border: 1px dashed white; */
+    font-size: 20px;
+    color: white;
+    /* margin: 20px; */
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+
+.detail3 {
+    grid-area: detail3;
+    /* border: 1px dashed white; */
+ 
+}
+
+.detail3 >p {
+    margin: 20px;
+    color: white;
+}
+
+
+
+.read-more3 {
+    grid-area: read-more3;
+    /* border: 1px dashed white; */
+    justify-self: center;
+   /* background-color: blue; */
+ 
+}
+
+.read-more3 > button {
+    color:white;
+    background-color:seagreen;
+    width:350px;
+    height: 30px;
+    
+
+}
+.github-repo3 {
+    grid-area: github-repo3;
+    /* border: 1px dashed white; */
+    justify-self: center;
+}
+
+.experience-sec {
+    color: white;
+    text-align: center;
+}
+
+.job-title {
+    /* created a grid for the para container and centerd this */
+    display: grid;
+    justify-content: center;
+}
+
+.job-title > h3 {
+    
+        /* aligned the text to the left */
+        color: white;
+        text-align: left;
+        line-height: 1.5;
+        max-width: 800px;
+      
+    
+}
+
+.job-title > h3 + p {
+    
+    /* aligned the text to the left */
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+    max-width: 800px;
+  
+
+}
