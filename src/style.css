@@ -89,6 +89,10 @@ header.landing {
   background-color: azure;
 }
 
+.columns-2 {
+  columns: 2;
+}
+
 .portfolio {
   background-color: rgb(255, 216, 223);
 }
@@ -111,16 +115,15 @@ header.landing {
   display: block;
   color: rgb(252, 250, 248);
   background-color: rgb(172, 26, 70);
+  margin-bottom: 10px;
 }
 
 .external-link{
-  color: rgb(172, 26, 70);
-  text-decoration: underline;
   text-align: center;
-  background-color: red;
-  display: inline-flex;
+}
 
-
+.external-link a {
+  color: rgb(172, 26, 70);text-decoration: underline;
 }
 
 .card {
