@@ -5,5 +5,35 @@
 
 body {
     display: grid;
+    grid-template-areas: "main-header"
+                          "main"
+                          "main2"
+                          "footer";
     grid-template-rows:repeat(4, 1fr);
+
 }
+
+
+
+.main-header {
+    display: grid;
+    background-color: rgb(84, 168, 220);
+    color: white;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "header"
+                          "header-content";
+
+}
+
+.main-header {
+display: grid;
+grid-template-columns: 1fr repeat(3, 1fr);
+grid-area: header;
+}
+
+.header-content {
+    display: grid;
+    grid-area: header-content;
+    }
+
+
