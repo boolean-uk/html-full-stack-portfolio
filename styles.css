@@ -19,7 +19,7 @@ grid-template: "name navi-section";
 grid-template-columns: 2fr 1fr;
 /* Takes template rows takes into account the height of the row */
 grid-template-rows: 50px;
-border: 1px dashed grey;
+/* border: 1px dashed grey; */
 padding: 10px;
 gap: 10px;
 
@@ -27,7 +27,7 @@ gap: 10px;
 
 .name {
     grid-area: name;
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
 
     font-size: 20px;
 
@@ -39,7 +39,7 @@ color: white;
 
 .navi-section {
     grid-area: navi-section;
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
 
    display: grid;
    grid-template: 
@@ -51,7 +51,7 @@ gap: 10px;
 
 .about-me-cont {
     grid-area: about-me-cont;
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
 
     /* center the button containers */
     display: grid;
@@ -61,7 +61,7 @@ gap: 10px;
 
 .portfolio-con {
     grid-area: portfolio-con;
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
 
     /* center the button containers */
     display: grid;
@@ -70,11 +70,18 @@ gap: 10px;
 
 .experience-con {
     grid-area: experience-con;
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
 
     /* center the button containers */
     display: grid;
-    place-items: center;
+   place-items: center;
+}
+
+.hiring-con {
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+    /* place-self: center; */
 }
 
 
@@ -83,8 +90,11 @@ gap: 10px;
     color: white;
     font-size: 70px;
     
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
     text-align: center;
+    text-align: left;
+    line-height: 1.5;
+    max-width: 800px;
    
     
 }
@@ -182,14 +192,14 @@ ul {
     grid-template-columns:repeat(3, 1fr) auto;
     grid-template-rows: 300px;
 
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     padding: 10px;
     gap:30px
 }
 
 .card1 {
     grid-area: card1;
-    border: 1px dashed white;
+    border: 3px solid grey;
 
     display: grid;
     grid-template: 
@@ -207,7 +217,7 @@ ul {
 
 .title {
     grid-area: title;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     font-size: 20px;
     color: white;
     padding-left: 20px;
@@ -216,7 +226,7 @@ ul {
 
 .detail {
     grid-area: detail;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
  
 }
 
@@ -227,7 +237,7 @@ ul {
 
 .read-more {
     grid-area: read-more;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     justify-self: center;
 }
 
@@ -242,14 +252,14 @@ ul {
 
 .github-repo {
     grid-area: github-repo;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
 
     justify-self: center;
 }
 
 .card2 {
     grid-area: card2;
-    border: 1px dashed white;
+    border: 3px solid grey;
 
     display: grid;
     grid-template: 
@@ -265,7 +275,7 @@ ul {
 
 .title2 {
     grid-area: title2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     font-size: 20px;
     color: white;
     padding-left: 20px;
@@ -274,7 +284,7 @@ ul {
 
 .detail2 {
     grid-area: detail2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
  
 }
 
@@ -285,7 +295,7 @@ ul {
 
 .read-more2 {
     grid-area: read-more2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     justify-self: center;
  
 }
@@ -303,13 +313,13 @@ ul {
 
 .github-repo2 {
     grid-area: github-repo2;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     justify-self: center;
 }
 
 .card3 { 
     display: grid;
-    border: 1px dashed white;
+    border: 3px solid grey;
     grid-template: 
     "title3"
     "detail3"
@@ -324,7 +334,7 @@ ul {
 
 .title3 {
     grid-area: title3;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     font-size: 20px;
     color: white;
     /* margin: 20px; */
@@ -335,7 +345,7 @@ ul {
 
 .detail3 {
     grid-area: detail3;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
  
 }
 
@@ -348,7 +358,7 @@ ul {
 
 .read-more3 {
     grid-area: read-more3;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     justify-self: center;
    /* background-color: blue; */
  
@@ -364,7 +374,7 @@ ul {
 }
 .github-repo3 {
     grid-area: github-repo3;
-    border: 1px dashed white;
+    /* border: 1px dashed white; */
     justify-self: center;
 }
 
