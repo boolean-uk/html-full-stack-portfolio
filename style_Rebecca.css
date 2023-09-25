@@ -1,0 +1,146 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin:0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 6em;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 30px 0 10px 0;
+}
+
+b, i {
+  color: rgb(0, 94, 100);
+}
+
+i {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+p+p {
+  text-indent: 1em;
+}
+
+.landingPage, .aboutMe, .portfolio, .experience {
+  padding: 120px 0;
+  border-bottom: 10px solid rgb(75, 75, 75);
+}
+
+ul {
+  list-style-type: disc;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.landingPage, .experience, .aboutMe, .portfolioDetails {
+  display: grid;
+  place-content: center;
+  grid-auto-columns: 50%;
+}
+
+.portfolioDetails {
+  height: 1;
+}
+
+.landingPage, nav {
+  background-color: rgb(48, 171, 171);
+  color: rgb(203, 252, 255);
+}
+
+.portfolio, .portfolioDetails {
+  background-color: rgb(252, 241, 243);
+  color: rgb(200, 0, 100);
+}
+
+.portfolioDetails {
+  padding: 120px 0;
+}
+
+.portfolioDetails h2 {
+  margin: 20px;
+}
+
+.projectCard {
+  border: 10px rgb(200, 0, 100) solid;
+  background-color: rgb(252, 248, 241);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 0, 128, 0.5);
+  width: 250px;
+  padding: 10px 40px 30px 40px;
+  margin: 40px 0;
+}
+
+nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 200px;
+  place-content: end;
+  position: sticky;
+  top: 0;
+}
+
+nav .button, nav a {
+  background-color: rgb(203, 252, 255);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(48, 171, 171);
+  margin: 20px 20px;
+}
+
+.projectCard .button, .projectCard .button a{
+  background-color: rgb(200, 0, 100);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:white;
+  margin: 20px 20px;
+}
+
+.projectCard .GithubLink, .projectCard a {
+  color: rgb(200, 0, 100);
+  text-decoration: underline;
+  text-align: center;
+}
+.portfolioDetails a {
+  color: rgb(200, 0, 100);
+}
+
+.projectCardGrid {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+}
+
+.footer {
+  margin:0;
+  padding: 20px;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  /* position: fixed;
+  bottom: 0; */
+}
