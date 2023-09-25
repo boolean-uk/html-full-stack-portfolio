@@ -52,10 +52,14 @@ ul {
   grid-template-columns: 1fr 1fr;
 }
 
-.landingPage, .experience, .aboutMe {
+.landingPage, .experience, .aboutMe, .portfolioDetails {
   display: grid;
   place-content: center;
   grid-auto-columns: 50%;
+}
+
+.portfolioDetails {
+  height: 1;
 }
 
 .landingPage, nav {
@@ -63,8 +67,17 @@ ul {
   color: rgb(203, 252, 255);
 }
 
-.portfolio {
-  background-color: rgb(255, 233, 236);
+.portfolio, .portfolioDetails {
+  background-color: rgb(252, 241, 243);
+  color: rgb(200, 0, 100);
+}
+
+.portfolioDetails {
+  padding: 120px 0;
+}
+
+.portfolioDetails h2 {
+  margin: 20px;
 }
 
 .projectCard {
@@ -96,12 +109,13 @@ nav .button, nav a {
   margin: 20px 20px;
 }
 
-.projectCard .button {
+.projectCard .button, .projectCard .button a {
   background-color: rgb(200, 0, 100);
   border-radius: 5px;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color:white;
   margin: 20px 20px;
 }
