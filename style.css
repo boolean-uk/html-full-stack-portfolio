@@ -86,3 +86,16 @@ header h2 {
     color: white;
 }
 
+.about_list {
+    display: grid;
+    outline: 3px solid navy;
+    align-items:center;
+    justify-content:center;
+    height: 50vh;
+
+}
+.Technical {
+    display:grid;
+    grid-template-columns:repeat(2, 100px) ;
+    
+}
