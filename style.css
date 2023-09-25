@@ -1,0 +1,131 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: 0px;
+}
+
+body {
+    margin: 5;
+}
+
+.navBar {
+    display: inline-block;
+    background-color: cadetblue;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.navBar ul li {
+    display: inline;
+    border-style: solid;
+    border-width: 3px;
+    border-color: antiquewhite;
+    border-radius: 4px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    padding-left: 0px;
+}
+
+#mainTitle {
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    padding-top: 0px;
+    padding-bottom: 25px;
+}
+
+#blurb {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.about-me {
+    background-color: cadetblue;
+}
+
+#aboutMe {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 25px;
+    color: antiquewhite;
+
+}
+
+.intro {
+    text-align: center;
+}
+
+.introp {
+    text-align: center;
+}
+
+.technicalSkills {
+    text-align: center;
+    list-style-type:circle;
+    text-decoration:dashed;
+
+}
+
+#portfolio h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#portfolio h4 {
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "left-side middle right-side";
+    grid-template-columns: 220px;
+    grid-template-rows: 300px;
+    gap: 25px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.left-side {
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    border-width: 3px;
+    text-align: center;
+    background-color: cadetblue;
+
+}
+.middle {
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    border-width: 3px;
+    text-align: center;
+    background-color: cadetblue;
+
+}
+
+.right-side {
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    border-width: 3px;
+    text-align: center;
+    background-color: cadetblue;
+
+}
+
+
+#experience {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer {
+    height: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: cadetblue;
+} 
