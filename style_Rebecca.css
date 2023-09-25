@@ -4,8 +4,17 @@
 }
 
 h1, h2 {
-  text-align: center;
   margin: 0;
+}
+
+h1 {
+  font-size: 6em;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+h2 {
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -13,16 +22,25 @@ h3 {
   margin: 30px 0 10px 0;
 }
 
+b, i {
+  color: rgb(0, 94, 100);
+}
+
+i {
+  text-decoration: underline;
+}
+
 p {
   margin: 0;
   padding: 0;
+  color: inherit;
 }
 
 p+p {
   text-indent: 1em;
 }
 
-.aboutMe, .portfolio, .experience {
+.landingPage, .aboutMe, .portfolio, .experience {
   border-top: 10px solid rgb(75, 75, 75);
   padding: 50px;
 }
@@ -34,10 +52,15 @@ ul {
   grid-template-columns: 1fr 1fr;
 }
 
-.experience, .aboutMe {
+.landingPage, .experience, .aboutMe {
   display: grid;
   place-content: center;
   grid-auto-columns: 50%;
+}
+
+.landingPage {
+  background-color: rgb(48, 171, 171);
+  color: rgb(203, 252, 255);
 }
 
 .portfolio {
