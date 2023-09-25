@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(217, 241, 227); 
+  }
+ 
+  h1 {
+    font: 2em "Tahoma";
+    font-weight: 700;
+  }
+  
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h3 {
+    font-weight: 700;
+    font-size: 0.8em;
+  }
+
+  h4 {
+    color:  rgb(17, 122, 63);
+  }
+  
+  body {
+    display:  grid;
+    grid-template:
+    "header" 60px
+    "hiring-dev" 600px
+    "about-me" 270px
+    "portfolio" 380px
+    "experience" 300px 
+    "footer" 50px/
+    1fr;
+    margin: 0;
+    background-color:rgb(59, 34, 16);
+  }
+  
+  
+  p {
+    font-size: 0.75em;
+  }
+  
+  header {
+    position:sticky;
+    top: 0;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 1fr 100px 100px 100px;
+    grid-template-areas:
+      "first-name . nav-ab nav-portf nav-expe";
+    color: rgb(217, 241, 227);
+    background-color: rgb(17, 122, 63);
+    margin-top: 5px;
+    padding: 5px 0 0 20px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  .first-name {
+    grid-area: first-name;
+  }
+
+  .first-name:hover {
+    text-decoration: underline;
+  }
+  #nav-ab {
+    grid-area: nav-ab;
+  }
+  #nav-portf {
+    grid-area: nav-portf;
+  }
+  #nav-expe {
+    grid-area: nav-expe;
+  }
+  
+  .background-A {
+    color: rgb(235, 255, 243);
+    background-color: rgb(17, 122, 63);
+  }
+  
+  .nav {
+    border: none;
+    border-radius: 3px;
+    padding: 5px; 
+    margin-right: 10px;
+    margin-top: 16px;
+    height: 27px;
+    width: 85px;
+    color: rgb(17, 122, 63);
+    background-color:rgb(235, 255, 243);
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .nav:hover{
+    color: rgb(235, 255, 243);
+    background-color: rgb(17, 122, 63);
+  }
+  .hiring-dev {
+    grid-area: hiring-dev;
+    color: rgb(235, 255, 243);
+    font-size: 2em;
+    background-color: rgb(17, 122, 63);
+    display: grid;
+    grid-template:
+    ". hiring-dev-contents ." 500px /
+    1fr 400px 1fr;
+    padding-top: 80px;
+    padding-bottom: 130px;
+  }
+  .brown-text {
+    color: rgb(59, 34, 16);
+  }
+  
+  #about-me {
+    grid-area: about-me;
+    display: grid;
+    grid-template:
+    ". about-me-contents ." 350px /
+    1fr 400px 1fr;
+    background-color: white;
+    margin-top: 5px;
+  }
+  #portfolio {
+    place-items: center;
+    grid-area: portfolio;
+    background-color:rgb(59, 34, 16);
+    background-color: rgb(222, 240, 250);
+    margin-top: 5px;
+  }
+  .portfolio-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    place-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .portfolio-item{
+    display: grid;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(59, 34, 16);
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 3px rgb(192, 190, 190);
+    width: 200px;
+  }
+  .portfolio-item-title {
+    font-size: 1.2em;
+  }
+  
+  .portfolio-read {
+    display: grid;
+    justify-self:center;
+    background-color: rgb(59, 34, 16);
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    margin: 10px 0 0 0;
+    padding: 5px 0 0 35px ; 
+    height: 25px;
+    width: 140px;
+  }
+
+  .portfolio-read:hover {
+    background-color: rgba(59, 34, 16, 0.304);
+    color: rgb(59, 34, 16);
+  }
+  
+  .github-link {
+    color: rgb(59, 34, 16);
+    font-size: 0.6em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+  #experience {
+    grid-area: experience;
+    display: grid;
+    grid-template:
+    ". experience-contents ." 400px /
+    1fr 400px 1fr;
+    background-color: white;
+    margin-top: 5px;
+  }
+  .tech-skills {
+    display: inline;
+    width: 50px;
+    float-left;
+  }
+  
+  ul,li {
+    width: 100px;
+    font-size: 0.8em;
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  footer {
+    grid-area: footer;
+    color: white;
+    background-color:rgb(59, 34, 16);
+    padding-top: 18px;
+    padding-left: 25px;
+    height: 50px;
+  }
+  
+  
+  .hiring-dev-contents {
+    grid-area:hiring-dev-contents;
+  }
+  .about-me-contents {
+    grid-area:about-me-contents;
+  }
+  .experience-contents {
+    grid-area:experience-contents;
+  }
+  
+  
+  .descr {
+    font-size: 0.5em;
+  }
+  
+  
+  
