@@ -1,0 +1,289 @@
+/* Breakpoints
+1500px - increase width of portfolio container and job container
+1200px - increase width of job container, about text and intro text
+1000px - switch portfolio section to 3 rows
+*/
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    margin: auto;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 20px 140px;
+    background-color: #4eb6ac;
+}
+
+.top-bar > .title {
+    color: #e5ffff;
+    font-size: 30px;
+}
+
+.top-bar > nav {
+    display: grid;
+    align-content: center;
+    justify-content: right;
+}
+
+.top-bar ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 40px;
+}
+
+.top-bar a {    
+    background-color: #e5ffff;
+    color: #4eb6ac;
+    padding: 5px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: 0.5fr 0.8fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: 
+    ". heading ."
+    ". intro-paragraph ."
+    ;
+    background-color: #4eb6ac;
+    border-bottom: solid 10px #1d313a;
+}
+
+.introduction .main-heading {
+    padding: 100px 0 30px 0;
+    grid-area: heading;
+    color: #e5ffff;
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+    line-height: 110px;
+}
+
+.introduction .intro-paragraph {
+    grid-area: intro-paragraph;
+    color: #e5ffff;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+.introduction .bold {
+    color: black;
+}
+
+.introduction .underline {
+    font-style: italic;
+    text-decoration: underline black;
+}
+
+.about {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    ".   heading   ."
+    ".   about-title   ."
+    ".   about-text   ."
+    ".   skills   .";
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    border-bottom: solid 10px #1d313a;
+}
+
+.about .heading {
+    grid-area: heading;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.about .about-title {
+    grid-area: about-title;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.about .about-text {
+    grid-area: about-text;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about .skills {
+    grid-area: skills;
+    display: grid;
+    grid-template-areas:
+    "skills-title   skills-title"
+    "list1          list2";
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    padding-bottom: 50px;
+}
+
+.about .skills .skills-title {
+    grid-area: skills-title;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 30px 0;
+}
+
+.about .skills #list1 {
+    grid-area: list1;
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.about .skills #list2 {
+    grid-area: list2;
+    padding-right: 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.portfolio {
+    background-color: #ffebee;
+    border-bottom: solid 10px black;
+}
+
+.portfolio .heading {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 70%;
+    grid-gap: 50px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.portfolio-container .portfolio-item {
+    border: solid 10px #ae1457;
+    border-radius: 10px;
+    padding: 25px 60px;
+    display: grid;
+    background-color: white;
+    box-shadow: 0px 3px 15px #ae145750;
+}
+
+.portfolio-item .item-title {
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.portfolio-item .item-text {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.portfolio-item .portfolio-link {
+    color: white;
+    background-color: #ae1457;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.portfolio-item .github-link {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ae1457;
+}
+
+.experience {
+    display: grid;
+}
+
+.experience .heading {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.experience .job-container {
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    margin: auto;
+    width: 40%;
+    padding-bottom: 50px;
+}
+
+/* .experience .job {
+    display: grid;
+
+} */
+
+.experience .job-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+.experience .job-description {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #1d313a;
+    width: 100%;
+    color: white;
+}
+
+@media screen and (max-width: 1500px)  {
+    .portfolio-container {
+        width: 90%;
+    }
+    .experience .job-container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .introduction {
+        grid-template-columns: 0.5fr 1.2fr 0.5fr;
+    }
+    .about {
+        grid-template-columns: 0.5fr 1.4fr 0.5fr;
+    }
+    .experience .job-container {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .portfolio-container {
+        display: grid;
+        grid-template-rows: repeat(3,auto);
+        grid-template-columns: repeat(1,auto);
+        width: 70%;
+        grid-gap: 50px;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+}
