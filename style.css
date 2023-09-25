@@ -41,6 +41,8 @@
     margin: 0;
     background-color:rgb(59, 34, 16);
   }
+
+
   
   
   p {
@@ -52,7 +54,7 @@
     top: 0;
     display: grid;
     height: 100%;
-    grid-template-columns: 3fr 1fr 100px 100px 100px;
+    grid-template-columns: 3fr 200px 100px 100px 100px;
     grid-template-areas:
       "first-name . nav-ab nav-portf nav-expe";
     color: rgb(217, 241, 227);
@@ -236,11 +238,8 @@
   .experience-contents {
     grid-area:experience-contents;
   }
-  
-  
+
   .descr {
     font-size: 0.5em;
   }
-  
-  
   
