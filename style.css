@@ -12,9 +12,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
 
 header {
     display: grid;
@@ -90,6 +87,19 @@ header h2 {
     color: white;
 }
 
+.about_list {
+    display: grid;
+    outline: 3px solid navy;
+    align-items:center;
+    justify-content:center;
+    height: 50vh;
+
+}
+.Technical {
+    display:grid;
+    grid-template-columns:repeat(2, 100px) ;
+    
+}
 
 .division {
     height: 1rem;
@@ -173,6 +183,7 @@ header h2 {
 
 .portfolio button a {
     color: white;
+    text-decoration: none;
 
 }
 
