@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(217, 241, 227); 
+  }
+ 
+  h1 {
+    font: 40px "Tahoma";
+    font-weight: 700;
+  }
+  
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  h3 {
+    font-weight: 700;
+    font-size: 0.8em;
+  }
+
+  h4 {
+    color:  rgb(17, 122, 63);
+  }
+  
+  body {
+    display:  grid;
+    grid-template:
+    "header" 60px
+    "main"   1fr
+    "footer" 50px/
+    1fr;
+    margin: 0;
+    background-color:rgb(59, 34, 16);
+  }
+
+  
+  p {
+    font-size: 16px;
+  }
+  
+  header {
+    position:sticky;
+    top: 0;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 200px 100px 100px 100px;
+    grid-template-areas:
+      "first-name . nav-ab nav-portf nav-expe";
+    color: rgb(217, 241, 227);
+    background-color: rgb(17, 122, 63);
+    margin-top: 5px;
+    padding: 5px 0 0 20px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  .first-name {
+    grid-area: first-name;
+  }
+
+  .first-name:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    padding: 50px 200px;
+  }
+  .portfolio-item{
+    grid-area: portfolio;
+    display: grid;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(59, 34, 16);
+    padding: 60px;
+    background-color: white;
+    box-shadow: 2px 2px 3px rgb(192, 190, 190);
+    height: auto;
+  }
+  .portfolio-item-title {
+    font-size: 1.2em;
+  }
+  
+  .github-link {
+    color: rgb(59, 34, 16);
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .github-link:hover {
+    color: rgba(175, 84, 19, 0.885);
+    font-weight: bold;
+  }
+ 
+  
+  footer {
+    grid-area: footer;
+    color: white;
+    background-color:rgb(59, 34, 16);
+    padding-top: 18px;
+    padding-left: 25px;
+    height: 50px;
+  }
+  
+  
