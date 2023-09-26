@@ -1,0 +1,47 @@
+*{
+    margin: 1px;
+    padding: 1px;
+}
+.container{
+    display: grid;
+    width: 95vw;
+    height: 60vh;
+    margin: 5px auto;
+    outline: 2px solid rgb(198, 198, 212);
+    align-items: center;
+    grid-template-rows: (5 40px 1fr 1fr 1fr 30px );
+ }
+.navbar{
+    background-color: aquamarine;
+    align-items: center;
+    border-bottom-left-radius: solid 2px black;
+    
+
+}
+.aboutme{
+    background-color: white;
+
+
+}
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    background-color: whitesmoke;
+    border-bottom: solid 1px black;
+
+}
+.box{
+    min-width: 40px;
+   min-height: 40px;
+   padding: 4px;
+   border: 2px dotted lightcoral;
+   }
+.experience{
+    background-color: white;
+    
+    
+}
+
+.footer{
+    background-color:rgb(20, 20, 57)
+}
