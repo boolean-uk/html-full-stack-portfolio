@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Roboto&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bodoni+Moda:opsz@6..96&family=Dela+Gothic+One&family=Roboto&display=swap');
+
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.section-one{
+    height: 100vh;
+    background-color: rgb(57, 141, 141);
+    margin-bottom: 7px;
+    display: grid;
+   place-items: center;
+   text-align: justify;
+
+}
+body > header{
+    display: grid;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: darkcyan;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    place-items: center;
+    padding: 10px;
+
+}
+header > p{
+    font-family: 'Alfa Slab One';
+    color: white;
+   
+} 
+
+header  a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+}
+
+
+header > nav ul {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+
+}
+
+header > nav li{
+    background-color: rgb(62, 153, 153);
+    padding: 5px;
+} 
+
+header > nav li:hover{
+    background-color: rgb(116, 187, 187);
+}
+
+
+.section-one > .box-container > .box-one{
+    font-family: 'Alfa Slab One';
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.785);
+
+}
+
+.section-one > .box-container > .box-two{
+    width: 300px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.785);
+
+}
+
+.section-one > .box-container > .box-two  span{
+    color: black;
+}
+
+.section-one > .box-container > .box-two  em{
+    border-bottom: 1px solid black;
+}
+
+
+@media only screen and (max-width: 468px) {
+
+    body > header{
+       display: flex;
+       flex-direction: column;
+       place-items: center;
+        width: 100%;
+        grid-auto-flow: row;
+        
+    } 
+
+    body > header > p{
+        margin-bottom: 10px;
+        
+    }
+
+    .section-one > .box-container > .box-two{
+        width: 100%;
+    }
+    
+}
+   
+
+
+
+
+/* start of styling section two */
+
+.section-two{
+    height: 100vh;
+
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 7px;
+    overflow-y: scroll;
+
+}
+
+.section-two > header{
+    background-color: aliceblue;
+    font-size: 1.5rem;
+
+}
+
+.section-two > header h3{
+   font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+.section-two .content-one, .content-two{
+    width: 400px;
+    display: grid;
+    margin:  0 auto;
+    line-height: 25px;
+}
+
+.section-two .content-one > p:first-of-type{
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+
+
+.section-two .content-two .list-of-skills{
+    display: grid;
+    grid-auto-flow:column;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.content-two > P{
+    font-weight:bolder ;
+    margin-top: 10px;
+}
+.list-of-skills ul li {
+    list-style:square;
+}
+
+
+@media only screen and (max-width: 468px) {
+
+    .section-two .content-one, .content-two{
+        width: 100%;
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+
+}
+/* End of styling section two */
+
+
+/* start of styling section three */
+.section-three{
+    height: 100vh;
+    background-color :rgb(230, 192, 204);
+    margin-bottom: 7px;
+    overflow-y: scroll;
+}
+
+.section-three > header{
+    background-color :rgb(230, 192, 204);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+.section-three .container{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+   
+    font-family: sans-serif;
+    gap: 10px;
+}
+
+.section-three .container > .box{
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    border: 4px solid #5e023b;
+   
+}
+
+.section-three .container > .box > p:first-of-type{
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 10px 0 10px 0;
+}
+
+.section-three .container > .box > p:nth-of-type(3) a{
+    display: block;
+    background-color: #5e023b;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    color: #ffff;
+    padding: 2px;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.section-three .container > .box > p:nth-of-type(3) a:hover{
+    background-color: rgba(94, 2, 59, 0.638);
+}
+.section-three .container > .box > p:nth-of-type(4) a{
+    display: block;
+    color: #5e023b;
+    font-family: sans-serif;
+    font-size: 0.6rem;
+    text-align: center;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 468px) {
+    .section-three .container{
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-auto-flow: row;
+    }
+
+    .section-three .container > .box{
+        width: 90%; 
+        margin: 0 auto;
+    }
+    
+  }
+
+/* End of styling section three */
+
+
+/* Start of styling section Four */
+.section-four{
+    height: 100vh;
+    width: 100%;
+    background-color:aliceblue;
+    overflow: scroll;
+}
+
+.section-four > .container {
+    width: 400px;
+    margin: 0 auto;
+}
+.section-four >  header > p{
+    background-color:rgb(186, 198, 208);
+    color: black;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.section-four > .container >  .box-one > P:first-of-type{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+.section-four >  .container >  .box-one > P:last-of-type{
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+ .section-four > .container > .box-two > P:first-of-type{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+.section-four > .container > .box-two > P:last-of-type{
+    font-family: sans-serif;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 468px) {
+    .section-four > .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
