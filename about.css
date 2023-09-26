@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: white;
+}
+
+hr {
+    border: 1px solid #ffffff;
+    width: 50%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template: "header-text header-nav";
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #85bdba;
+    color: #fff;
+    height: 100px;
+    align-items: center;
+    gap: 10px;
+}
+
+.header h1 {
+    grid-area: header-text;
+    font-size: 50px;
+    padding-left: 200px;
+}
+
+.header-nav {
+    font-size: 20px;
+    background-color: #3e5c5a;
+    padding: 20px;
+    border-radius: 0 0 0 30px;
+}
+
+.header-nav-item {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    place-items: end;
+    height: 50px;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.nav-button {
+    background-color: #5b7e7b;
+    height: 50px;
+    width: 150px;
+    border-radius: 0 30px 0 30px;
+}
+
+.nav-button:hover {
+    background-color: #3e5c5a;
+    transition: 0.5s;
+}
+
+.nav-button > a {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.main-body {
+    background-image: linear-gradient(to top, #85bdba, #70a09c 100% );
+    display: grid;
+    place-items: center;
+}
+
+.body-elements {
+    display: grid;
+    grid-template-rows: 300px repeat(2, 1fr);
+    place-items: center;
+    margin: 0 25%;
+    text-align: center;
+    height: 100vh;
+    padding-bottom: 20%;
+}
+
+.body-title {
+    font-size: 40px;
+    color: white;
+}
+
+.body-text {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.body-text h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.body-list {
+    color: white;
+    font-size: 20px;
+    place-items: center;
+    background-color: #3e5c5a;
+    border-radius: 20px;
+    list-style-position: inside;
+    margin-top: 20px;
+    padding: 30px;
+    width: 400px;
+}
+
+.body-list li {
+    display: inline-block;
+    padding: 5px;
+    text-align: left;
+    list-style: square;
+}
