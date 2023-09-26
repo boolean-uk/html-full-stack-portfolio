@@ -85,8 +85,9 @@ html {
 .black__text {
   color: #1c1c1c;
 }
-.under__line {
-  text-decoration: underline;
+.under__line i {
+  color: white;
+  border-bottom: 2px solid black;
 }
 
 .hero__title {
