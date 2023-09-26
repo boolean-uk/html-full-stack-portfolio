@@ -198,6 +198,24 @@ html {
     grid-gap: 40px;
 }
 
+@media screen and (max-width: 1600px) {
+    .portfolio__content {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .portfolio__content {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .portfolio {
+        padding: 0 20px;
+    }
+}
+
 .portfolio__card {
     border: 7.5px solid #ae1457;
     border-radius: 10px;
