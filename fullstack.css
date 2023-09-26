@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows:repeat(4, auto);
+    grid-template-areas: "overview"
+                          "about-me"
+                          "portfolio"
+                          "footer";
+}
+
+
+/* OVERVIEW */
+.overview-page {
+    display: grid;
+    grid-area: overview;
+    grid-template-rows: 50px 450px;
+    grid-template-areas: 
+    "header"
+    "overview-content";
+
+    background-color: rgb(37, 203, 187);
+    color: white;
+    padding: 10px 20px;
+
+    border-bottom: solid 10px black;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 500px;
+    align-items: center;
+}
+
+.name {
+    font-size: 13px;
+}
+
+.name h1:hover {
+    color: lawngreen;
+    font-size: 50px;
+}
+
+.main-nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 30px;
+}
+
+.main-nav ul li {
+    list-style: none;
+}
+
+.main-nav > ul > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(37, 203, 187);
+    background-color: rgba(255, 255, 255, 0.817);
+    border-radius: 4px;
+    padding: 7px 10px;
+}
+
+.main-nav > ul > li > a:hover {
+    background-color: gold;
+}
+
+.overview-content {
+    display: grid;
+    grid-area: overview-content;
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-areas: ". content .";
+}
+
+.overview-content-group {
+    grid-area: content;
+}
+
+.overview-content-header {
+    display: grid;
+    line-height: 90px;
+    font-size: 70px;
+    padding-bottom: 20px;
+}
+
+.overview-content-header:hover {
+    color: darkblue;
+}
+
+/* ABOUT ME */
+.about-me {
+    display: grid;
+    grid-area: about-me;
+    grid-template-rows: 80px 180px 150px;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-areas: 
+    ". about-me-header ."
+    ". about-me-content ."
+    ". technical-skills .";
+    border-bottom: solid 10px black;
+}
+
+.about-me-heading {
+    display: grid;
+    grid-area: about-me-header;
+    place-content: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(1, 1, 71);
+}
+
+.about-me-intro {
+    grid-area: about-me-content;
+    line-height: 24px;
+}
+
+.introduction-title {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.technical-skills {
+    grid-area: technical-skills;
+}
+
+.technical-skills-title {
+    font-size: 16px;
+}
+
+.technical-skills > ul {
+     column-count: 2;
+     column-gap: 80px;
+     padding: 20px 40px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display: grid;
+    grid-area: portfolio;
+    grid-template-rows: 80px 450px;
+    background-color: rgba(216, 112, 147, 0.266);
+    border-bottom: solid 10px black;
+}
+
+.portfolio-title {
+    display: grid;
+    place-content: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(1, 1, 71);
+}
+
+.title-cards {
+    display: grid;
+    grid-template-columns:repeat(3, 300px);
+    height: 400px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.title-cards> div {
+    display: grid;
+    border: solid 8px  rgb(199, 15, 98);
+    border-radius: 5px;
+    box-shadow: 0 0 20px 1px rgb(199, 15, 98);
+    padding: 30px;
+    background-color: white;
+}
+
+.title-cards > div > div:nth-of-type(1) {
+   font-size: 24px;
+   font-weight: bold;
+}
+
+.read-more-link > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    background-color: rgb(199, 15, 98);
+    height: 30px;
+}
+.read-more-link > a:hover {
+    background-color: teal;
+}
+.github-link {
+    display: grid;
+    justify-self: center;
+    color: rgb(199, 15, 98);
+}
+
+/* EXPERIENCE */
+.experience {
+    display: grid;
+    grid-template-rows: 80px 400px;
+}
+
+.experience-header {
+    display: grid;
+    place-content: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgb(1, 1, 71);
+}
+
+.job-experience {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-areas: ". experience-info .";
+    line-height: 24px;
+}
+
+.job-experience-content {
+    display: grid;
+    grid-area: experience-info;
+}
+
+.job-title-subheader {
+    display: grid;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+
+.back-to-top > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: blueviolet;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 30%;
+    left: 20px;
+    padding: 10px 15px;
+}
+
+.back-to-top > a:hover {
+    background-color: sandybrown;
+    color: midnightblue;
+}
+
+.footer {
+    display: grid;
+    align-content: center;
+    background-color: rgb(25, 53, 53);
+    height: 50px;
+    color: white;
+    padding-left: 20px;
+}
