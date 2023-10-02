@@ -18,10 +18,6 @@ p, ul, h3 {
     font-size: 20px;
 }
 
-body {
-    
-}
-
 .content {
     display: grid;
     background-color: white;
