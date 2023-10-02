@@ -4,7 +4,7 @@
 }
 
 .content-container {
-    background-color: rgb(15, 15, 50);
+    background-color: rgb(15, 15, 60);
 }
 
 .content {
@@ -67,7 +67,7 @@
     font-size: 20px;
     line-height: 1.5;
     padding-bottom: 30px;
-    color: rgb(15, 15, 60);
+    color: rgb(214, 255, 251);
 }
 
 .header-container .wrapper {
