@@ -3,22 +3,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div, .head-container {
-    border: solid 1px black;
-}
-
-body {
-    background-color: black;
-}
-
 .content-container {
-    display: contents;
-    
+    background-color: rgb(15, 15, 50);
 }
 
 .content {
-    background-color: white;
-    gap: 20px;
+    gap: 10px;
     display: grid;
     grid-template-rows: repeat(4, auto) 50px;
     grid-template-columns: 1fr;
@@ -34,17 +24,50 @@ body {
     text-align: center;
     font-size: 35px;
     font-weight: bold;
-    padding: 30px;
+    padding: 20px;
 }
 
-.content p, ul {
+.content h2, h3 {
+    color: rgb(15, 15, 60);
+}
+
+.header {
+    padding: 20px;
+}
+
+.header nav {
+    float: right;
+}
+
+.header .name {
+    float: left;
+    text-decoration: none;
+    color: rgb(214, 255, 251);
+}
+
+.header .nav-button {
+    text-decoration: none;
+    font-weight: bold;
     font-size: 20px;
-    line-height: 1.25;
+    color: rgb(25, 171, 156);
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(214, 255, 251);
+    width: 150px;
+    padding: 10px;
+    margin-left: 30px;
 }
 
 .header-container {
     grid-area: header-container;
     background-color: rgb(25, 171, 156);
+}
+
+.header-container p, ul {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    color: rgb(15, 15, 60);
 }
 
 .header-container .wrapper {
@@ -57,36 +80,39 @@ body {
 .header-container .wrapper .front-page {
     padding: 200px;
     width: 35%;
-    color: white;
-    
+    color: rgb(214, 255, 251);
     margin-left: auto;
     margin-right: auto;
 }
 
 .header-container .wrapper .front-page h1 {
-    font-size: 70px;
+    font-size: 80px;
     line-height: 1.25;
-}
-
-.header {
-    display: inline;
-}
-
-.header .name, nav {
-    padding: 10px;
-}
-
-.header nav {
-    float: right;
-}
-
-.header .name {
-    position: inherit;
-    float: left;
 }
 
 .about-me {
     grid-area: about-me;
+    background-color: white;
+}
+
+.about-me p, ul {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    color: rgb(15, 15, 60);
+}
+
+.about-me .skills {
+    width: 100%;
+}
+
+.about-me .skills ul {
+    display: inline-block;
+    list-style: inside;
+    width: 25%;
+}
+
+.about-me .wrapper {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -97,14 +123,20 @@ body {
     background-color: pink;
 }
 
-.portfolio .section-container {
+.portfolio p, ul {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    color: rgb(15, 15, 60);
+}
+
+.portfolio .info-container {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-
 }
 
-.portfolio .section-container .section {
+.portfolio .info-container .info-box {
     display: inline-grid;
     padding: 20px;
     margin: 20px;
@@ -126,6 +158,20 @@ body {
 
 .experience {
     grid-area: experience;
+    background-color: white;
+}
+
+.experience p, ul {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    color: rgb(15, 15, 60);
+}
+
+.experience .wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
