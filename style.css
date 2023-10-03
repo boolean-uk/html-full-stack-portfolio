@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-container {
+    background-color: rgb(15, 15, 60);
+}
+
+.content {
+    gap: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, auto) 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header-container"
+    "about-me"
+    "portfolio"
+    "experience"
+    "footer";
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.content h2, h3 {
+    color: rgb(15, 15, 60);
+}
+
+.header {
+    padding: 20px;
+}
+
+.header nav {
+    float: right;
+}
+
+.header .name {
+    float: left;
+    text-decoration: none;
+    color: rgb(214, 255, 251);
+}
+
+.header .nav-button {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(25, 171, 156);
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(214, 255, 251);
+    width: 150px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.header-container {
+    grid-area: header-container;
+    background-color: rgb(25, 171, 156);
+}
+
+.header-container p, ul {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    color: rgb(214, 255, 251);
+}
+
+.header-container .wrapper {
+    display: contents;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container .wrapper .front-page {
+    padding: 200px;
+    width: 35%;
+    color: rgb(214, 255, 251);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container .wrapper .front-page h1 {
+    font-size: 80px;
+    line-height: 1.25;
+}
+
+.about-me {
+    grid-area: about-me;
+    background-color: white;
+}
+
+.about-me p, ul {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    color: rgb(15, 15, 60);
+}
+
+.about-me .skills {
+    width: 100%;
+}
+
+.about-me .skills ul {
+    display: inline-block;
+    list-style: inside;
+    width: 25%;
+}
+
+.about-me .wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    background-color: pink;
+}
+
+.portfolio p, ul {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    color: rgb(15, 15, 60);
+}
+
+.portfolio .info-container {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio .info-container .info-box {
+    display: inline-grid;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    height: 400px;
+    text-align: left;
+    border: solid 5px purple;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.read-button {
+    width: 1fr;
+    height: 20px;
+    color: white;
+    border: 0;
+    background-color: purple;
+}
+
+.experience {
+    grid-area: experience;
+    background-color: white;
+}
+
+.experience p, ul {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    color: rgb(15, 15, 60);
+}
+
+.experience .wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(0, 0, 127);
+    color: white;
+}
