@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+.home{
+    background-color: rgb(51, 177, 162);
+    height: 100vh;
+}
+
+.header{
+    display: grid;
+    grid-auto-flow: column;
+    padding: 20px;
+
+}
+.logo ul li{
+    list-style-type: none;
+}
+.logo ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-left: -20px;
+}
+nav ul{
+    display: grid;
+    grid-auto-flow: column;
+}
+.navigation ul li {
+    list-style-type: none;
+
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(51, 177, 162);
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+.navigation ul li a:hover{
+    color: gold;
+}
+.navigation > ul> li:nth-child(1){
+    padding-left: 250px;
+}
+.main-home{
+    display: grid;
+    place-content: center;
+    padding: 50px 400px 100px 400px;
+    color: white;
+}
+.main-home > h1{
+    font-size: 60px;
+}
+.main-home > p > strong{
+    color: black;
+}
+.main-home > p > em{
+    text-decoration: underline black;
+}
+.aboutme{
+    min-height: 250px;
+    padding: 20px 300px 20px 300px ;
+    height: 1fr;
+    margin-top: 0;
+}
+.aboutme> h2{
+    text-align: center;
+}
+.technical{
+    display: grid;
+    grid-auto-flow: column;
+}
+.secondrow{
+    padding-right: 900px;
+}
+.portfolio{
+    height: 1fr;
+    background-color: rgb(238, 213, 218);
+    padding: 20px 200px 20px 200px;
+    min-height: 100vh;
+
+}
+.portfolio > h2{
+    display: grid;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.boxes{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+
+}
+.redbox{
+    border: solid 5px rgb(162, 26, 87);
+    border-radius: 4px;
+    background-color: white;
+    padding: 20px;
+}
+.read {
+    display: grid;
+    color: rgb(245, 242, 242);
+    background-color: rgb(162, 26, 87);
+    padding: 5px 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.gitrepo{
+    color: rgb(162, 26, 87);
+    display: grid;
+    padding-left: 10px;
+    text-align: center;
+}
+.experience{
+    min-height: 100vh;
+    padding: 20px 300px;
+    height: 1fr;
+}
+.experience > h2{
+    display: grid;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.footer{
+    background-color: rgb(22, 29, 57);
+    color: white;
+    height: 40px;
+    padding: 10px 0 0 10px;
+    text-align: center;
+}
