@@ -1,0 +1,231 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 30px
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.container .navigationBar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color:rgb(8, 164, 164);
+    color: whitesmoke
+}
+
+header {
+    background-color:rgb(8, 164, 164);
+    border-top: black 5px solid;
+}
+
+.navigationBar h3 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color:rgb(8, 164, 164);
+    color: whitesmoke;
+}
+
+.navigationBar .navigationTabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2px;
+    margin-right: 5px;
+    text-align: center;
+}
+.navigationBar .navigationTabs a {
+    background-color: rgba(245, 245, 245, 0.788);
+    color:rgb(8, 164, 164) ;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: 
+    ". title ."
+    ". textbox ."
+    ;
+    background-color: rgb(8, 164, 164);
+}
+.title h1 {
+    grid-area: title;
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+
+}
+.title p {
+    grid-area: textbox;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+.title p span {
+    font-weight: bold;
+    color: black;
+
+}
+
+.title p #underline {
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: underline black;
+    color: whitesmoke;
+
+
+}
+
+.aboutMe {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    font-family: sans-serif;
+    border-top: black 5px solid;
+    grid-template-areas:
+    ". ABOUTME ."
+    ". intro ."
+    ". texts ."
+    ". listTitle ."
+    ". techSkills .";
+    grid-template-columns: .5fr 1fr .5fr;
+}
+
+.aboutMe h1 {
+    text-align: center;
+}
+
+.aboutMe .techSkills {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-area: techSkills;
+}
+
+.aboutMe .sectionTitle {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    grid-area: ABOUTME;
+
+
+}
+.aboutMe .heading {
+    grid-area: intro;
+}
+
+.aboutMe .blockText {
+    grid-area: texts;
+}
+
+.aboutMe #listTitle {
+    grid-area: listTitle;
+}
+.portfolio {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    border-top: black 5px solid;
+    font-family: sans-serif;
+    background-color: rgba(250, 128, 114, 0.199);
+}
+
+.portfolio .sectionTitle {
+    text-align: center;
+}
+.portfolio .smallContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;    
+}
+.portfolio .articleContainer {
+    display: grid;
+    border: rgb(179, 0, 45) solid 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+.portfolio .articleContainer a {
+    justify-items: center;
+    text-align: center;
+
+}
+.portfolio .articleContainer a{
+    font-size: small;
+    color: rgb(179, 0, 45);
+    margin-bottom: 20px;
+}
+.portfolio .articleContainer .blockText {
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.portfolio .articleContainer .readMoreButton {
+    border: 0px white solid;
+    background-color: rgb(179, 0, 45);
+    border-radius: 5px;
+    color: whitesmoke;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: large;
+    margin-bottom: 5px;
+    text-decoration: none;
+    padding-top: 5px;
+}
+.experience {
+    display: grid;
+    border-top: black 5px solid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". sectionTitle ."
+    ". heading ."
+    ". blockText ."
+    ". heading2 ."
+    ". blockText2 ."
+    ;
+    font-family: sans-serif;
+}
+.experience .sectionTitle {
+    grid-area: sectionTitle;
+    text-align: center;
+}
+.experience .heading {
+    grid-area: heading;
+}
+.experience .blockText {
+    grid-area: blockText;
+}
+.experience #heading2 {
+    grid-area: heading2;
+}
+.experience #blockText2 {
+    grid-area: blockText2;
+}
+footer {
+    background-color: rgb(1, 67, 67);
+    color: whitesmoke;
+
+}
+footer p {
+    margin-top: 3px;
+    margin-left: 2px;
+}
+
+@media screen and (max-width: 710px) {
+    .mainContainer .navBar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio .smallContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+} 
