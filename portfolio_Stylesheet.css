@@ -1,0 +1,368 @@
+* {
+    margin: 0px;
+
+    font-family: sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+}
+
+hr {
+    height: 5px;
+    background-color: #1D313A;
+    border: none;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 7rem;
+
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #1D313A;
+
+    display: grid;
+    place-items: center;
+}
+
+h4 {
+    padding: 20px 0px;
+}
+
+h5 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+/* Header - Top bar*/
+header {
+    background-color: #4EB6AC;
+    color: white;
+
+    display: grid;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 20px;
+}
+
+.top-bar ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    place-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0px;
+}
+
+.top-bar li {
+    padding: 0px;
+    list-style: none;
+}
+
+.top-bar a {
+    background-color: rgba(255, 255, 255, 0.911);
+    color: #4EB6AC;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+
+    padding: 10px 20px;
+
+}
+
+.navigation-bar {
+    display: grid;
+    align-items: center;
+    justify-content: right;
+}
+
+/* Header - Hire Me*/
+.hire-me {
+    display: grid;
+    grid-template-columns: 75ch;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 200px;
+}
+
+.hire-me span {
+    color: #1D313A;
+    font-weight: bold;
+}
+
+.hire-me em {
+    text-decoration: underline;
+    text-decoration-color: #1D313A;
+}
+
+.hire-me p {
+    font-size: larger;
+    line-height: 30px;
+}
+
+/* Main - About me */
+.about-me {
+    display: grid;
+    grid-template-columns: 75ch;
+    justify-content: center;
+
+    padding: 50px 0px;
+    
+}
+
+.about-me p {
+ line-height: 25px;
+}
+
+.about-me ul {
+   display: grid;
+
+   grid-template-columns: 1fr 1fr ;
+
+   gap:10px
+}
+
+/* Main - Portfolio */
+.portfolios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 50px;
+}
+
+.portfolio {
+    background-color: #FFEBEE;
+
+    justify-content: center;
+
+    padding-top: 50px;
+}
+
+.portfolio-1, .portfolio-2, .portfolio-3 {
+    background-color: white;
+    border: 5px solid #c61562;
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px #ae14572c;
+
+    padding: 50px 30px;
+}
+
+.portfolio1, .portfolio2, .portfolio3 p {
+    line-height: 25px;
+    gap: 10px;
+    
+
+}
+
+.read-more {
+    background-color: #AE1457;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+
+    padding: 10px 60px;
+    display: grid;
+    place-content: center;
+    margin-top: 30px;
+}
+
+.github {
+    color: #AE1457;
+    display: grid;
+    place-content: center;
+    margin-top: 10px;
+}
+
+
+/* Main - Experience */
+.experience {
+    display: grid;
+    grid-template-columns: 75ch;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.experience p {
+    line-height: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #1D313A;
+    color: white;
+
+    padding: 20px 30px;
+}
+
+/* Make responsive */
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Header */
+    .hire-me {
+        display: grid;
+        grid-template-columns: 25ch;
+
+        padding: 50px;
+    }
+
+    .top-bar {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .top-bar ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px 0px;
+        gap: 2rem;
+
+    }
+
+    .top-bar {
+        display: grid;
+    }
+
+    .navigation-bar {
+        display: grid;
+        place-content: center;
+    }
+
+    /* Main - About me */
+    .about-me {
+        display: grid;
+        grid-template-columns: 25ch;
+    }
+
+    .about-me ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Main - Portfolio */
+    .portfolios {
+        display: grid;
+        grid-template-columns: 25ch;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'portfolio-1'
+        'portfolio-2'
+        'portfolio-3';
+
+        padding: 100px 0px;
+
+        place-content: center;
+    }
+
+    .portfolio-1 {
+        grid-area: portfolio-1;
+    }
+
+    .portfolio-2 {
+        grid-area: portfolio-2;
+    }
+
+    .portfolio-3 {
+        grid-area: portfolio-3;
+    }
+
+    /* Main - Experience */
+.experience {
+    display: grid;
+    grid-template-columns: 25ch;
+}
+
+}
+
+/* Make responsive */
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Header */
+    .hire-me {
+        display: grid;
+        grid-template-columns: 55ch;
+
+        padding: 50px;
+    }
+
+    .navigation-bar {
+        display: grid;
+        justify-content: right;
+    }
+
+    .top-bar {
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+        padding: 20px;
+    }
+
+    /* Main - About me */
+    .about-me {
+        display: grid;
+        grid-template-columns: 55ch;
+    }
+
+    .about-me ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Main - Portfolio */
+    .portfolios {
+        display: grid;
+        grid-template-columns: 55ch;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'portfolio-1'
+        'portfolio-2'
+        'portfolio-3';
+
+        padding: 50px 0px;
+
+        place-content: center;
+
+        gap: 20px;
+    }
+
+    .portfolio-1 {
+        grid-area: portfolio-1;
+    }
+
+    .portfolio-2 {
+        grid-area: portfolio-2;
+    }
+
+    .portfolio-3 {
+        grid-area: portfolio-3;
+    }
+
+    /* Main - Experience */
+.experience {
+    display: grid;
+    grid-template-columns: 55ch;
+}
+
+}
