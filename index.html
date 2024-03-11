@@ -1,13 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<title>Full Stack Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="./css.css" />
+	</head>
+	<body class="flex flex-col">
+		<!-- prettier-ignore -->
+		<nav class="
+		bg-primary 
+		min-h-[6svh] px-6 py-4
+		flex items-center justify-between
+		text-secondary font-bold
+		text-xl 
+		sticky top-0
+		">
+			<span class="text-4xl">Rafa Lopes</span>
 
-  </body>
+			<span class="space-x-4">
+				<a
+					href="#about"
+					class="nav__link">
+					About Me
+				</a>
+
+				<a
+					href="#portfolio"
+					class="nav__link">
+					Portfolio
+				</a>
+				<a
+					href="#exp"
+					class="nav__link">
+					Experience
+				</a>
+			</span>
+		</nav>
+
+		<!-- prettier-ignore -->
+		<section  class="
+			bg-primary text-secondary
+			min-h-[75svh] p-4 
+			flex flex-col items-center justify-center
+			
+			section-border
+			">
+			<!-- prettier-ignore -->
+			<div class=" 
+			flex flex-col
+			w-1/3
+			">
+
+				<h1 class="text-[6rem] font-bold leading-tight w-2/3 text-nowrap">Hiring A <wbr/> Full-Stack <wbr/> Developer?</h1>
+				<p class="mb-40">
+					I have experience with <span class="text-tertiary font-bold">React</span>, <span class="text-tertiary font-bold">NodeJS</span> and <span class="text-tertiary font-bold">Typescript</span>. I would
+					love to work at an <span class="italic underline decoration-tertiary">innovative</span> and <span class="italic underline decoration-tertiary">eco-friendly</span> startup in the
+				<span class="text-tertiary font-bold">sustainable energy sector</span>
+				</p>
+
+			</div>
+		</section>
+
+		<section
+			id="about"
+			class="flex flex-col items-center justify-center p-16 pt-[10svh] space-y-8 section-border">
+			<h2 class="text-tertiary uppercase text-5xl font-bold">About me</h2>
+			<span class="w-1/3 space-y-2">
+				<p class="font-bold text-lg">Introduction</p>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Explicabo eius totam, at in animi aspernatur blanditiis
+					temporibus! Consequuntur deleniti repellendus, corporis,
+					iure, doloremque dolorem unde recusandae omnis totam
+					distinctio exercitationem? s soluta alias ullam sed dolores
+					similique numquam, eos amet sit. Quo sed nihil unde.
+					consectetur adipisicing elit. Nihil laborum impedit
+					perspiciatis eius dolore pariatur voluptates soluta alias
+					ullam sed dolores similique numquam, eos amet sit. Quo sed
+					nihil unde.
+				</p>
+			</span>
+			<span class="w-1/3 space-y-2">
+				<p class="font-bold text-lg">Technical Skills</p>
+				<div class="flex space-x-[40%] justify-evenly">
+					<ul class="list-disc">
+						<li>HTML & CSS</li>
+						<li>Javascript</li>
+						<li>Typescript</li>
+					</ul>
+					<ul class="list-disc">
+						<li>React</li>
+						<li>Redux</li>
+						<li>Node JS</li>
+					</ul>
+				</div>
+			</span>
+		</section>
+
+		<section
+			id="portfolio"
+			class="flex flex-col items-center justify-center p-16 pt-[10svh] space-y-8 section-border bg-[#ffebee]">
+			<h2 class="text-tertiary uppercase text-5xl font-bold">
+				Portfolio
+			</h2>
+
+			<div class="flex items-center justify-evenly">
+				<!-- prettier-ignore -->
+				<article class="
+				w-1/5 p-8
+				border-8 border-solid border-[#ae1457]
+				rounded-md
+				bg-white
+				flex flex-col
+				space-y-4
+				shadow-md shadow-[#ae1457]
+				">
+					<h3 class="text-4xl font-bold">Title</h3>
+					<p class="text-lg leading-8 ">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates labore ab minus alias neque saepe suscipit quo, laborum odio cupiditate modi ullam. Sequi facere et consequatur temporibus quasi iste distinctio? 
+					</p>
+
+					<button class="bg-[#ae1457] rounded-md py-2 uppercase font-bold text-white">Read More</button>
+					<a href="" class="text-[#ae1457] underline decoration-[#ae1457] font-bold text-center">GitHub Repo</a>
+				</article>
+				<article
+					class="w-1/5 p-8 border-8 border-solid border-[#ae1457] rounded-md bg-white flex flex-col space-y-4 shadow-md shadow-[#ae1457]">
+					<h3 class="text-4xl font-bold">Title</h3>
+					<p class="text-lg leading-8">
+						Lorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Voluptates labore ab minus alias neque saepe
+						suscipit quo, laborum odio cupiditate modi ullam. Sequi
+						facere et consequatur temporibus quasi iste distinctio?
+					</p>
+
+					<button
+						class="bg-[#ae1457] rounded-md py-2 uppercase font-bold text-white">
+						Read More
+					</button>
+					<a
+						href=""
+						class="text-[#ae1457] underline decoration-[#ae1457] font-bold text-center"
+						>GitHub Repo</a
+					>
+				</article>
+				<article
+					class="w-1/5 p-8 border-8 border-solid border-[#ae1457] rounded-md bg-white flex flex-col space-y-4 shadow-md shadow-[#ae1457]">
+					<h3 class="text-4xl font-bold">Title</h3>
+					<p class="text-lg leading-8">
+						Lorem ipsum dolor sit amet consectetur, adipisicing
+						elit. Voluptates labore ab minus alias neque saepe
+						suscipit quo, laborum odio cupiditate modi ullam. Sequi
+						facere et consequatur temporibus quasi iste distinctio?
+					</p>
+
+					<button
+						class="bg-[#ae1457] rounded-md py-2 uppercase font-bold text-white">
+						Read More
+					</button>
+					<a
+						href=""
+						class="text-[#ae1457] underline decoration-[#ae1457] font-bold text-center"
+						>GitHub Repo</a
+					>
+				</article>
+			</div>
+		</section>
+
+		<section
+			id="exp"
+			class="flex flex-col items-center justify-center p-16 pt-[10svh] space-y-8 section-border">
+			<h2 class="text-tertiary uppercase text-5xl font-bold">
+				Experience
+			</h2>
+			<span class="w-1/3 space-y-2">
+				<p class="font-bold text-lg">Job Title</p>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Explicabo eius totam, at in animi aspernatur blanditiis
+					temporibus! Consequuntur deleniti repellendus, corporis,
+					iure, doloremque dolorem unde recusandae omnis totam
+					distinctio exercitationem? s soluta alias ullam sed dolores
+					similique numquam, eos amet sit. Quo sed nihil unde.
+					consectetur adipisicing elit. Nihil laborum impedit
+					perspiciatis eius dolore pariatur voluptates soluta alias
+					ullam sed dolores similique numquam, eos amet sit. Quo sed
+					nihil unde.
+				</p>
+			</span>
+			<span class="w-1/3 space-y-2">
+				<p class="font-bold text-lg">Job Title</p>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Explicabo eius totam, at in animi aspernatur blanditiis
+					temporibus! Consequuntur deleniti repellendus, corporis,
+					iure, doloremque dolorem unde recusandae omnis totam
+					distinctio exercitationem? s soluta alias ullam sed dolores
+					similique numquam, eos amet sit. Quo sed nihil unde.
+					consectetur adipisicing elit. Nihil laborum impedit
+					perspiciatis eius dolore pariatur voluptates soluta alias
+					ullam sed dolores similique numquam, eos amet sit. Quo sed
+					nihil unde.
+				</p>
+			</span>
+		</section>
+
+		<footer
+			class="h-[6svh] bg-tertiary text-secondary p-4 flex items-center">
+			Rafa Lopes
+		</footer>
+	</body>
 </html>
