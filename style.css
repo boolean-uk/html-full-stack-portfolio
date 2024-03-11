@@ -154,7 +154,6 @@ body {
 }
 
 .cards div {
-    /* text-align: left; */
     border: 5px solid #ae1457;
     border-radius: 7px;
     box-shadow: -2px 5px gray;
@@ -163,13 +162,11 @@ body {
 }
 
 .cards h2 {
-    /* text-align: left; */
     padding-left: 10px;
     padding-top: 1em;
 }
 
 .cards p {
-    /* text-align: left; */
     padding-left: 10px;
     padding-top: .5em;
     padding-bottom: 20px;
@@ -177,24 +174,30 @@ body {
 
 
 
-
-.cards div button {
+ .cards button {
     margin-left: 10%;
     margin-right: 15%;
-    margin-top: 7%;
+    /* margin-top: 7%; */
     width: 80%;
     border: 0;
-    border-radius: 3px;
-    background-color: #ae1457;
-    color: white;
+    border-radius: 3px;    
+    background-color: #bd467a;
     padding: 3px;
+    
+}
+.cards button a {
+        color: white;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.cards div a {
+/* .cards div .internal {
+    color: white;
+} */
+
+.cards div p a {
     margin-left: 35%;
     margin-right: 35%;
-    margin-right: 15%;
     margin-top: 15%;
 
     width: 30%;
