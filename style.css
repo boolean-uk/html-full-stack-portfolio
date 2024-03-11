@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+script, title {
+    display: none;
+}
+
+.page-open {
+    height: 100vh;
+    background-color: rgb(26, 208, 181);
+}
+
+.header-container {
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    gap: 1rem;
+    margin: 20px;
+}
+
+.list-container {
+    list-style: none;
+    grid-auto-columns: 6rem;
+    grid-auto-flow: column;
+    gap: 2rem;
+    margin-left: 50%;
+}
+
+.list-container li {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 6px;
+    padding: 5%;
+}
+.list-container li a {
+    background-color: white;
+    color: rgb(26, 208, 181);
+    text-decoration: none;
+}
+
+.main-heading {
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    place-content: center;
+    margin: 10rem;
+    color: white;
+    gap: 8%;
+}
+.main-heading h1 {
+    font-size: 7rem;
+    margin: 0 15rem;
+}
+
+.main-heading p {
+    margin: 0 15rem;
+}
+
+#about-me {
+   width: 100%;
+   background-color: white;
+   padding: 3rem 0;
+   height: 100%;
+   border-top: 6px solid black;
+   border-bottom: 6px solid black;
+}
+.intro {
+    margin: 2rem 25rem 2rem 25rem;
+    gap: 1rem;
+    background-color: white;
+}
+
+
+#about-me h2 {
+    place-items: center;
+    font-size: 200%;
+}
+
+#about-me h2, #about-me h4, #about-me p, #about-me li {
+    background-color: white;
+}
+
+.skills {
+    background-color: white;
+    margin: 2rem 25rem 2rem 25rem;
+    gap: 1rem;
+}
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#portfolio {
+    place-items: center;
+    background-color: rgb(255, 227, 232);
+    height: 123%;
+    border-bottom: 6px solid black;
+}
+#portfolio h2 {
+    background-color: rgb(255, 227, 232);
+    font-size: 200%;
+}
+#portfolio h3 {
+    font-size: 150%;
+}
+.portfolio-container {
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    background-color: rgb(255, 227, 232);
+    
+}
+
+.portfolio-container .item-1,  .portfolio-container .item-2, .portfolio-container .item-3 {
+    border: 6px solid rgb(185, 73, 73);
+    border-radius: 5%;
+    padding: 1rem 1rem;
+    background-color: white;
+    margin: 1rem 5rem;
+}
+
+.portfolio-container h4 a {
+    border: 2px solid rgb(185, 73, 73);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(185, 73, 73);
+    place-content: center;
+    color: white;
+}
+
+.portfolio-container p, h3, a {
+    background-color: white;
+}
+
+.portfolio-container p {
+    place-content: center;
+    color: rgb(185, 73, 73);
+    margin: 1rem;
+}
+
+#experience h2, #experience h4, #experience p {
+    background-color: white;
+    margin: 1rem 25rem;
+    height: 100%;
+    gap: 1rem;
+}
+
+#experience {
+    background-color: white;
+    margin-top: 7rem;
+    padding: 5%;
+}
+
+footer h5 {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
