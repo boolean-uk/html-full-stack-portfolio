@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows:
+    100px
+    1fr
+    70px;
+}
+
+header {
+  background-color: #4eb6ac;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem;
+}
+
+nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+li a {
+  color: #4eb6ac;
+  background-color: #e5ffff;
+  padding: 0.5rem 0.8rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  border-radius: 7px;
+}
+
+li a:hover {
+  background-color: #cfebeb;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e5ffff;
+}
+/* ************************************ */
+
+main {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: #4eb6ac;
+  color: #e5ffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 7rem 0;
+}
+
+main > div {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 6rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+
+main p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+main span {
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+main i {
+  border-bottom: 0.09rem solid #1c1c1c;
+}
+
+/**************** Abouut me & Experience *****************/
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 0.5rem;
+}
+
+.container > * {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.container ul {
+  padding-left: 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(6rem, 1fr));
+  gap: 0.2rem 2rem;
+}
+.h1-about-me {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/**************** Portfolio *****************/
+.portfolio {
+  background-color: #ffebee;
+  padding: 1rem 0.5rem;
+}
+
+.portfolio > h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.cards > * {
+  background-color: #fbfffc;
+  border: 0.5rem solid #ae1457;
+  border-radius: 0.5rem;
+
+  padding: 1.5rem;
+}
+
+h2,
+.desc {
+  margin-bottom: 1rem;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more button {
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 2.5rem;
+
+  color: #fbfffc;
+  background-color: #ae1457;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 7px;
+}
+
+.github {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ae1457;
+}
+/**************** Footer *****************/
+
+footer {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  background-color: #1d313a;
+  color: #e5ffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
