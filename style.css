@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: Impact;
+    gap: 5px;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'main main main'
+        'about-me about-me about-me'
+        'portfolio portfolio portfolio'
+        'xperience xperience xperience'
+        'footer footer footer'
+    ;
+    grid-auto-flow: row;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 80px 1fr 0.6fr 0.8fr 0.8fr 40px;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    background-color: bisque;
+    grid-template-columns: 
+        'name menu'
+    ;
+    grid-auto-flow: column;
+}
+.menu ul a {
+    list-style: none;
+}
+
+.main {
+    grid-area: main;
+    background-color: beige;
+}
+
+.about-me {
+    grid-area: about-me;
+    background-color: azure;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    background-color: rgb(33, 194, 140);
+}
+
+.xperience {
+    grid-area: xperience;
+    background-color: aqua;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: antiquewhite;
+}
