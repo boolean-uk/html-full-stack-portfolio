@@ -180,7 +180,7 @@ grid-area: column-3;
 }
 
 .portfolio-column p {
-    flex-shrink: 1;
+    flex: 1;
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 10px 0;
