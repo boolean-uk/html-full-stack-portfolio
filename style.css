@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    grid-template: 
+        'introduction' minmax(850px, 1fr) 
+        'about-me' 515px
+        'portfolio' 650px
+        'experience' 665px;
+}
+
+.introduction {
+    display: grid;
+    grid-area: introduction;
+    background-color: #4EB6AC;
+    color: white;
+    border-top: 10px solid #1D313A;
+    border-bottom: 10px solid #1D313A;
+    grid-template: 
+        'header' 100px
+        'content' minmax(100px, 1fr);
+    gap: 50px;
+}
+
+.introduction header {
+    margin: 20px;
+    display: grid;
+    grid-template: 
+        'header buttons' / 250px minmax(250px, 1fr);
+}
+
+.introduction h2 {
+    font-size: 35px;
+}
+
+.introduction .buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.introduction button {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.introduction button a {
+    text-decoration: none;
+    color: #4EB6AC;
+}
+
+.introduction button a:hover {
+    color: #1D313A;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    grid-template: 
+        'h1' 380px
+        'p' 100px;
+}
+
+.content h1 {
+    font-size: 100px;
+}
+
+.content p {
+    font-size: 20px;
+}
+
+.content strong {
+    color: #1D313A;
+}
+
+.content span {
+    text-decoration: underline;
+    text-decoration-color: #1D313A;
+}
+
+.about-me {
+    display: grid;
+    grid-area: about-me;
+    grid-template: 
+        'header' 70px
+        'text' minmax(60px, 1fr)
+        'text2' 70px
+        'lists' 60px;
+    border-bottom: 10px solid #1D313A;
+}
+
+.about-me header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #1D313A;
+    margin: 40px;
+}
+
+.about-me .text {
+    display: grid;
+    grid-area: text;
+    align-self: center;
+    justify-self: center;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.about-me .text2 {
+    display: grid;
+    grid-area: text2;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-me .lists {
+    display: grid;
+    grid-template: 
+        'first-list second-list';
+    gap: 0 200px;
+    margin-right: 180px;
+}
+
+.about-me .lists .first-list {
+    grid-area: first-list;
+}
+
+.about-me .lists .second-list {
+    grid-area: second-list;
+}
+
+.about-me strong {
+    color: #1D313A
+}
+
+.portfolio {
+    display: grid;
+    grid-area: portfolio;
+    background-color: #FFEBEE;
+    grid-template: 
+        'h1' 65px
+        'title' minmax(65px, 1fr);
+    border-bottom: 10px solid #1D313A;
+}
+
+.portfolio h1 {
+    grid-area: h1;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #1D313A;
+    margin: 40px;
+}
+
+.portfolio .title {
+    display: grid;
+    grid-template: 
+        'div div div';
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.portfolio .title h2 {
+    font-size: 40px;
+}
+
+.portfolio .title div {
+    display: grid;
+    height: 400px;
+    width: 280px;
+    border: 10px solid #AE1457;
+    border-radius: 5px;
+    background-color: #FBFFFC;
+    padding: 25px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+
+.portfolio .title a {
+    display: grid;
+    font-size: 17px;
+    font-weight: bold;
+    color: #AE1457;
+    text-decoration-color: #AE1457;
+    justify-content: center;
+}
+
+.portfolio .title a:hover {
+    text-decoration-color: #1D313A;
+    color: #1D313A;
+}
+
+.portfolio .title button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: #AE1457;
+}
+
+.portfolio .title button p {
+    font-size: 20px;
+}
+
+.experience {
+    display: grid;
+    grid-area: experience;
+    grid-template: 
+        'h1' 135px
+        'job-title' minmax(80px, 1fr)
+        'footer' 80px;
+}
+
+.experience h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #1D313A;
+    align-self: center;
+}
+
+
+.experience .job-title {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template: 
+        'first-experience' 200px
+        'second-experience' 200px;
+}
+
+.experience p {
+    font-size: 20px;
+}
+
+.experience strong {
+    color: #1D313A;
+}
+
+.experience .footer {
+    display: grid;
+    color: white;
+    background-color: #1D313A;
+    align-items: center;
+    padding: 30px;
+}
