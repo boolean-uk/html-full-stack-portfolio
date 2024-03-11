@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* colors: {
+				primary: "#4eb6ac",
+				secondary: "#e5ffff",
+				tertiary: "#1d313a",
+			}, */
+
+* {
+	scroll-behavior: smooth;
+}
+
+.nav__link {
+	border-radius: 5px;
+	background-color: #e5ffff;
+	color: #4eb6ac;
+	padding: 0.5em 0.75em;
+}
+
+.section-border {
+	border-bottom-width: 0.75em;
+	border-color: #1d313a;
+	border-style: solid;
+}
