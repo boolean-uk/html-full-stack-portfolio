@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+
+.container {
+    grid-auto-flow: rows;
+    background-color:white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.black-text {
+    text-decoration: none;
+    color: black;
+}
+
+.underlined-italic {
+   text-decoration-color: black;
+   font-style: italic;
+}
+
+hr {
+    background-color: black;
+    height:7px;
+    border: none;    
+}
+
+nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:#4EB6AC
+}
+
+
+nav .name {
+    font-weight: bold;
+    display: grid;
+    width: auto;
+    align-items:center;
+    padding-left: 1rem;
+    color: #E5FFFF
+}
+
+nav .navbuttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    text-align: center;
+    place-self: end;
+    gap: 30px;
+    color: #4EB6AC;
+}
+
+.navbuttons a {
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    background-color: #E5FFFF
+}
+
+
+.container .hero {
+    margin-inline: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:#4EB6AC;
+    
+}
+
+.hero h1, .hero p {
+    width: 420px;
+    color: #E5FFFF;
+    margin-inline: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.about-me { 
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 420px;
+    margin-inline: auto;
+}
+
+.about-me ul {
+    column-count: 2;
+}
+
+.portfolio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FFEBEE;
+}
+
+.portfolio .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 300px));
+    justify-content: center;
+}
+
+.project-container div {
+    font-size: 12px;
+    border: 5px solid #AE1557;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(102, 102, 102, 0.366) ;
+    padding: 15px;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.portfolio-button {
+    text-align: center; 
+    background-color: #AE1557;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.portfolio .git-button {
+    color: #AE1557;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.experience {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 420px;
+    margin-inline: auto;
+}
+
+footer {
+    width: 100%;
+    font-size: 12px;
+    height: 40px;
+    background-color: #1D303A;
+    padding-left: 30px;
+    justify-content: center;
+    line-height: 40px;
+    color: #E5FFFF
+}
+
+@media screen and (max-width: 576px) {
+    nav .navbuttons {
+        display: grid;
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+        gap: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav .name {
+        display: grid;
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .portfolio .project-container {
+        all: unset;
+        display: grid;
+        width: 390px;
+        grid-template-rows: repeat(3, 190px);
+        gap: 10px;
+        margin-inline: auto;
+    }
+
+    .about-me ul {
+        column-count: 3;
+    }
+
+}
