@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: green;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    /* gap: 7px; */
+    grid-template:
+        'top' 40px
+        'main' 30%
+        'about' 1fr
+        'portfolio' 1fr
+        'experience' 1fr
+        'bottom' 35px
+    ;
+}
+
+
+/* ============================ Top Bar ============================ */
+
+.top-bar {
+    grid-area: top;
+    height: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #4eb6ac;
+}
+
+.name {
+    padding: 10px;
+    color: #ecffff;
+    font-size: 28px;
+    
+}
+
+.links {
+    padding: 3px 7px;
+    margin: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #4eb6ac;
+}
+
+.links button {
+    background-color: #e5ffff;
+    
+    text-decoration: none;
+    font-weight: bold;
+    padding: 4px 17px 8px 17px;
+    float: right;
+    width: 120px;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+/* ============================ Main ============================ */
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background-color: #4eb6ac;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    border-bottom: 6px solid black;
+}
+
+.main h1 {
+    font-size: 48px;
+    color: #e6ffff;
+    margin-bottom: 20px;
+}
+
+.main p {
+    color: #e6ffff;
+}
+
+.main b {
+    color: black;
+}
+
+.main u {
+    text-decoration-color: black;
+}
+
+
+/* ============================ About ============================ */
+
+
+#about-me {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 6px solid black;
+}
+
+#about-me div {
+    /* text-align: left; */
+    margin-top: 1em;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.skills h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+
+.skills ul {
+    margin-top: 10px;
+    place-items: left;
+}
+
+
+/* ============================ Portfolio ============================ */
+
+
+.portfolio {
+    grid-area: portfolio;
+
+    display: grid;
+    grid-template-rows: 15% minmax(10px, 1fr);
+    gap: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    background-color: #ccbcbe;
+    place-items: center;
+    border-bottom: 6px solid black;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding-bottom: 10px;
+}
+
+.cards div {
+    /* text-align: left; */
+    border: 5px solid #ae1457;
+    border-radius: 7px;
+    box-shadow: -2px 5px gray;
+    background-color: white;
+    padding: 5px;
+}
+
+.cards h2 {
+    /* text-align: left; */
+    padding-left: 10px;
+    padding-top: 1em;
+}
+
+.cards p {
+    /* text-align: left; */
+    padding-left: 10px;
+    padding-top: .5em;
+    padding-bottom: 20px;
+}
+
+
+
+
+.cards div button {
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 7%;
+    width: 80%;
+    border: 0;
+    border-radius: 3px;
+    background-color: #ae1457;
+    color: white;
+    padding: 3px;
+    font-weight: bold;
+}
+
+.cards div a {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-right: 15%;
+    margin-top: 15%;
+
+    width: 30%;
+    color: #ae1457;
+    }
+
+
+
+
+
+
+
+
+/* ============================ Experience ============================ */
+
+
+#experience {
+    grid-area: experience;
+    display: grid;
+    place-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 30px;
+}
+
+#experience h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#experience div {
+    margin-bottom: 20px;
+}
+
+
+
+
+/* ============================Bottom Bar ============================ */
+
+.bottom-bar {
+    grid-area: bottom;
+    color: white;
+    background-color: #1d313a;
+    padding-left: 30px;
+    padding-top: 10px;
+}
