@@ -62,10 +62,13 @@ nav .navbuttons {
     padding: 5px;
     border-radius: 5px;
     width: 100px;
-    background-color: #E5FFFF
+    background-color: #E5FFFF;
+    transition: background-color 0.3s ease
 }
 
-
+.navbuttons a:hover {
+    background-color: #f6ffe5;
+}
 .container .hero {
     margin-inline: auto;
     padding-top: 100px;
