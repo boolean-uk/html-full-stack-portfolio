@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.page-layout {
+    background-color: black;
+    /* height: 100vh; */
+    padding: 10px 0px;
+}
+
+.page-layout > div {
+    /* height: 400px; */
+    /* background-color: pink; */
+    margin: 10px 0px;
+}
+
+.intro {
+    background-color: rgb(62, 191, 241);
+    color: white;
+    padding-bottom: 100px;
+}
+
+header {
+    display: grid;
+    grid-auto-flow: column;
+    /* background-color: aquamarine; */
+    padding: 10px;
+}
+
+h2, nav {
+    display: inline-block;
+}
+
+nav {
+    justify-self: end;
+    align-self: center;
+}
+
+button {
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px black solid;
+    padding: 5px 10px;
+    font-weight: 600;
+    color: rgb(62, 191, 241);
+
+}
+
+.hiring {
+    /* height: 200px; */
+    /* background-color: yellow; */
+    margin: 50px 100px;
+}
+
+h1 {
+    font-size: 70px
+}
+
+#about, #portfolio, #experience {
+    /* height: 400px; */
+    background-color: white;
+}
+
+
+#portfolio > div {
+    /* height: 200px; */
+    background-color: aqua;
+    width: 200px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.white-text {
+    color: white;
+    padding-left: 10px;
+}
