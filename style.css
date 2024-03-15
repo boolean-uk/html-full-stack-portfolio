@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-rows: 50px 500px 450px 600px 350px 50px;
+  width: 1150px;
+  height: 100vh;
+  grid-template-areas: 
+  'tabbar'
+  'description'
+  'aboutMe'
+  'portfolio'
+  'experience'
+  'footer';
+}
+
+.tabbar {
+ grid-area: tabbar;
+ background-color: #4EB6AC;
+ color: #E5FFFF ;
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ padding: 10px;
+}
+.portfolio-name {
+  font-weight: bold;
+ }
+.option {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  gap: 20px;
+  div {
+    height: 17px ;
+    background-color: #E5FFFF;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #4EB6AC;
+    font-size: 15px;
+  }
+}
+
+
+
+.description {
+  padding: 50px 200px 50px 200px;
+  grid-area: description;
+  background-color: #4EB6AC;
+  color: #E5FFFF;
+  border-bottom: 5px solid black;
+  text-align: left;
+  font-size: 42px;
+  p {
+    padding-top: 25px;
+    font-size: 15px;
+    text-align: left;
+    span {
+      color: black;
+    }
+    sl {
+      text-decoration: underline;
+      text-decoration-color: black;
+    }
+  }
+}
+
+.aboutMe {
+  padding: 50px 200px 50px 200px;
+  grid-area: aboutMe;
+  background-color: white;
+  border-bottom: 5px solid black;
+
+  h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  p{
+    font-size: 17px;
+    padding-bottom: 20px;
+  }
+  h3 {
+    padding-bottom: 20px;
+  }
+  ul {
+    display: inline-block;
+  }
+}
+
+.portfolio {
+  grid-area: portfolio;
+  background-color: #FFEBEE;
+  border-bottom: 5px solid black;
+  text-align: center;
+  padding: 40px 60px 40px 60px;
+  display: grid;
+  grid-template-rows: 50px 450px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  .portfolio-parts {
+    display: grid;
+    grid-template-columns: repeat(3,330px);
+    gap: 20px;
+    .each-portfolio {
+      background-color: #FBFFFC;
+      border: 5px solid #AE1457;
+      box-shadow: 1px 1px 5px #AE1457;
+      padding: 20px 30px 10px 30px;
+      display: grid;
+      grid-template-rows: 40px 300px 100px ;
+      h2 {
+        text-align: left;
+      }
+      p {
+        text-align: left;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      div {
+        button {
+          color: white;
+          background-color: #AE1457;
+          height: 30px;
+          width: 250px;
+          align-items: center;
+          border: 0;
+          border-radius: 5px;
+          margin-bottom:15px ;
+        }
+        
+        p {
+          text-align: center;
+          span {
+            color: #B8336B;
+            text-decoration: underline;
+            text-decoration-color: red;
+          }
+        }
+      }
+    }
+  }
+}
+.experience {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  grid-area: experience;
+  padding-top: 20px;
+  text-align: center;
+  .experience-job {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 200px 20px 200px;
+    text-align: left;
+  }
+}
+
+.footer {
+  grid-area: footer;
+  padding: 15px 0px 15px 15px;
+  background-color: #1D313A;
+  color: white;
+}
+/* 
+.header {
+  grid-area: tabbar;
+  display: block;
+  background-color: #4EB6AC;
+  height: 500px;
+}
+
+.tabbar {
+  display: grid;
+  padding: 15px 45px 15px 15px;
+  color: #E5FFFF;
+  grid-template-columns: minmax(200px , 5fr) minmax(300px , .5fr);
+  .portfolio-name {
+    font-size: 15px;
+    font-weight: bold;
+  }
+ }
+
+.option {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 100px 100px 100px;
+  
+  gap: 16px;
+  div {
+    background-color: #E5FFFF;
+    padding: 8px;
+    border-radius: 10px;
+    color: #4EB6AC;
+  }
+}
+
+
+.header h1 {
+  box-sizing: content-box;
+  font-size: 80px;
+  padding: 80px 320px 0 240px;
+  color: #E5FFFF;
+}
+
+.header p {
+  box-sizing: border-box;
+  border: 1px solid black;
+    padding: 16px 320px 80px 240px;
+    color: #E5FFFF;
+    font-size: 13px;
+    span {
+      color: black;
+    }
+    sl {
+      text-decoration: underline;
+      text-decoration-color: black;
+    }
+}
+
+
+.aboutMe {
+  display: block;
+  height: 20rem;
+
+}
+
+.portfolio {
+  height: 20rem;
+
+}
+
+.experience {
+  height: 20rem;
+} */
